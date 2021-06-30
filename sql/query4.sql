@@ -1,9 +1,10 @@
 /*Total amount of memory allocated per tool per month*/
 
 with totalmem as (
-select * from job join job_metric_numeric on job.id = job_metric_numeric.job_id
+select distinct job_id, metric_value from job_metric_numeric
 where metric_name = 'memtotal')
 
-select extract(month from create_time) as month, extract(year from create_time) as year,tool_id,sum(metric_value) as totalMemory
-from totalmem
-group by extract(month from create_time), extract(year from create_time),tool_id;
+select concat(cast(EXTRACT(year FROM cast(job.create_time as date)) as varchar(4)),'-',cast(EXTRACT(month FROM cast(job.create_time as date)) as varchar(2))) as month_year,tool_id,sum(metric_value) as totalMemory
+from job join totalmem on job.id = totalmem.job_id
+group by month_year,tool_id
+order by totalMemory desc; 

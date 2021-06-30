@@ -1,11 +1,10 @@
-/* Number of users running a tool, grouped by month and by year in two separate graphs. */
+/*Average amount of memory allocated per tool per month*/
 
-/* Query that group by month */
-select extract(month from create_time) as month, extract(year from create_time) as year, count(distinct user_id) as numusers
-from job join job_metric_numeric on job.id = job_metric_numeric.job_id
-group by extract(month from create_time), extract(year from create_time);
+with totalmem as (
+select distinct job_id, metric_value from job_metric_numeric
+where metric_name = 'memtotal')
 
-/* Query that gropu by year */
-select extract(year from create_time) as year, count(distinct user_id) as numusers
-from job join job_metric_numeric on job.id = job_metric_numeric.job_id
-group by extract(year from create_time); 
+select concat(cast(EXTRACT(year FROM cast(job.create_time as date)) as varchar(4)),'-',cast(EXTRACT(month FROM cast(job.create_time as date)) as varchar(2))) as month_year,tool_id,avg(metric_value) as avgMemory
+from job join totalmem on job.id = totalmem.job_id
+group by month_year,tool_id
+order by avgMemory desc; 
