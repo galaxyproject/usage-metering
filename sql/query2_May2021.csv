@@ -1,0 +1,1324 @@
+month_year,total_cpu_time,tool_name,tool_version
+ 2021-5     ,1.58001E+21,bwa_mem,0.7.17.1                                                                              
+ 2021-5     ,1.41287E+21,rna_star,2.7.8a                                                                             
+ 2021-5     ,1.34311E+21,tophat2,2.1.1                                                                             
+ 2021-5     ,7.78674E+20,ncbi_blastp_wrapper,2.10.1+galaxy0                                                
+ 2021-5     ,5.65306E+20,unicycler,0.4.8.0                                                                           
+ 2021-5     ,4.73237E+20,trinity_align_and_estimate_abundance,2.9.1+galaxy1               
+ 2021-5     ,4.38079E+20,spades,3.12.0+galaxy1                                                                          
+ 2021-5     ,4.1996E+20,fastq_groomer,1.1.1                                                                 
+ 2021-5     ,4.00072E+20,fasterq_dump,2.10.9+galaxy0                                                                 
+ 2021-5     ,3.9948E+20,ncbi_blastx_wrapper,2.10.1+galaxy0                                                
+ 2021-5     ,3.6514E+20,hisat2,2.1.0+galaxy7                                                                           
+ 2021-5     ,3.29385E+20,freebayes,1.3.1                                                                         
+ 2021-5     ,3.14986E+20,fastq_dump,2.10.9+galaxy0                                                                   
+ 2021-5     ,3.05925E+20,bwa,0.7.17.4                                                                                  
+ 2021-5     ,2.92934E+20,trinity,2.9.1+galaxy1                                                                         
+ 2021-5     ,2.82098E+20,deeptools_bigwig_compare,3.3.2.0.0                                     
+ 2021-5     ,1.81063E+20,maxquant,1.6.10.43+galaxy3                                                               
+ 2021-5     ,1.57198E+20,cuffdiff,2.2.1.6                                                                         
+ 2021-5     ,1.52695E+20,busco,5.0.0+galaxy0                                                                             
+ 2021-5     ,1.43277E+20,lofreq_call,2.1.5+galaxy1                                                                 
+ 2021-5     ,1.18677E+20,trim_galore,0.6.3                                                                   
+ 2021-5     ,1.1757E+20,flye,2.6
+ 2021-5     ,1.15008E+20,tophat2,0.9
+ 2021-5     ,1.13603E+20,deeptools_multi_bam_summary,3.3.2.0.0                               
+ 2021-5     ,1.10622E+20,ncbi_blastn_wrapper,2.10.1+galaxy0                                                
+ 2021-5     ,1.08104E+20,htseq_count,0.9.1                                                                    
+ 2021-5     ,1.07663E+20,prokka,1.14.5+galaxy0                                                                         
+ 2021-5     ,1.04111E+20,pileup_parser,1.0.2                                                                 
+ 2021-5     ,1.00554E+20,fastq_groomer,1.1.5                                                                 
+ 2021-5     ,8.71029E+19,cufflinks,2.2.1.3                                                                       
+ 2021-5     ,8.15208E+19,sam_pileup,1.1.3                                                                       
+ 2021-5     ,7.06053E+19,metaspades,3.9.0                                                                           
+ 2021-5     ,6.23325E+19,rseqc_geneBody_coverage,2.6.4.3                                                              
+ 2021-5     ,6.03174E+19,rbc_mafft,7.221.3                                                                           
+ 2021-5     ,5.74063E+19,spaln,2.4.03+galaxy0                                                                            
+ 2021-5     ,4.77414E+19,clustalw,2.1
+ 2021-5     ,4.56817E+19,bwa_mem,0.7.15.1                                                                              
+ 2021-5     ,4.28759E+19,disco,1.2.0                                                                                     
+ 2021-5     ,3.88055E+19,iqtree,1.5.5.3                                                                                 
+ 2021-5     ,3.67574E+19,rnaspades,3.9.0.2                                                                           
+ 2021-5     ,3.64995E+19,roary,3.13.0+galaxy1                                                                            
+ 2021-5     ,3.44842E+19,minimap2,2.17+galaxy4                                                                        
+ 2021-5     ,3.29077E+19,fastq_quality_trimmer,1.1.5                                              
+ 2021-5     ,3.12663E+19,gops_join_1,1.0.0                                                                            
+ 2021-5     ,3.10816E+19,megablast_wrapper,1.2.0                                                         
+ 2021-5     ,3.08784E+19,vegan_rarefaction,2.4-3                                                             
+ 2021-5     ,2.62892E+19,volcanoplot,0.0.3                                                                         
+ 2021-5     ,2.60472E+19,deeptools_compute_matrix,3.3.2.0.0                                     
+ 2021-5     ,2.59507E+19,repeatmasker_wrapper,4.0.9                                                        
+ 2021-5     ,2.58908E+19,megahit,1.1.3.5                                                                               
+ 2021-5     ,2.53765E+19,stringtie,2.1.1                                                                             
+ 2021-5     ,2.45125E+19,velvetoptimiser,2.2.6                                                       
+ 2021-5     ,2.36614E+19,fastq_paired_end_deinterlacer,1.1.5                                 
+ 2021-5     ,2.17961E+19,dexseq_count,1.28.1.0                                                                          
+ 2021-5     ,2.15491E+19,mimodd_varcall,0.1.9                                                                    
+ 2021-5     ,1.93693E+19,lofreq_call,2.1.5+galaxy0                                                                 
+ 2021-5     ,1.92204E+19,trimmomatic,0.38.0                                                                   
+ 2021-5     ,1.92081E+19,trinity,2.9.1                                                                                 
+ 2021-5     ,1.90883E+19,mothur_cluster_split,1.39.5.0                                                    
+ 2021-5     ,1.77974E+19,quast,5.0.2+galaxy1                                                                             
+ 2021-5     ,1.76935E+19,bowtie2,2.3.4.3+galaxy0                                                                   
+ 2021-5     ,1.57323E+19,deeptools_bam_coverage,3.3.2.0.0                                         
+ 2021-5     ,1.55379E+19,shovill,1.1.0+galaxy0                                                                         
+ 2021-5     ,1.53692E+19,samtools_view,1.9+galaxy3                                                               
+ 2021-5     ,1.50383E+19,fastq_paired_end_splitter,1.1.5                                         
+ 2021-5     ,1.46166E+19,naive_variant_caller,0.0.4                                               
+ 2021-5     ,1.34731E+19,maker,2.31.11                                                                                   
+ 2021-5     ,1.32841E+19,cutadapt,1.16.6                                                                         
+ 2021-5     ,1.31945E+19,porechop,0.2.3                                                                               
+ 2021-5     ,1.31309E+19,samtools_rmdup,2.0.1                                                               
+ 2021-5     ,1.25811E+19,deeptools_compute_matrix,3.1.2.0.0                                     
+ 2021-5     ,1.22855E+19,fastq_filter,1.1.5                                                                   
+ 2021-5     ,1.13641E+19,augustus_training,3.3.3                                                       
+ 2021-5     ,1.12507E+19,plant_tribes_gene_family_classifier,1.0.3.0                      
+ 2021-5     ,1.09479E+19,hisat2,2.1.0+galaxy5                                                                           
+ 2021-5     ,1.08081E+19,meme_chip,4.11.2+galaxy1                                                                    
+ 2021-5     ,1.06241E+19,salmon,1.3.0+galaxy1                                                                     
+ 2021-5     ,1.02257E+19,rna_starsolo,2.7.8a                                                                      
+ 2021-5     ,1.01952E+19,tophat2,2.1.0                                                                             
+ 2021-5     ,1.01928E+19,lofreq_alnqual,2.1.5+galaxy0                                                           
+ 2021-5     ,9.96427E+18,busco,4.1.2                                                                                     
+ 2021-5     ,9.35399E+18,fastq_stats,1.1.5                                                                     
+ 2021-5     ,9.2222E+18,microsatellite,1.0.0                                                       
+ 2021-5     ,8.68789E+18,bcftools_mpileup,1.1
+ 2021-5     ,8.54518E+18, CONVERTER_sam_to_bigwig_0                                                                                                              , CONVERTER_sam_to_bigwig_0                                                                                                              
+ 2021-5     ,8.25746E+18,fastq_paired_end_joiner,2.0.1.1+galaxy0                                   
+ 2021-5     ,8.00939E+18,bioext_bealign,0.19.7.0                                                                
+ 2021-5     ,7.94031E+18,samtools_mpileup,2.1.4                                                           
+ 2021-5     ,7.93881E+18,picard_MarkDuplicates,2.18.2.2                                                             
+ 2021-5     ,7.15035E+18,fastqe,0.2.6+galaxy1                                                                           
+ 2021-5     ,7.06843E+18, __EXPORT_HISTORY__                                                                                                                     , __EXPORT_HISTORY__                                                                                                                     
+ 2021-5     ,6.98179E+18,augustus,3.3.3                                                                         
+ 2021-5     ,6.85435E+18,gubbins,0.1.0                                                                                 
+ 2021-5     ,5.93354E+18,dexseq,1.28.1+galaxy1                                                                          
+ 2021-5     ,5.26556E+18,bowtie2,2.3.4.2                                                                           
+ 2021-5     ,5.18567E+18,hisat2,2.1.0+galaxy4                                                                           
+ 2021-5     ,5.13186E+18,rnaspades,3.9.0.1                                                                           
+ 2021-5     ,5.03402E+18,plant_tribes_assembly_post_processor,1.0.3.0                    
+ 2021-5     ,4.92328E+18,fastqc,0.72+galaxy1                                                                        
+ 2021-5     ,4.8924E+18,snippy,4.5.0                                                                                   
+ 2021-5     ,4.6832E+18,mothur_align_seqs,1.39.5.0                                                          
+ 2021-5     ,4.63001E+18,mothur_classify_seqs,1.39.5.0                                                    
+ 2021-5     ,4.49991E+18,deeptools_plot_fingerprint,3.3.2.0.0                                 
+ 2021-5     ,4.14112E+18,samtools_bedcov,2.0.2                                                             
+ 2021-5     ,3.66051E+18,varscan_somatic,2.4.3.6                                                               
+ 2021-5     ,3.4947E+18,macs2_callpeak,2.1.1.20160309.6                                                                 
+ 2021-5     ,3.47289E+18,samtools_depth,1.9
+ 2021-5     ,3.29929E+18,picard_MergeSamFiles,2.18.2.1                                                              
+ 2021-5     ,3.05164E+18,hyphy_prime,2.5.31+galaxy1                                                                
+ 2021-5     ,2.99443E+18,fastq_trimmer,1.1.5                                                                 
+ 2021-5     ,2.97419E+18,split_file_to_collection,0.5.0                                         
+ 2021-5     ,2.64846E+18,trinity_align_and_estimate_abundance,2.9.1                       
+ 2021-5     ,2.57615E+18,egsea,1.10.0                                                                                    
+ 2021-5     ,2.5679E+18,vsearch_chimera_detection,1.9.7.0                                                             
+ 2021-5     ,2.55297E+18, CONVERTER_bam_to_qname_sorted_bam                                                                                                      , CONVERTER_bam_to_qname_sorted_bam                                                                                                      
+ 2021-5     ,2.46814E+18, upload1                                                                                                                                , upload1                                                                                                                                
+ 2021-5     ,2.42393E+18,mothur_make_contigs,1.39.5.1                                                      
+ 2021-5     ,2.36738E+18, CONVERTER_bam_to_bigwig_0                                                                                                              , CONVERTER_bam_to_bigwig_0                                                                                                              
+ 2021-5     ,2.15801E+18,lastz_wrapper_2,1.3.3                                                                       
+ 2021-5     ,2.13353E+18,bwameth,0.2.2                                                                                 
+ 2021-5     ,1.8779E+18,varscan,2.4.2                                                                   
+ 2021-5     ,1.81965E+18,deseq2,2.11.40.6+galaxy1                                                                       
+ 2021-5     ,1.80626E+18,gd_raxml,1.0.0                                                                
+ 2021-5     ,1.78379E+18,fastq_paired_end_interlacer,1.2.0.1+galaxy0                           
+ 2021-5     ,1.76647E+18,mothur_seq_error,1.39.5.0                                                            
+ 2021-5     ,1.72068E+18,rna_star,2.7.5b                                                                             
+ 2021-5     ,1.65848E+18,transdecoder,5.5.0+galaxy1                                                               
+ 2021-5     ,1.59488E+18, join1                                                                                                                                  , join1                                                                                                                                  
+ 2021-5     ,1.55363E+18,ncbi_acc_download,0.2.5+galaxy0                                                     
+ 2021-5     ,1.50699E+18,mothur_fastq_info,1.39.5.0                                                          
+ 2021-5     ,1.44816E+18,picard_SortSam,2.18.2.1                                                                    
+ 2021-5     ,1.41835E+18,dada2_learnErrors,1.18+galaxy0                                                      
+ 2021-5     ,1.41034E+18,bg_diamond,0.9.29.0                                                                     
+ 2021-5     ,1.36892E+18,pilon,1.20.1                                                                                    
+ 2021-5     ,1.36791E+18,bedtools_genomecoveragebed,2.30.0                                                            
+ 2021-5     ,1.31434E+18,mothur_pre_cluster,1.39.5.0                                                        
+ 2021-5     ,1.29653E+18,vcffilter2,1.0.0_rc3+galaxy3                                                            
+ 2021-5     ,1.27398E+18,deeptools_bam_compare,3.3.2.0.0                                           
+ 2021-5     ,1.08403E+18, __EXPORT_HISTORY_TO_URI__                                                                                                              , __EXPORT_HISTORY_TO_URI__                                                                                                              
+ 2021-5     ,1.02825E+18,shovill,1.0.4+galaxy1                                                                         
+ 2021-5     ,9.93763E+17,charts,1.0.1                                                                                   
+ 2021-5     ,9.71737E+17,fastp,0.19.5+galaxy1                                                                            
+ 2021-5     ,9.67719E+17,progressivemauve,2015_02_13.0                                                        
+ 2021-5     ,9.61914E+17, Grouping1                                                                                                                              , Grouping1                                                                                                                              
+ 2021-5     ,9.2042E+17,samtools_sort,2.0.3                                                                 
+ 2021-5     ,8.90424E+17,freebayes,1.1.0.46-0                                                                    
+ 2021-5     ,8.69865E+17,varscan_mpileup,2.4.3.1                                                               
+ 2021-5     ,8.37768E+17,snpEff,4.3+T.galaxy1                                                                           
+ 2021-5     ,7.87643E+17,fastq_dump,2.10.8+galaxy0                                                                   
+ 2021-5     ,6.95274E+17,qualimap_bamqc,2.2.2c                                                                  
+ 2021-5     ,6.79411E+17,bowtie_wrapper,1.2.0                                                              
+ 2021-5     ,6.43082E+17,lofreq_viterbi,2.1.5+galaxy0                                                           
+ 2021-5     ,6.3884E+17,pizzly,0.37.3.1                                                                                
+ 2021-5     ,6.16313E+17,kallisto_quant,0.46.0.4                                                                
+ 2021-5     ,6.02782E+17,umi_tools_extract,0.5.5.1                                                           
+ 2021-5     ,5.71975E+17,fastp,0.20.1+galaxy0                                                                            
+ 2021-5     ,5.62448E+17,cshl_fastx_trimmer,1.0.2+galaxy0                                                    
+ 2021-5     ,5.44354E+17, CONVERTER_bam_to_coodinate_sorted_bam                                                                                                  , CONVERTER_bam_to_coodinate_sorted_bam                                                                                                  
+ 2021-5     ,5.38325E+17,bamFilter,2.4.1                                                                   
+ 2021-5     ,5.33935E+17,unicycler,0.4.6.0                                                                           
+ 2021-5     ,5.31646E+17,samtools_merge,1.9
+ 2021-5     ,5.18068E+17,sam_dump,2.10.9+galaxy0                                                                     
+ 2021-5     ,5.13504E+17, CONVERTER_cram_to_bam_0                                                                                                                , CONVERTER_cram_to_bam_0                                                                                                                
+ 2021-5     ,5.09715E+17,trim_galore,0.4.3.1                                                                 
+ 2021-5     ,4.93125E+17,cshl_fastq_to_fasta,1.0.2                                                          
+ 2021-5     ,4.76135E+17,fastq_groomer,1.0.4                                                                 
+ 2021-5     ,4.69156E+17,ivar_removereads,1.2.2+galaxy1                                                       
+ 2021-5     ,4.50589E+17, __DATA_FETCH__                                                                                                                         , __DATA_FETCH__                                                                                                                         
+ 2021-5     ,4.34757E+17,cshl_fastq_quality_filter,1.0.2+galaxy0                                      
+ 2021-5     ,4.29947E+17, ebi_sra_main                                                                                                                           , ebi_sra_main                                                                                                                           
+ 2021-5     ,4.23584E+17,cuffmerge,0.0.5                                                                         
+ 2021-5     ,4.06375E+17,samtools_fastx,1.9+galaxy1                                                             
+ 2021-5     ,4.03704E+17,deeptools_plot_coverage,3.3.2.0.0                                       
+ 2021-5     ,3.90117E+17,fasterq_dump,2.10.8+galaxy0                                                                 
+ 2021-5     ,3.84556E+17,rna_star,2.6.0b-1                                                                           
+ 2021-5     ,3.8371E+17,bam_to_sam,2.0.1                                                                       
+ 2021-5     ,3.66697E+17,fastq_manipulation,1.1.5                                                       
+ 2021-5     ,3.65886E+17, CONVERTER_gz_to_uncompressed                                                                                                           , CONVERTER_gz_to_uncompressed                                                                                                           
+ 2021-5     ,3.44759E+17,varscan_copynumber,2.4.3.2                                                         
+ 2021-5     ,3.29308E+17,fastq_dump,2.10.4+galaxy1                                                                   
+ 2021-5     ,3.20519E+17,cuffdiff,2.2.1.3                                                                         
+ 2021-5     ,3.15185E+17,bowtie2,2.3.4.1                                                                           
+ 2021-5     ,2.91995E+17,bcftools_call,1.1
+ 2021-5     ,2.76387E+17,qualimap_bamqc,2.2.2d+galaxy3                                                          
+ 2021-5     ,2.66916E+17,mummer_nucmer,4.0.0beta2+galaxy1                                                        
+ 2021-5     ,2.53777E+17,featurecounts,2.0.1                                                                     
+ 2021-5     ,2.52857E+17, __SET_METADATA__                                                                                                                       , __SET_METADATA__                                                                                                                       
+ 2021-5     ,2.31886E+17,lofreq_indelqual,2.1.5+galaxy0                                                       
+ 2021-5     ,2.29833E+17,pathview,1.24.0+galaxy0                                                                      
+ 2021-5     ,2.20786E+17,deeptools_plot_heatmap,3.3.2.0.1                                         
+ 2021-5     ,2.09551E+17,hyphy_absrel,2.5.31+galaxy1                                                              
+ 2021-5     ,1.98721E+17,samtool_filter2,1.8+galaxy1                                                       
+ 2021-5     ,1.94367E+17,maxbin2,2.2.7+galaxy2                                                                      
+ 2021-5     ,1.91547E+17,kpca1,1.0.0                                                   
+ 2021-5     ,1.88278E+17,idba_ud,1.1.3+galaxy1                                                                         
+ 2021-5     ,1.80662E+17, CONVERTER_interval_to_bed_0                                                                                                            , CONVERTER_interval_to_bed_0                                                                                                            
+ 2021-5     ,1.80028E+17,mothur_screen_seqs,1.39.5.1                                                        
+ 2021-5     ,1.75959E+17,hyphy_fade,2.5.31+galaxy1                                                                  
+ 2021-5     ,1.68259E+17,diffbind,2.10.0                                                                        
+ 2021-5     ,1.65881E+17,deeptools_plot_enrichment,3.3.2.0.0                                   
+ 2021-5     ,1.61961E+17,bamleftalign,1.3.1                                                                      
+ 2021-5     ,1.61917E+17,fastq_to_fasta_python,1.1.5                                                          
+ 2021-5     ,1.35312E+17,sailfish,0.10.1.1                                                                      
+ 2021-5     ,1.34846E+17,seqtk_sample,1.3.2                                                                              
+ 2021-5     ,1.31122E+17, CONVERTER_interval_to_bedstrict_0                                                                                                      , CONVERTER_interval_to_bedstrict_0                                                                                                      
+ 2021-5     ,1.30136E+17,ngsutils_bam_filter,0.5.9                                                         
+ 2021-5     ,1.26257E+17,deeptools_multi_bigwig_summary,3.3.2.0.0                         
+ 2021-5     ,1.22188E+17,sam_to_bam,2.1.1                                                                       
+ 2021-5     ,1.20728E+17,qualimap_rnaseq,2.2.2d+galaxy1                                                        
+ 2021-5     ,1.19901E+17,meme_meme,5.0.5.0                                                                           
+ 2021-5     ,1.1693E+17,fasta_concatenate0,0.0.1                                             
+ 2021-5     ,1.16927E+17,rseqc_tin,2.6.4.1                                                                            
+ 2021-5     ,1.11451E+17,bwa,0.7.12.1                                                                                  
+ 2021-5     ,1.1081E+17,rna_star,2.7.2b                                                                             
+ 2021-5     ,1.08677E+17,cshl_fastx_clipper,1.0.3+galaxy0                                                    
+ 2021-5     ,1.07768E+17,cuffquant,2.2.1.1                                                                       
+ 2021-5     ,1.05728E+17,rna_star,2.7.7a                                                                             
+ 2021-5     ,1.03795E+17,bg_diamond_makedb,0.9.29                                                                
+ 2021-5     ,1.03518E+17,fargene,0.1+galaxy1                                                                           
+ 2021-5     ,1.01594E+17,kraken,1.3.1                                                                               
+ 2021-5     ,9.70567E+16,bowtie2,2.3.4.3                                                                           
+ 2021-5     ,9.27157E+16,rseqc_read_distribution,2.6.4.1                                                              
+ 2021-5     ,8.63808E+16,mothur_filter_seqs,1.39.5.0                                                        
+ 2021-5     ,7.80425E+16,mothur_make_contigs,1.39.5.0                                                      
+ 2021-5     ,7.54385E+16,kraken2,2.1.1+galaxy1                                                                         
+ 2021-5     ,7.2842E+16,EMBOSS: plotcon75,5.0.0.1                                                                
+ 2021-5     ,7.13338E+16, CONVERTER_vcf_bgzip_to_tabix_0                                                                                                         , CONVERTER_vcf_bgzip_to_tabix_0                                                                                                         
+ 2021-5     ,7.13136E+16,cshl_fastx_renamer,0.0.14+galaxy1                                                   
+ 2021-5     ,7.06743E+16,trimmomatic,0.36.5                                                                   
+ 2021-5     ,7.03109E+16,cshl_fastx_clipper,1.0.1                                                            
+ 2021-5     ,6.95765E+16,velvetg,1.2.10.2                                                                           
+ 2021-5     ,6.86466E+16,mothur_chimera_vsearch,1.39.5.2                                                
+ 2021-5     ,6.50485E+16,snpSift_extractFields,4.3+t.galaxy0                                                           
+ 2021-5     ,6.44393E+16,dada2_dada,1.18+galaxy0                                                                    
+ 2021-5     ,6.32268E+16,rseqc_bam2wig,2.6.4                                                                          
+ 2021-5     ,6.18872E+16,mimodd_sort,0.1.9                                                                       
+ 2021-5     ,6.02341E+16,ivar_trim,1.2.2+galaxy1                                                                     
+ 2021-5     ,5.93702E+16,unipept,4.3.0                                                                             
+ 2021-5     ,5.92242E+16,picard_ReorderSam,2.18.2.1                                                                 
+ 2021-5     ,5.78242E+16,abricate,1.0.1                                                                               
+ 2021-5     ,5.77334E+16,ncbi_makeblastdb,2.10.1+galaxy0                                                   
+ 2021-5     ,5.68321E+16,limma_voom,3.38.3+galaxy3                                                                  
+ 2021-5     ,5.67832E+16,fastq_quality_trimmer,1.0.0                                              
+ 2021-5     ,5.61273E+16,trimmomatic,0.36.6                                                                   
+ 2021-5     ,5.36278E+16,fasta-stats,1.0.1                                                                         
+ 2021-5     ,5.12585E+16,seqtk_dropse,1.3.1                                                                              
+ 2021-5     ,5.11435E+16,crossmap_bam,0.3.7+galaxy1                                                               
+ 2021-5     ,5.07793E+16,bowtie2,2.3.2.2                                                                           
+ 2021-5     ,5.06804E+16,busco,4.1.4                                                                                     
+ 2021-5     ,5.02513E+16,bowtie2,2.2.6.2                                                                           
+ 2021-5     ,5.00948E+16,bedtools_intersectbed,2.29.0                                                                 
+ 2021-5     ,4.76757E+16,mothur_summary_seqs,1.39.5.0                                                      
+ 2021-5     ,4.64079E+16,deg_annotate,1.1.0                                                                       
+ 2021-5     ,4.40444E+16,picard_FixMateInformation,2.18.2.1                                                         
+ 2021-5     ,4.26195E+16,exonerate,2.4.0+galaxy2                                                                     
+ 2021-5     ,4.24515E+16,picard_MarkDuplicates,2.7.1.1                                                              
+ 2021-5     ,4.22819E+16,meme_fimo,5.0.5.0                                                                           
+ 2021-5     ,4.15143E+16,ococo,0.1.2.6                                                                                   
+ 2021-5     ,4.10752E+16,bamSplit,2.4.0                                                                     
+ 2021-5     ,4.09156E+16,ggplot2_heatmap2,3.0.1                                                               
+ 2021-5     ,4.08211E+16,scpipe,1.0.0+galaxy2                                                                           
+ 2021-5     ,4.01923E+16,deeptools_bam_coverage,3.3.0.0.0                                         
+ 2021-5     ,4.01314E+16,samtools_split,1.9
+ 2021-5     ,3.84964E+16,multiqc,1.8+galaxy1                                                                           
+ 2021-5     ,3.82372E+16,bedtools_coveragebed,2.29.2                                                                  
+ 2021-5     ,3.77456E+16,EMBOSS: transeq101,5.0.0                                                                 
+ 2021-5     ,3.72179E+16,bedtools_bamtobed,2.30.0                                                                     
+ 2021-5     ,3.70765E+16,bacteria_tradis,1.4.5+galaxy2                                                               
+ 2021-5     ,3.66311E+16,hyphy_relax,2.5.31+galaxy1                                                                
+ 2021-5     ,3.63557E+16,cshl_fastx_quality_statistics,1.0.1                                      
+ 2021-5     ,3.63153E+16,bedtools_windowbed,2.30.0                                                                    
+ 2021-5     ,3.55836E+16,bamtools_split,2.4.0                                                               
+ 2021-5     ,3.47442E+16,fastq_dump,2.9.1.3                                                                          
+ 2021-5     ,3.42001E+16,macs2_bdgcmp,2.1.1.20160309.0                                                                   
+ 2021-5     ,3.33086E+16,fastq_to_tabular,1.1.5                                                           
+ 2021-5     ,3.32748E+16,sickle,1.33.2                                                                                  
+ 2021-5     ,3.25073E+16,rseqc_FPKM_count,2.6.4.1                                                                     
+ 2021-5     ,3.22481E+16,bedtools_bamtofastq,2.27.1                                                                   
+ 2021-5     ,3.21832E+16,hyphy_busted,2.5.31+galaxy1                                                              
+ 2021-5     ,3.20097E+16,mlst,2.19.0                                                                                      
+ 2021-5     ,3.1566E+16,trinotate,3.2.1                                                                             
+ 2021-5     ,2.97941E+16,samtools_calmd,2.0.2                                                               
+ 2021-5     ,2.96792E+16, ucsc_table_direct1                                                                                                                     , ucsc_table_direct1                                                                                                                     
+ 2021-5     ,2.93328E+16,bamtools,2.4.0.0                                                                         
+ 2021-5     ,2.93212E+16,gops_intersect_1,1.0.0                                                                  
+ 2021-5     ,2.89839E+16,chipseeker,1.18.0+galaxy1                                                              
+ 2021-5     ,2.78445E+16,mimodd_varextract,0.1.9                                                                 
+ 2021-5     ,2.73223E+16,picard_AddOrReplaceReadGroups,2.18.2.1                                                     
+ 2021-5     ,2.72654E+16,samtools_stats,2.0.2+galaxy2                                                       
+ 2021-5     ,2.71056E+16,bcftools_merge,1.1
+ 2021-5     ,2.66194E+16,deeptools_compute_matrix,3.3.0.0.0                                     
+ 2021-5     ,2.626E+16,bedtools_unionbedgraph,2.30.0                                                                
+ 2021-5     ,2.62302E+16,cuffmerge,2.2.1.1                                                                       
+ 2021-5     ,2.57319E+16,pipelign,0.2+galaxy0                                                                         
+ 2021-5     ,2.50709E+16,picard_MergeBamAlignment,2.18.2.1                                                          
+ 2021-5     ,2.49011E+16,macs2_predictd,2.1.1.20160309.1                                                                 
+ 2021-5     ,2.34929E+16,edger,3.24.1+galaxy1                                                                            
+ 2021-5     ,2.30068E+16,prinseq,0.20.4                                                                                
+ 2021-5     ,2.19493E+16,crossmap_wig,0.3.7+galaxy1                                                               
+ 2021-5     ,2.15979E+16,velveth,1.2.10.1                                                                           
+ 2021-5     ,2.1586E+16,anndata_inspect,0.7.5+galaxy0                                                         
+ 2021-5     ,2.14839E+16,EMBOSS: getorf42,5.0.0.1                                                                 
+ 2021-5     ,2.0713E+16,bamtools,0.0.2                                                                           
+ 2021-5     ,2.06677E+16,snpSift_annotate,4.3+t.galaxy1                                                                
+ 2021-5     ,2.05351E+16,idba_tran,1.1.3+galaxy0                                                                     
+ 2021-5     ,2.03672E+16,nanoplot,1.28.2+galaxy1                                                                      
+ 2021-5     ,2.03563E+16,t_test_two_samples,1.0.1                                                       
+ 2021-5     ,1.96579E+16,seqtk_seq,1.3.3                                                                                 
+ 2021-5     ,1.88457E+16,gops_subtract_1,1.0.0                                                                    
+ 2021-5     ,1.88066E+16,cuffnorm,2.2.1.3                                                                         
+ 2021-5     ,1.80066E+16,bcftools_isec,1.1
+ 2021-5     ,1.74723E+16,fasttree,2.1.10+galaxy1                                                                      
+ 2021-5     ,1.74093E+16,snpSift_filter,4.3+t.galaxy1                                                                  
+ 2021-5     ,1.72145E+16,bcftools_annotate,1.1
+ 2021-5     ,1.71873E+16,bcftools_plugin_counts,1.10+galaxy1                                            
+ 2021-5     ,1.65771E+16,tp_replace_in_line,1.1.2                                                        
+ 2021-5     ,1.63005E+16,cutadapt,1.16.1                                                                         
+ 2021-5     ,1.57748E+16,kc-align,1.0.2                                                                               
+ 2021-5     ,1.55169E+16,mothur_clearcut,1.39.5.0                                                              
+ 2021-5     ,1.53193E+16,jvarkit_wgscoverageplotter,20201223+galaxy0                                
+ 2021-5     ,1.44656E+16,bioext_bam2msa,0.19.7.0                                                                
+ 2021-5     ,1.40128E+16,bcftools_view,1.1
+ 2021-5     ,1.3889E+16,gatk4_mutect2,4.1.7.0+galaxy02                                                          
+ 2021-5     ,1.36145E+16,vcfsort,1.0.0_rc3+galaxy0                                                                 
+ 2021-5     ,1.34773E+16,snpfreqplot,1.0+galaxy3                                                                   
+ 2021-5     ,1.29562E+16,samtool_filter2,1.1.2                                                             
+ 2021-5     ,1.28502E+16,mimodd_convert,0.1.9                                                                    
+ 2021-5     ,1.18388E+16,fastq_join,1.1.2-806.1                                                                
+ 2021-5     ,1.14853E+16,jbrowse,1.16.11+galaxy0                                                                       
+ 2021-5     ,1.04402E+16,bamleftalign,1.1.0.46-0                                                                 
+ 2021-5     ,1.02687E+16,vcf2tsv,1.0.0_rc3+galaxy0                                                                 
+ 2021-5     ,1.0221E+16,hyphy_meme,2.5.31+galaxy2                                                                  
+ 2021-5     ,1.00712E+16,kallisto_pseudo,0.43.1.1                                                              
+ 2021-5     ,9.95864E+15,samtools_markdup,1.9+galaxy2                                                         
+ 2021-5     ,9.92572E+15, Cut1                                                                                                                                   , Cut1                                                                                                                                   
+ 2021-5     ,9.60523E+15,macs2_bdgdiff,2.1.1.20160309.1                                                                  
+ 2021-5     ,9.50853E+15,picard_MarkDuplicatesWithMateCigar,2.18.2.1                                                
+ 2021-5     ,9.40779E+15,rseqc_RPKM_saturation,2.6.4.1                                                                
+ 2021-5     ,9.20594E+15, sort1                                                                                                                                  , sort1                                                                                                                                  
+ 2021-5     ,9.16933E+15,samtools_flagstat,2.0.3                                                         
+ 2021-5     ,8.97119E+15,column_remove_by_header,0.0.1                                                 
+ 2021-5     ,8.85075E+15,picard_FastqToSam,2.18.2.1                                                                 
+ 2021-5     ,8.8105E+15, Count1                                                                                                                                 , Count1                                                                                                                                 
+ 2021-5     ,8.53503E+15,ivar_consensus,1.2.2+galaxy0                                                           
+ 2021-5     ,8.4756E+15,datamash_transpose,1.1.0                                                           
+ 2021-5     ,8.30602E+15,filter_tabular,3.1.2                                                                   
+ 2021-5     ,7.94551E+15,bedtools_subtractbed,2.30.0                                                                  
+ 2021-5     ,7.89483E+15,prokka,1.13
+ 2021-5     ,7.83802E+15, CONVERTER_fasta_to_tabular                                                                                                             , CONVERTER_fasta_to_tabular                                                                                                             
+ 2021-5     ,7.76648E+15,featurecounts,1.6.4+galaxy2                                                             
+ 2021-5     ,7.65465E+15, CONVERTER_fastq_to_fqtoc0                                                                                                              , CONVERTER_fastq_to_fqtoc0                                                                                                              
+ 2021-5     ,7.31618E+15,hyphy_cfel,2.5.31+galaxy1                                                                  
+ 2021-5     ,7.29819E+15,bcftools_concat,1.1
+ 2021-5     ,7.11998E+15,cshl_fastx_barcode_splitter,1.0.1                                          
+ 2021-5     ,7.09682E+15,ivar_variants,1.2.2+galaxy0                                                             
+ 2021-5     ,6.95762E+15, CONVERTER_fasta_to_bowtie_base_index                                                                                                   , CONVERTER_fasta_to_bowtie_base_index                                                                                                   
+ 2021-5     ,6.84955E+15,samtools_slice_bam,2.0.1                                                       
+ 2021-5     ,6.77812E+15, wig_to_bigWig                                                                                                                          , wig_to_bigWig                                                                                                                          
+ 2021-5     ,6.76267E+15,cshl_fastx_reverse_complement,1.0.2+galaxy0                              
+ 2021-5     ,6.73006E+15,intervene_upset,0.6.4                                                                       
+ 2021-5     ,6.71675E+15,table_annovar,0.2
+ 2021-5     ,6.71145E+15,samtools_view,1.9+galaxy1                                                               
+ 2021-5     ,6.68592E+15,picard_NormalizeFasta,2.18.2.1                                                             
+ 2021-5     ,6.67447E+15, CONVERTER_vcf_to_vcf_bgzip_0                                                                                                           , CONVERTER_vcf_to_vcf_bgzip_0                                                                                                           
+ 2021-5     ,6.67167E+15,bedtools_coveragebed,2.30.0                                                                  
+ 2021-5     ,6.41894E+15,anndata_import,0.7.5+galaxy0                                                           
+ 2021-5     ,6.38212E+15,bedtools_intersectbed,2.30.0                                                                 
+ 2021-5     ,6.33539E+15,dropletutils,1.10.0+galaxy1                                                              
+ 2021-5     ,6.2171E+15,tp_sed_tool,1.1.1                                                               
+ 2021-5     ,6.19344E+15,samtools_idxstats,2
+ 2021-5     ,6.00299E+15,rseqc_infer_experiment,2.6.4.1                                                               
+ 2021-5     ,5.76031E+15,picard_SamToFastq,2.18.2.2                                                                 
+ 2021-5     ,5.59704E+15,mothur_dist_shared,1.39.5.0                                                        
+ 2021-5     ,5.59053E+15,prokka,1.12.0                                                                                 
+ 2021-5     ,5.58316E+15,duplex,0.3
+ 2021-5     ,5.47031E+15,bedtools_genomecoveragebed,2.29.2                                                            
+ 2021-5     ,5.45732E+15,rseqc_mismatch_profile,2.6.4                                                                 
+ 2021-5     ,5.44232E+15,rbc_splitfasta,0.4.0                                                                   
+ 2021-5     ,5.33027E+15,hyphy_fel,2.5.31+galaxy1                                                                    
+ 2021-5     ,5.31514E+15,samtools_view,1.9+galaxy2                                                               
+ 2021-5     ,5.16445E+15,goseq,1.36.0+galaxy0                                                                            
+ 2021-5     ,5.14949E+15,vsearch_chimera_detection,2.8.3.0                                                             
+ 2021-5     ,5.05183E+15,cuffmerge,2.2.1.2                                                                       
+ 2021-5     ,5.04146E+15,gops_coverage_1,1.0.0                                                                    
+ 2021-5     ,5.00197E+15,fastqc,0.72
+ 2021-5     ,4.94335E+15,plotdexseq,1.28.1.0                                                                            
+ 2021-5     ,4.74513E+15,macs2_bdgpeakcall,2.1.1.20160309.0                                                              
+ 2021-5     ,4.71496E+15,goenrichment,2.0.1                                                                       
+ 2021-5     ,4.62603E+15,taxonomy_krona_chart,2.7.1                                                      
+ 2021-5     ,4.56484E+15,crossmap_gff,0.3.7+galaxy1                                                               
+ 2021-5     ,4.41181E+15,scanpy_remove_confounders,1.7.1+galaxy0                                     
+ 2021-5     ,4.39567E+15,rseqc_junction_annotation,2.6.4.1                                                            
+ 2021-5     ,4.38985E+15,iterative_map_pipeline,1
+ 2021-5     ,4.25427E+15,tb_profiler_profile,2.8.14+galaxy1                                                         
+ 2021-5     ,4.08641E+15,bedtools_multicovtbed,2.30.0                                                                 
+ 2021-5     ,3.92058E+15,cshl_fastx_collapser,1.0.1                                                        
+ 2021-5     ,3.91839E+15,bwa_wrapper,1.2.3                                                                    
+ 2021-5     ,3.89162E+15,seurat,3.2.2+galaxy0                                                                           
+ 2021-5     ,3.83373E+15,ivar_variants,1.3.1+galaxy0                                                             
+ 2021-5     ,3.80572E+15,bcftools_norm,1.1
+ 2021-5     ,3.77276E+15,mothur_dist_seqs,1.39.5.0                                                            
+ 2021-5     ,3.74805E+15,macs2_filterdup,2.1.1.20160309.1                                                                
+ 2021-5     ,3.67117E+15,fasta_merge_files_and_filter_unique_sequences,1.2.0 
+ 2021-5     ,3.62983E+15,mothur_pairwise_seqs,1.39.5.0                                                    
+ 2021-5     ,3.62817E+15,mothur_make_group,1.39.5.0                                                          
+ 2021-5     ,3.57046E+15,mummer_mummer,4.0.0beta2+galaxy1                                                        
+ 2021-5     ,3.56094E+15,Add_a_column1,1.6
+ 2021-5     ,3.41118E+15,picard_MarkDuplicates,2.18.2.1                                                             
+ 2021-5     ,3.3772E+15,mothur_count_seqs,1.39.5.0                                                          
+ 2021-5     ,3.34975E+15, CONVERTER_bedgraph_to_bigwig                                                                                                           , CONVERTER_bedgraph_to_bigwig                                                                                                           
+ 2021-5     ,3.25851E+15,samtools_fixmate,1.9
+ 2021-5     ,3.19679E+15,collection_column_join,0.0.3                                                   
+ 2021-5     ,3.18798E+15,bp_genbank2gff3,1.1
+ 2021-5     ,3.14568E+15,filtlong,0.2.0                                                                               
+ 2021-5     ,3.13659E+15,cuffcompare,2.2.1.2                                                                   
+ 2021-5     ,2.97604E+15,ruvseq,1.16.0+galaxy1                                                                          
+ 2021-5     ,2.92838E+15,trinity_super_transcripts,2.9.1                                             
+ 2021-5     ,2.81517E+15,fastq_filter,1.1.1                                                                   
+ 2021-5     ,2.7757E+15,transdecoder,3.0.1                                                                       
+ 2021-5     ,2.73717E+15,melt,1.4.2                                                                              
+ 2021-5     ,2.64877E+15,fastq_combiner,1.1.5                                                               
+ 2021-5     ,2.58186E+15,rseqc_bam_stat,2.6.4                                                                         
+ 2021-5     ,2.54603E+15,flash,1.2.11.4                                                                                  
+ 2021-5     ,2.53865E+15,EMBOSS: primersearch81,5.0.0.1                                                           
+ 2021-5     ,2.50066E+15,picard_CollectRnaSeqMetrics,2.18.2.2                                                       
+ 2021-5     ,2.47117E+15,mummer_dnadiff,4.0.0beta2+galaxy1                                                      
+ 2021-5     ,2.46281E+15,snpEff_build_gb,4.3+T.galaxy4                                                                  
+ 2021-5     ,2.39362E+15,deeptools_bam_coverage,3.1.2.0.0                                         
+ 2021-5     ,2.2139E+15, Filter1                                                                                                                                , Filter1                                                                                                                                
+ 2021-5     ,2.19087E+15,snpsift_vartype,4.3+t.galaxy0                                                                 
+ 2021-5     ,2.1599E+15,query_tabular,3.1.2                                                                     
+ 2021-5     ,2.15765E+15,bcftools_filter,1.1
+ 2021-5     ,2.14643E+15,EMBOSS: prettyplot79,5.0.0.1                                                             
+ 2021-5     ,2.08846E+15,genrich,0.5+galaxy2                                                                           
+ 2021-5     ,2.07774E+15,dada2_assignTaxonomyAddspecies,1.18+galaxy0                            
+ 2021-5     ,2.06794E+15,fastq_paired_end_joiner,2.0.1.1                                           
+ 2021-5     ,2.02065E+15,collapse_dataset,5.1.0                                                           
+ 2021-5     ,1.98502E+15,sam2interval,1.0.2                                                                   
+ 2021-5     ,1.96633E+15,jq,1
+ 2021-5     ,1.95114E+15, CONVERTER_bed_gff_or_vcf_to_bigwig_0                                                                                                   , CONVERTER_bed_gff_or_vcf_to_bigwig_0                                                                                                   
+ 2021-5     ,1.9503E+15,picard_EstimateLibraryComplexity,2.18.2.1                                                  
+ 2021-5     ,1.94184E+15, CONVERTER_Bam_Bai_0                                                                                                                    , CONVERTER_Bam_Bai_0                                                                                                                    
+ 2021-5     ,1.91911E+15,tp_find_and_replace,1.1.3                                                       
+ 2021-5     ,1.88789E+15,annotatemyids,3.12.0                                                                    
+ 2021-5     ,1.87799E+15,multiqc,1.9+galaxy1                                                                           
+ 2021-5     ,1.84372E+15, CONVERTER_bz2_to_uncompressed                                                                                                          , CONVERTER_bz2_to_uncompressed                                                                                                          
+ 2021-5     ,1.84132E+15,mothur_make_fastq,1.39.5.0                                                          
+ 2021-5     ,1.77634E+15,length_and_gc_content,0.1.1                                                     
+ 2021-5     ,1.75286E+15,mothur_rarefaction_single,1.39.5.0                                          
+ 2021-5     ,1.73006E+15,picard_CollectInsertSizeMetrics,2.18.2.1                                                   
+ 2021-5     ,1.71839E+15,mothur_unique_seqs,1.39.5.0                                                        
+ 2021-5     ,1.71005E+15,multigps,0.74.0                                                                             
+ 2021-5     ,1.70967E+15,snpeff_sars_cov_2,4.5covid19                                                        
+ 2021-5     ,1.67615E+15,dropletutils,1.2.1+2                                                                     
+ 2021-5     ,1.64401E+15,tp_tail_tool,1.1.0                                                              
+ 2021-5     ,1.62955E+15,bowtie_wrapper,1.1.2                                                              
+ 2021-5     ,1.62832E+15,velvetg,1.2.10.1                                                                           
+ 2021-5     ,1.58611E+15,bg_find_subsequences,0.2
+ 2021-5     ,1.57049E+15,ncbi_blastn_wrapper,0.3.0                                                         
+ 2021-5     ,1.55755E+15,mothur_pcr_seqs,1.39.5.0                                                              
+ 2021-5     ,1.53231E+15,trinotate,3.1.1                                                                             
+ 2021-5     ,1.48043E+15,bcftools_query_list_samples,1.1
+ 2021-5     ,1.41012E+15,dada2_filterAndTrim,1.18+galaxy0                                                  
+ 2021-5     ,1.40616E+15,scanpy_cluster_reduce_dimension,1.7.1+galaxy0                         
+ 2021-5     ,1.39798E+15,stringtie_merge,2.1.1                                                                       
+ 2021-5     ,1.39663E+15,prokka,1.14.5                                                                                 
+ 2021-5     ,1.38717E+15,table_compute,0.9.2                                                                     
+ 2021-5     ,1.37655E+15,medaka_consensus_pipeline,1.0.3+galaxy2                                     
+ 2021-5     ,1.37096E+15,peakcalling_sicer,1.1
+ 2021-5     ,1.33253E+15,fastq_paired_end_joiner,2.0.1.0                                           
+ 2021-5     ,1.32963E+15,deeptools_plot_profile,3.3.2.0.0                                         
+ 2021-5     ,1.32721E+15,vcfannotate,1.0.0_rc3+galaxy0                                                         
+ 2021-5     ,1.31589E+15, Paste1                                                                                                                                 , Paste1                                                                                                                                 
+ 2021-5     ,1.31559E+15,table_annovar,0.1
+ 2021-5     ,1.30034E+15,vcftools_slice,0.1
+ 2021-5     ,1.2723E+15, aggregate_scores_in_intervals2                                                                                                         , aggregate_scores_in_intervals2                                                                                                         
+ 2021-5     ,1.26239E+15,sam_dump,2.10.8+galaxy0                                                                     
+ 2021-5     ,1.25951E+15,basil,1.2.0                                                                                     
+ 2021-5     ,1.25909E+15,vcfselectsamples,1.0.0_rc3+galaxy0                                               
+ 2021-5     ,1.25715E+15,exomedepth,1.1.0                                                                          
+ 2021-5     ,1.24205E+15,tximport,0.1
+ 2021-5     ,1.2342E+15,bedtools_genomecoveragebed,2.29.0                                                            
+ 2021-5     ,1.19248E+15,cshl_fastx_artifacts_filter,1.0.1+galaxy0                                  
+ 2021-5     ,1.17982E+15,picard_DownsampleSam,2.18.2.1                                                              
+ 2021-5     ,1.16514E+15,Extract genomic DNA 1,3.0.3+galaxy2                                               
+ 2021-5     ,1.15999E+15,EMBOSS: needle56,5.0.0.1                                                                 
+ 2021-5     ,1.12594E+15,picard_CollectWgsMetrics,2.18.2.1                                                          
+ 2021-5     ,1.12326E+15,snpEff_download,4.3+T.galaxy2                                                                  
+ 2021-5     ,1.12224E+15,transit_hmm,3.0.2+galaxy0                                                                 
+ 2021-5     ,1.0961E+15,sina,1.7.2+galaxy0                                                                               
+ 2021-5     ,1.09264E+15,freebayes,0.4.1                                                                         
+ 2021-5     ,1.08356E+15,intervene_pairwise,0.6.4                                                                    
+ 2021-5     ,1.07043E+15,circos,0.69.8+galaxy7                                                                          
+ 2021-5     ,1.05213E+15,crosscontamination_barcode_filter,0.3
+ 2021-5     ,1.04527E+15,mothur_rarefaction_shared,1.39.5.0                                          
+ 2021-5     ,1.03242E+15,khmer_abundance_distribution_single,3.0.0a3+galaxy1               
+ 2021-5     ,1.02948E+15,bedtools_bedtobam,2.30.0                                                                     
+ 2021-5     ,1.01127E+15,rseqc_junction_saturation,2.6.4.1                                                            
+ 2021-5     ,1.00345E+15,export2graphlan,0.20+galaxy0                                                          
+ 2021-5     ,9.66412E+14,seqtk_trimfq,1.3.1                                                                              
+ 2021-5     ,9.46063E+14,samtool_filter2,1.8
+ 2021-5     ,9.11711E+14,khmer_partition,3.0.0a3+galaxy1                                                       
+ 2021-5     ,9.09253E+14, csv_to_tabular                                                                                                                         , csv_to_tabular                                                                                                                         
+ 2021-5     ,8.78798E+14,tp_multijoin_tool,1.1.1                                                         
+ 2021-5     ,8.71114E+14,samtools_phase,2.0.1                                                               
+ 2021-5     ,8.54643E+14,seqtk_mergefa,1.3.1                                                                             
+ 2021-5     ,8.47083E+14,masigpro,1.49.3.1+galaxy1                                                                    
+ 2021-5     ,8.24036E+14,pe_histogram,1.0.1                                                                       
+ 2021-5     ,7.78895E+14,cshl_fastx_trimmer,1.0.1                                                            
+ 2021-5     ,7.59279E+14,tp_cat,0.1.0                                                                    
+ 2021-5     ,7.44722E+14,lofreq_filter,2.1.5+galaxy0                                                             
+ 2021-5     ,7.42866E+14,vcfvcfintersect,1.0.0_rc3+galaxy0                                                 
+ 2021-5     ,7.41802E+14, tabular_to_dbnsfp                                                                                                                      , tabular_to_dbnsfp                                                                                                                      
+ 2021-5     ,7.30383E+14,hyphy_bgm,2.5.31+galaxy2                                                                    
+ 2021-5     ,7.13028E+14,tp_sorted_uniq,1.1.0                                                            
+ 2021-5     ,7.10798E+14,bandage_image,0.8.1+galaxy3                                                                   
+ 2021-5     ,7.09947E+14,msstats,3.22.0.0                                                                          
+ 2021-5     ,7.04602E+14,pygenomeTracks,3.6
+ 2021-5     ,7.03767E+14,snpSift_vcfCheck,4.3+t.galaxy0                                                                
+ 2021-5     ,7.02945E+14,circos_gc_skew,0.69.8+galaxy7                                                                  
+ 2021-5     ,7.00743E+14,shovill,1.0.4+galaxy0                                                                         
+ 2021-5     ,6.98331E+14,datamash_ops,1.1.0                                                                       
+ 2021-5     ,6.97307E+14,qualimap_bamqc,2.2.2d+galaxy1                                                          
+ 2021-5     ,6.92072E+14,vcfhethom,1.0.0_rc3+galaxy0                                                             
+ 2021-5     ,6.83682E+14,samtools_sort,2
+ 2021-5     ,6.72127E+14,gffread,2.2.1.2                                                                           
+ 2021-5     ,6.71133E+14,kraken-report,1.3.1                                                                 
+ 2021-5     ,6.69297E+14,vcfgenotypes,1.0.0_rc3+galaxy0                                                       
+ 2021-5     ,6.68475E+14,featurecounts,1.6.4+galaxy1                                                             
+ 2021-5     ,6.62835E+14,salmon,0.14.1.2+galaxy1                                                                  
+ 2021-5     ,6.57007E+14,cshl_fasta_nucleotides_changer,1.0.2                                     
+ 2021-5     ,6.50259E+14,tp_awk_tool,1.1.2                                                               
+ 2021-5     ,6.45692E+14,hhsearch,3.2.0+galaxy0                                                                   
+ 2021-5     ,6.41383E+14,bedtools_bamtobed,2.29.2                                                                     
+ 2021-5     ,6.39663E+14,ggplot2_pca,2.2.1                                                                         
+ 2021-5     ,6.37018E+14,bcftools_consensus,1.1
+ 2021-5     ,6.28284E+14,gops_merge_1,1.0.0                                                                          
+ 2021-5     ,6.1021E+14,bedtools_getfastabed,2.30.0                                                                  
+ 2021-5     ,5.9655E+14,gops_concat_1,1.0.1                                                                        
+ 2021-5     ,5.95702E+14,mothur_classify_tree,1.39.5.0                                                    
+ 2021-5     ,5.9316E+14, Convert characters1                                                                                                                    , Convert characters1                                                                                                                    
+ 2021-5     ,5.9155E+14,replace_column_with_key_value_file,0.2
+ 2021-5     ,5.86432E+14,vcfflatten2,1.0.0_rc3+galaxy0                                                          
+ 2021-5     ,5.80993E+14,megahit,1.1.3.4                                                                               
+ 2021-5     ,5.65548E+14,tn93_cluster,1.0.6                                                                       
+ 2021-5     ,5.55584E+14,deeptools_plot_coverage,3.3.0.0.0                                       
+ 2021-5     ,5.55156E+14, MAF_To_Fasta1                                                                                                                          , MAF_To_Fasta1                                                                                                                          
+ 2021-5     ,5.50849E+14,tp_replace_in_column,1.1.3                                                      
+ 2021-5     ,5.36468E+14,gffcompare,0.11.2                                                                          
+ 2021-5     ,5.29137E+14,hisat2,2.1.0+galaxy3                                                                           
+ 2021-5     ,5.26772E+14,gmx_em,2020.2+galaxy0                                                                     
+ 2021-5     ,5.24084E+14,tab2fasta,1.1.1                                                                  
+ 2021-5     ,5.22788E+14,mothur_chimera_vsearch,1.39.5.1                                                
+ 2021-5     ,5.20284E+14,cuffdiff,2.2.1.2                                                                         
+ 2021-5     ,5.20072E+14,scanpy_inspect,1.7.1+galaxy0                                                           
+ 2021-5     ,5.11914E+14,macs2_randsample,2.1.1.20160309.1                                                               
+ 2021-5     ,5.08216E+14, CONVERTER_vcf_to_bgzip_0                                                                                                               , CONVERTER_vcf_to_bgzip_0                                                                                                               
+ 2021-5     ,4.94461E+14, CONVERTER_sam_to_unsorted_bam                                                                                                          , CONVERTER_sam_to_unsorted_bam                                                                                                          
+ 2021-5     ,4.94147E+14,vcffixup,1.0.0_rc3+galaxy0                                                               
+ 2021-5     ,4.75896E+14, sra_source                                                                                                                             , sra_source                                                                                                                             
+ 2021-5     ,4.75673E+14,bedtools_makewindowsbed,2.30.0                                                               
+ 2021-5     ,4.72136E+14,mummer_mummerplot,4.0.0beta2+galaxy1                                                
+ 2021-5     ,4.62848E+14,seqtk_subseq,1.3.1                                                                              
+ 2021-5     ,4.609E+14,freebayes,0.4
+ 2021-5     ,4.57977E+14,bwa_mem,0.1
+ 2021-5     ,4.51269E+14,feelnc,0.2
+ 2021-5     ,4.4769E+14, CONVERTER_gff_to_fli_0                                                                                                                 , CONVERTER_gff_to_fli_0                                                                                                                 
+ 2021-5     ,4.4431E+14,EMBOSS: cpgplot15,5.0.0                                                                  
+ 2021-5     ,4.44061E+14,picard_CleanSam,2.18.2.1                                                                   
+ 2021-5     ,4.3025E+14,staramr_search,0.5.1                                                                          
+ 2021-5     ,4.28861E+14,diffbind,2.6.6.4                                                                       
+ 2021-5     ,4.1781E+14,ivar_consensus,1.3.1+galaxy0                                                           
+ 2021-5     ,4.14832E+14,cutadapt,1.16.3                                                                         
+ 2021-5     ,4.13179E+14,trinity_run_de_analysis,2.9.1                                                 
+ 2021-5     ,4.08878E+14,cuffdiff,2.2.1.5                                                                         
+ 2021-5     ,4.07473E+14,khmer_count_median,3.0.0a3+galaxy1                                                 
+ 2021-5     ,3.98167E+14,snippy_core,4.5.0                                                                              
+ 2021-5     ,3.97818E+14,bwa_mem,0.4.2                                                                                 
+ 2021-5     ,3.94399E+14,featurecounts,1.6.3+galaxy2                                                             
+ 2021-5     ,3.83059E+14,deeptools_plot_correlation,3.3.2.0.0                                 
+ 2021-5     ,3.82887E+14, cat1                                                                                                                                   , cat1                                                                                                                                   
+ 2021-5     ,3.80021E+14,deeptools_plot_heatmap,3.3.0.0.1                                         
+ 2021-5     ,3.52502E+14,bcftools_consensus,1.10+galaxy1                                                    
+ 2021-5     ,3.51123E+14,bcftools_query,1.1
+ 2021-5     ,3.4922E+14,xmfa2gff3,2015_02_13.1                                                               
+ 2021-5     ,3.36265E+14,bwa,0.4.2                                                                                     
+ 2021-5     ,3.34811E+14,medaka_variant_pipeline,1.0.3+galaxy1                                         
+ 2021-5     ,3.32441E+14, Grep1                                                                                                                                  , Grep1                                                                                                                                  
+ 2021-5     ,3.25613E+14,poretools_stats,0.6.1a1.0                                                             
+ 2021-5     ,3.22738E+14, CONVERTER_gff_to_interval_index_0                                                                                                      , CONVERTER_gff_to_interval_index_0                                                                                                      
+ 2021-5     ,3.1912E+14,fasterq_dump,2.10.7+galaxy2                                                                 
+ 2021-5     ,3.1747E+14,sam_bw_filter,1.0.0                                                       
+ 2021-5     ,3.15743E+14,circos_wiggle_to_scatter,0.69.8+galaxy7                                                        
+ 2021-5     ,3.14861E+14,kraken_taxonomy_report,0.0.2                                                   
+ 2021-5     ,3.13699E+14,make_families,0.3
+ 2021-5     ,3.13448E+14,velveth,1.2.10.2                                                                           
+ 2021-5     ,3.12102E+14,vcfallelicprimitives,1.0.0_rc3+galaxy0                                       
+ 2021-5     ,3.10978E+14,fasta2tab,1.1.1                                                                  
+ 2021-5     ,3.04264E+14, gff2bed1                                                                                                                               , gff2bed1                                                                                                                               
+ 2021-5     ,3.02793E+14, random_lines1                                                                                                                          , random_lines1                                                                                                                          
+ 2021-5     ,3.02081E+14,cshl_fastq_quality_filter,1.0.2                                              
+ 2021-5     ,2.98172E+14,dada2_plotQualityProfile,1.18+galaxy0                                        
+ 2021-5     ,2.96835E+14,fasterq_dump,2.10.4                                                                         
+ 2021-5     ,2.94831E+14,idr,2.0.3                                                                                         
+ 2021-5     ,2.8572E+14,jcvi_gff_stats,0.8.4                                                                   
+ 2021-5     ,2.82607E+14,ggplot2_heatmap,2.2.1                                                                 
+ 2021-5     ,2.73887E+14, tabular_to_csv                                                                                                                         , tabular_to_csv                                                                                                                         
+ 2021-5     ,2.69545E+14,bcftools_stats,1.1
+ 2021-5     ,2.63078E+14,plant_tribes_gene_family_aligner,1.0.3.0                            
+ 2021-5     ,2.59791E+14,Kraken2Tax,1.2
+ 2021-5     ,2.5955E+14,diffbind,2.6.5.0                                                                       
+ 2021-5     ,2.58476E+14,fastqc,0.69
+ 2021-5     ,2.57151E+14,tp_easyjoin_tool,1.1.2                                                          
+ 2021-5     ,2.54331E+14, comp1                                                                                                                                  , comp1                                                                                                                                  
+ 2021-5     ,2.53263E+14,cat_multiple,0.2
+ 2021-5     ,2.31641E+14,fasta_filter_by_length,1.2
+ 2021-5     ,2.31015E+14,scanpy_filter,1.7.1+galaxy0                                                             
+ 2021-5     ,2.24873E+14,dada2_mergePairs,1.18+galaxy0                                                        
+ 2021-5     ,2.22743E+14,medaka_consensus,1.0.3+galaxy2                                                       
+ 2021-5     ,2.20687E+14,make_families,2.15
+ 2021-5     ,2.18332E+14,hyphy_bgm,2.5.31+galaxy1                                                                    
+ 2021-5     ,2.16061E+14,mothur_trim_seqs,1.39.5.0                                                            
+ 2021-5     ,2.07984E+14,bedtools_closestbed,2.30.0                                                                   
+ 2021-5     ,2.03837E+14,deeptools_plot_heatmap,3.1.2.0.1                                         
+ 2021-5     ,2.00294E+14,dada2_seqCounts,1.18+galaxy0                                                          
+ 2021-5     ,1.97933E+14,macs2_bdgbroadcall,2.1.1.20160309.0                                                             
+ 2021-5     ,1.97469E+14,ncbi_blastdbcmd_wrapper,2.10.1+galaxy0                                            
+ 2021-5     ,1.96368E+14,crossmap_vcf,0.3.7+galaxy1                                                               
+ 2021-5     ,1.93291E+14,hyphy_strike_ambigs,2.5.31                                                        
+ 2021-5     ,1.92695E+14,cummeRbund,2.16.0+galaxy1                                                              
+ 2021-5     ,1.91667E+14,transit_gumbel,3.0.2+galaxy0                                                           
+ 2021-5     ,1.91529E+14,snap_training,2013_11_29+galaxy1                                                        
+ 2021-5     ,1.80721E+14,regex1,1.0.1                                                                   
+ 2021-5     ,1.80628E+14,mothur_remove_lineage,1.39.5.0                                                  
+ 2021-5     ,1.80471E+14,mothur_merge_files,1.39.5.0                                                        
+ 2021-5     ,1.79827E+14,scanpy_plot,1.7.1+galaxy0                                                                 
+ 2021-5     ,1.70447E+14,anndata_manipulate,0.7.5+galaxy0                                                   
+ 2021-5     ,1.65866E+14,gmx_setup,2020.2+galaxy0                                                               
+ 2021-5     ,1.65568E+14,picard_ValidateSamFile,2.18.2.1                                                            
+ 2021-5     ,1.64262E+14,jbrowse,1.16.8+galaxy0                                                                        
+ 2021-5     ,1.62581E+14,trinity_filter_low_expr_transcripts,2.9.1                         
+ 2021-5     ,1.62091E+14,rseqc_read_duplication,2.6.4                                                                 
+ 2021-5     ,1.59302E+14,miniasm,0.3+galaxy0                                                                           
+ 2021-5     ,1.5887E+14,dada2_plotComplexity,1.18+galaxy0                                                
+ 2021-5     ,1.53503E+14,tp_cut_tool,1.1.0                                                               
+ 2021-5     ,1.51759E+14,featureCoverage1,2.0.0                                                             
+ 2021-5     ,1.47222E+14, Sff_extractor                                                                                                                          , Sff_extractor                                                                                                                          
+ 2021-5     ,1.47103E+14, gff_filter_by_attribute                                                                                                                , gff_filter_by_attribute                                                                                                                
+ 2021-5     ,1.45374E+14,EMBOSS: newcpgreport57,5.0.0.1                                                           
+ 2021-5     ,1.40844E+14,blastxml_to_tabular,2.10.1+galaxy0                                                
+ 2021-5     ,1.40814E+14,mothur_remove_seqs,1.39.5.0                                                        
+ 2021-5     ,1.3928E+14,seq_filter_by_id,0.2.7                                                           
+ 2021-5     ,1.37966E+14,histogram_rpy,1.0.4                                                                     
+ 2021-5     ,1.36891E+14,transdecoder,5.5.0+galaxy0                                                               
+ 2021-5     ,1.3548E+14,tp_grep_tool,1.1.1                                                              
+ 2021-5     ,1.34091E+14,sklearn_numeric_clustering,1.0.8.2                                   
+ 2021-5     ,1.27858E+14,fasta2tab,1.1.0                                                                  
+ 2021-5     ,1.26638E+14,mothur_screen_seqs,1.39.5.0                                                        
+ 2021-5     ,1.25375E+14,tp_head_tool,1.1.0                                                              
+ 2021-5     ,1.2196E+14,circgraph,0.9-RC2                                                                              
+ 2021-5     ,1.21268E+14,vcfcombine,1.0.0_rc3+galaxy0                                                           
+ 2021-5     ,1.20993E+14,gtftobed12,357
+ 2021-5     ,1.18702E+14,vcfgeno2haplo,1.0.0_rc3+galaxy0                                                     
+ 2021-5     ,1.1656E+14,goslimmer,1.0.1                                                                             
+ 2021-5     ,1.10481E+14,tp_sort_header_tool,1.1.1                                                       
+ 2021-5     ,1.09125E+14,compose_text_param,0.1.1                                                           
+ 2021-5     ,1.07619E+14,fgsea,1.8.0+galaxy1                                                                             
+ 2021-5     ,1.05768E+14,sequence_content_trimmer,0.1
+ 2021-5     ,1.05709E+14,EMBOSS: palindrome65,5.0.0.1                                                             
+ 2021-5     ,1.02657E+14, CONVERTER_bed_to_bgzip_0                                                                                                               , CONVERTER_bed_to_bgzip_0                                                                                                               
+ 2021-5     ,1.0203E+14, CONVERTER_wiggle_to_interval_0                                                                                                         , CONVERTER_wiggle_to_interval_0                                                                                                         
+ 2021-5     ,1.00007E+14,samtools_idxstats,2.0.3                                                         
+ 2021-5     ,9.75817E+13,tp_uniq_tool,1.1.1                                                              
+ 2021-5     ,9.64854E+13,poretools_extract,0.6.1a1.0                                                         
+ 2021-5     ,9.55112E+13,bcftools_roh,1.1
+ 2021-5     ,8.90931E+13,cshl_fastq_to_fasta,1.0.0                                                          
+ 2021-5     ,8.86112E+13,circos_wiggle_to_stacked,0.69.8+galaxy7                                                        
+ 2021-5     ,8.82041E+13,featurecounts,1.6.2                                                                     
+ 2021-5     ,8.5901E+13,cuffmerge,0.0.6                                                                         
+ 2021-5     ,8.55759E+13,predict_pipeline,1
+ 2021-5     ,8.53673E+13,rseqc_read_quality,2.6.4                                                                     
+ 2021-5     ,8.51159E+13,mothur_make_biom,1.39.5.0                                                            
+ 2021-5     ,8.44836E+13,allele_counts_1,1.3.2                                                                  
+ 2021-5     ,8.40048E+13,annotatemyids,3.7.0+galaxy2                                                             
+ 2021-5     ,8.28116E+13,bedtools_map,2.30.0.2                                                                        
+ 2021-5     ,8.07927E+13,macs2_predictd,2.1.1.20160309.0                                                                 
+ 2021-5     ,8.07197E+13,cshl_fastx_trimmer,1.0.0                                                            
+ 2021-5     ,8.05557E+13,bam_to_scidx,1.0.1                                                                       
+ 2021-5     ,8.03818E+13,kallisto_pseudo,0.46.0.1                                                              
+ 2021-5     ,7.929E+13,msaboot,0.1.2                                                                                 
+ 2021-5     ,7.64336E+13,mothur_classify_otu,1.39.5.0                                                      
+ 2021-5     ,7.50787E+13, bed2gff1                                                                                                                               , bed2gff1                                                                                                                               
+ 2021-5     ,7.48363E+13,picard_QualityScoreDistribution,2.18.2.1                                                   
+ 2021-5     ,7.40587E+13, CONVERTER_interval_to_bed12_0                                                                                                          , CONVERTER_interval_to_bed12_0                                                                                                          
+ 2021-5     ,7.30463E+13,filter_by_fasta_ids,2.3
+ 2021-5     ,6.92999E+13,snpSift_filter,4.3+t.galaxy0                                                                  
+ 2021-5     ,6.89739E+13,sklearn_ensemble,1.0.8.2                                                       
+ 2021-5     ,6.7482E+13,bcftools_mpileup,1.4.0.0                                                             
+ 2021-5     ,6.68836E+13,macs2_refinepeak,2.1.1.20160309.1                                                               
+ 2021-5     ,6.5148E+13,raceid_filtnormconf,3.1
+ 2021-5     ,6.04926E+13,Add_a_column1,1.2.0                                                                  
+ 2021-5     ,5.94393E+13, Remove beginning1                                                                                                                      , Remove beginning1                                                                                                                      
+ 2021-5     ,5.92016E+13,flanking_features_1,4.0.1                                                       
+ 2021-5     ,5.89943E+13,bcftools_convert_to_vcf,1.1
+ 2021-5     ,5.79071E+13,subtract_query1,0.1
+ 2021-5     ,5.68425E+13,dada2_makeSequenceTable,1.18+galaxy0                                          
+ 2021-5     ,5.67729E+13,vcfannotategenotypes,1.0.0_rc3+galaxy0                                       
+ 2021-5     ,5.67425E+13,stringtie,1.0.3                                                                             
+ 2021-5     ,5.65645E+13,sklearn_searchcv,1.0.8.2                                                       
+ 2021-5     ,5.62406E+13,ivar_trim,1.3.1+galaxy0                                                                     
+ 2021-5     ,5.61568E+13,EMBOSS: einverted28,5.0.0.1                                                              
+ 2021-5     ,5.45542E+13,minimap2,2.17+galaxy3                                                                        
+ 2021-5     ,5.16702E+13,EMBOSS: fuzznuc37,5.0.2                                                                  
+ 2021-5     ,5.14798E+13, CONVERTER_fasta_to_fai                                                                                                                 , CONVERTER_fasta_to_fai                                                                                                                 
+ 2021-5     ,5.13349E+13,fastq_dump,2.10.4                                                                           
+ 2021-5     ,5.01758E+13,ivar_removereads,1.3.1+galaxy0                                                       
+ 2021-5     ,4.83885E+13,salmon,0.14.1.2                                                                          
+ 2021-5     ,4.74125E+13,bcftools_plugin_fill_tags,1.1
+ 2021-5     ,4.73691E+13, addValue                                                                                                                               , addValue                                                                                                                               
+ 2021-5     ,4.69416E+13,rgweblogo3,3.5.0                                                                         
+ 2021-5     ,4.49233E+13,bedtools_multiintersectbed,2.30.0                                                            
+ 2021-5     ,4.47672E+13,deeptools_plot_pca,3.3.2.0.0                                                 
+ 2021-5     ,4.47429E+13,deeptools_plot_heatmap,2.5.0.0                                           
+ 2021-5     ,4.36062E+13,bedtools_bed12tobed6,2.30.0                                                                  
+ 2021-5     ,4.30383E+13,jbrowse,1.16.9+galaxy0                                                                        
+ 2021-5     ,4.27322E+13,deeptools_bam_pe_fragmentsize,3.3.2.0.0                           
+ 2021-5     ,4.15987E+13,qualimap_multi_bamqc,2.2.2d                                                      
+ 2021-5     ,4.15766E+13,dada2_removeBimeraDenovo,1.18+galaxy0                                        
+ 2021-5     ,4.13618E+13, CONVERTER_gff_to_bed_0                                                                                                                 , CONVERTER_gff_to_bed_0                                                                                                                 
+ 2021-5     ,4.0178E+13,deseq2,2.11.40.2                                                                               
+ 2021-5     ,3.89466E+13,gops_complement_1,1.0.0                                                                
+ 2021-5     ,3.86397E+13,rseqc_inner_distance,2.6.4.1                                                                 
+ 2021-5     ,3.86314E+13,deeptools_compute_gc_bias,3.3.2.0.0                                   
+ 2021-5     ,3.83932E+13,Add_a_column1,1.5
+ 2021-5     ,3.83195E+13,cshl_fastx_renamer,0.0.11                                                           
+ 2021-5     ,3.74958E+13,snpSift_rmInfo,4.3+t.galaxy0                                                                  
+ 2021-5     ,3.7343E+13,bedtools_sortbed,2.30.0                                                                      
+ 2021-5     ,3.67821E+13,seqtk_comp,1.3.1                                                                                
+ 2021-5     ,3.6703E+13,snpEff_databases,4.3+T.galaxy2                                                                 
+ 2021-5     ,3.63507E+13, mergeCols1                                                                                                                             , mergeCols1                                                                                                                             
+ 2021-5     ,3.62563E+13,gprofiler_gost,0.1.7+galaxy11                                                          
+ 2021-5     ,3.60938E+13,poretools_qualpos,0.6.1a1.1                                                         
+ 2021-5     ,3.46485E+13, Show beginning1                                                                                                                        , Show beginning1                                                                                                                        
+ 2021-5     ,3.44785E+13,samtools_mpileup,2.1.3                                                           
+ 2021-5     ,3.43592E+13,vegan_diversity,2.4-3                                                                 
+ 2021-5     ,3.43414E+13,venn_list,0.1.1                                                                         
+ 2021-5     ,3.41519E+13,ggplot2_point,2.2.1+galaxy2                                                             
+ 2021-5     ,3.41211E+13,mothur_make_shared,1.39.5.0                                                        
+ 2021-5     ,3.38474E+13,mothur_heatmap_sim,1.39.5.0                                                        
+ 2021-5     ,3.3651E+13,cshl_fastx_collapser,1.0.0                                                        
+ 2021-5     ,3.30903E+13,mimodd_vcf_filter,0.1.9                                                                 
+ 2021-5     ,3.30604E+13,macs2_callpeak,2.1.0.20140616.0                                                                 
+ 2021-5     ,3.25828E+13,bedtools_flankbed,2.30.0                                                                     
+ 2021-5     ,3.15946E+13,kraken-translate,1.3.1                                                           
+ 2021-5     ,3.091E+13,regexColumn1,1.0.1                                                             
+ 2021-5     ,3.05718E+13,column_order_header_sort,0.0.1                                               
+ 2021-5     ,3.02722E+13,fastq_to_fasta_python,1.1.1                                                          
+ 2021-5     ,3.01643E+13,kraken-mpa-report,1.2.4                                                             
+ 2021-5     ,3.00493E+13,naive_variant_caller,0.0.2                                               
+ 2021-5     ,3.00298E+13,mimodd_map,0.1.9                                                                        
+ 2021-5     ,2.89599E+13, ChangeCase                                                                                                                             , ChangeCase                                                                                                                             
+ 2021-5     ,2.8571E+13,EMBOSS: wordcount109,5.0.0.1                                                             
+ 2021-5     ,2.84067E+13,bandage_info,0.8.1+galaxy1                                                                    
+ 2021-5     ,2.81512E+13, wc_gnu                                                                                                                                 , wc_gnu                                                                                                                                 
+ 2021-5     ,2.80139E+13,EMBOSS: newcpgreport57,5.0.0                                                             
+ 2021-5     ,2.73571E+13,edger,3.20.7.2                                                                                  
+ 2021-5     ,2.72673E+13,bcftools_reheader,1.1
+ 2021-5     ,2.72559E+13,ml_visualization_ex,1.0.8.2                                                 
+ 2021-5     ,2.70007E+13,trinity_abundance_estimates_to_matrix,2.9.1                     
+ 2021-5     ,2.67338E+13,check_snpeff_candidates,1.0.0                                    
+ 2021-5     ,2.63271E+13,vcfbreakcreatemulti,1.0.0_rc3+galaxy0                                         
+ 2021-5     ,2.58907E+13,raceid_clustering,3.1
+ 2021-5     ,2.58251E+13, CONVERTER_fasta_to_len                                                                                                                 , CONVERTER_fasta_to_len                                                                                                                 
+ 2021-5     ,2.55036E+13,datamash_reverse,1.1.0                                                               
+ 2021-5     ,2.54835E+13, CONVERTER_interval_to_bigwig_0                                                                                                         , CONVERTER_interval_to_bigwig_0                                                                                                         
+ 2021-5     ,2.52253E+13,PlasFlow,1
+ 2021-5     ,2.49911E+13,biom_convert,2.1.5.3                                                                     
+ 2021-5     ,2.45674E+13,mothur_taxonomy_to_krona,1
+ 2021-5     ,2.41395E+13,newick_display,1.6+galaxy1                                                               
+ 2021-5     ,2.35618E+13,picard_artifact_metrics,2.18.2.1                                                           
+ 2021-5     ,2.34349E+13,rseqc_read_GC,2.6.4                                                                          
+ 2021-5     ,2.33393E+13,jbrowse_to_standalone,1.16.11+galaxy0                                                         
+ 2021-5     ,2.30107E+13,taxonomy_krona_chart,2.6.1                                                      
+ 2021-5     ,2.25102E+13,bg_diamond_view,0.9.29                                                                  
+ 2021-5     ,2.23339E+13,EMBOSS: pepcoil68,5.0.0.1                                                                
+ 2021-5     ,2.22699E+13,mothur_rename_seqs,1.39.5.0                                                        
+ 2021-5     ,2.20483E+13,deseq2,2.11.40.6                                                                               
+ 2021-5     ,2.19706E+13,collapse_dataset,4.2
+ 2021-5     ,2.08776E+13,minimap2,2.17+galaxy2                                                                        
+ 2021-5     ,2.06908E+13,scanpy_normalize,1.7.1+galaxy0                                                       
+ 2021-5     ,2.0512E+13,circos_resample,0.69.8+galaxy7                                                                 
+ 2021-5     ,2.03562E+13,htseq_count,0.6.1galaxy1                                                             
+ 2021-5     ,1.9874E+13, CONVERTER_bed_to_gff_0                                                                                                                 , CONVERTER_bed_to_gff_0                                                                                                                 
+ 2021-5     ,1.97134E+13,sklearn_build_pipeline,1.0.8.2                                           
+ 2021-5     ,1.9632E+13,vcfbedintersect,1.0.0_rc3+galaxy0                                                 
+ 2021-5     ,1.9103E+13,EMBOSS: geecee41,5.0.0                                                                   
+ 2021-5     ,1.8927E+13,keras_model_config,0.5.0                                                     
+ 2021-5     ,1.89152E+13, liftOver1                                                                                                                              , liftOver1                                                                                                                              
+ 2021-5     ,1.87322E+13,gprofiler_snpense,0.1.7+galaxy11                                                    
+ 2021-5     ,1.87228E+13,bedtools_getfastabed,2.29.0                                                                  
+ 2021-5     ,1.86672E+13,rseqc_insertion_profile,2.6.4                                                                
+ 2021-5     ,1.82727E+13,picard_CollectGcBiasMetrics,2.18.2.1                                                       
+ 2021-5     ,1.80501E+13,hyphy_slac,2.5.31+galaxy1                                                                  
+ 2021-5     ,1.73511E+13,fastq_combiner,1.0.1                                                               
+ 2021-5     ,1.71812E+13,plant_tribes_kaks_analysis,1.0.3.0                                        
+ 2021-5     ,1.70436E+13, CONVERTER_bed_to_fli_0                                                                                                                 , CONVERTER_bed_to_fli_0                                                                                                                 
+ 2021-5     ,1.7028E+13,plant_tribes_gene_family_phylogeny_builder,1.0.3.1        
+ 2021-5     ,1.65549E+13,uniprot,0.2
+ 2021-5     ,1.63931E+13,bedtools_multicovtbed,2.27.0.0                                                               
+ 2021-5     ,1.61445E+13,mothur_tree_shared,1.39.5.0                                                        
+ 2021-5     ,1.58146E+13,bcftools_plugin_missing2ref,1.1
+ 2021-5     ,1.57867E+13, bed_to_bigBed                                                                                                                          , bed_to_bigBed                                                                                                                          
+ 2021-5     ,1.5714E+13,vcf2pgSnp,1.0.0                                                                         
+ 2021-5     ,1.54122E+13,tp_replace_in_line,1.1.1                                                        
+ 2021-5     ,1.5328E+13,multiqc,1.7
+ 2021-5     ,1.50246E+13,tab2fasta,1.1.0                                                                  
+ 2021-5     ,1.47456E+13, Show tail1                                                                                                                             , Show tail1                                                                                                                             
+ 2021-5     ,1.43875E+13,medaka_variant,1.0.3+galaxy3                                                           
+ 2021-5     ,1.42324E+13,genetrack,1.0.1                                                                             
+ 2021-5     ,1.41242E+13,sklearn_generalized_linear,1.0.8.2                                   
+ 2021-5     ,1.40672E+13, ucsc_table_direct_archaea1                                                                                                             , ucsc_table_direct_archaea1                                                                                                             
+ 2021-5     ,1.38887E+13, CONVERTER_fasta_to_2bit                                                                                                                , CONVERTER_fasta_to_2bit                                                                                                                
+ 2021-5     ,1.37462E+13,fastqc,0.63
+ 2021-5     ,1.31576E+13,deeptools_plot_profile,3.1.2.0.0                                         
+ 2021-5     ,1.28264E+13,pca1,1.0.2                                                           
+ 2021-5     ,1.26491E+13,cutadapt,1.16.5                                                                         
+ 2021-5     ,1.25447E+13,EMBOSS: etandem33,5.0.0.1                                                                
+ 2021-5     ,1.21904E+13,mothur_unique_seqs,1.36.1.0                                                        
+ 2021-5     ,1.18612E+13,XY_Plot_1,1.0.2                                                                           
+ 2021-5     ,1.18588E+13,jbrowse,1.16.8+galaxy1                                                                        
+ 2021-5     ,1.17733E+13, hgv_david                                                                                                                              , hgv_david                                                                                                                              
+ 2021-5     ,1.15426E+13,plant_tribes_gene_family_phylogeny_builder,1.0.3.0        
+ 2021-5     ,1.13457E+13,bedtools_bedtoigv,2.30.0                                                                     
+ 2021-5     ,1.11406E+13,mothur_unifrac_weighted,1.39.5.0                                              
+ 2021-5     ,1.10202E+13,picard_FilterSamReads,2.18.2.1                                                             
+ 2021-5     ,1.10165E+13, CONVERTER_ref_to_seq_taxomony                                                                                                          , CONVERTER_ref_to_seq_taxomony                                                                                                          
+ 2021-5     ,1.07343E+13,quast,5.0.2+galaxy0                                                                             
+ 2021-5     ,1.06861E+13,circos_interval_to_tile,0.69.8+galaxy7                                                         
+ 2021-5     ,1.06694E+13,addName,0.2.0                                                            
+ 2021-5     ,1.05935E+13,mothur_count_groups,1.39.5.0                                                      
+ 2021-5     ,1.05911E+13,sra_pileup,2.10.3                                                                           
+ 2021-5     ,1.04235E+13,tb_profiler_profile,2.8.4+galaxy1                                                          
+ 2021-5     ,1.03891E+13,gffcompare_to_bed,0.2.1                                                         
+ 2021-5     ,1.02624E+13,pygenomeTracks,3.5
+ 2021-5     ,1.02528E+13,bcftools_plugin_missing2ref,1.9+galaxy1                                   
+ 2021-5     ,1.01861E+13,bcftools_concat,1.9+galaxy1                                                           
+ 2021-5     ,1.01461E+13,kraken-filter,1.3.1                                                                 
+ 2021-5     ,9.99538E+12,taxonomy_krona_chart,2.6.1.1                                                    
+ 2021-5     ,9.89619E+12,mothur_classify_seqs,1.36.1.0                                                    
+ 2021-5     ,9.83587E+12,get_flanks1,1.0.0                                                                      
+ 2021-5     ,9.81344E+12,trimmomatic,0.36.2                                                                   
+ 2021-5     ,9.81036E+12,bwa_mem,0.7.12.1                                                                              
+ 2021-5     ,9.77533E+12,fasta_compute_length,1.0.3                                                   
+ 2021-5     ,9.51025E+12, Extract_features1                                                                                                                      , Extract_features1                                                                                                                      
+ 2021-5     ,9.40827E+12,count_gff_features,0.2
+ 2021-5     ,9.33049E+12,heinz_visualization,0.1.1                                                                       
+ 2021-5     ,9.31747E+12,mummer_nucmer,4.0.0beta2+galaxy0                                                        
+ 2021-5     ,8.89661E+12,multiqc,1.6
+ 2021-5     ,8.72612E+12,scikit_bio_diversity_beta_diversity,0.4.2.0                       
+ 2021-5     ,8.64451E+12, trimmer                                                                                                                                , trimmer                                                                                                                                
+ 2021-5     ,8.59429E+12,cshl_fastq_quality_boxplot,1.0.1                                            
+ 2021-5     ,8.58697E+12,socru,2.1.7                                                                                     
+ 2021-5     ,8.4985E+12,tp_awk_tool,1.1.1                                                               
+ 2021-5     ,8.44432E+12,mothur_sub_sample,1.39.5.0                                                          
+ 2021-5     ,8.38595E+12,rseqc_geneBody_coverage,2.6.4.2                                                              
+ 2021-5     ,8.20098E+12,sam_merge2,1.2.0                                                                        
+ 2021-5     ,8.16451E+12,EMBOSS: union105,5.0.0                                                                   
+ 2021-5     ,7.9756E+12,bcftools_plugin_frameshifts,1.1
+ 2021-5     ,7.96739E+12,EMBOSS: supermatcher95,5.0.0.1                                                           
+ 2021-5     ,7.69181E+12,deseq2,2.1.8.3                                                                                 
+ 2021-5     ,7.66109E+12,gmx_solvate,2020.2+galaxy0                                                           
+ 2021-5     ,7.50757E+12,mothur_get_groups,1.39.5.0                                                          
+ 2021-5     ,7.30689E+12,snpSift_dbnsfp,4.3.0                                                                   
+ 2021-5     ,7.18217E+12,bedtools_mergebed,2.30.0                                                                     
+ 2021-5     ,7.11693E+12,picard_AddOrReplaceReadGroups,1.126.0                                                      
+ 2021-5     ,7.11573E+12,snpEff_get_chr_names,4.3+T.galaxy2                                                             
+ 2021-5     ,7.0945E+12,cshl_fastq_quality_filter,1.0.1                                              
+ 2021-5     ,7.0696E+12,circos_tableviewer,0.69.8+galaxy7                                                              
+ 2021-5     ,7.01966E+12,mothur_make_group,1.36.1.0                                                          
+ 2021-5     ,7.00267E+12,racon,1.3.1.1                                                                             
+ 2021-5     ,6.86307E+12,collapse_dataset,4.1
+ 2021-5     ,6.82711E+12,mothur_remove_groups,1.39.5.0                                                    
+ 2021-5     ,6.7486E+12,bcftools_norm,1.9+galaxy1                                                               
+ 2021-5     ,6.67726E+12,mummer_delta_filter,4.0.0beta2+galaxy1                                            
+ 2021-5     ,6.61579E+12,bcftools_plugin_setgt,1.9+galaxy1                                               
+ 2021-5     ,6.57038E+12,fasterq_dump,2.10.7+galaxy1                                                                 
+ 2021-5     ,6.52379E+12,purge_dups,1.2.5+galaxy1                                                                   
+ 2021-5     ,6.42738E+12,mothur_cluster,1.39.5.0                                                                
+ 2021-5     ,6.28186E+12,mimodd_varreport,0.1.9                                                                  
+ 2021-5     ,6.24227E+12, CONVERTER_len_to_linecount                                                                                                             , CONVERTER_len_to_linecount                                                                                                             
+ 2021-5     ,6.09467E+12,gff_to_prot,3.0.2+galaxy0                                                                 
+ 2021-5     ,6.07943E+12,bcftools_plugin_impute_info,1.9+galaxy1                                   
+ 2021-5     ,5.93213E+12,sklearn_svm_classifier,1.0.8.2                                           
+ 2021-5     ,5.91252E+12,bedtools_nucbed,2.30.0                                                                       
+ 2021-5     ,5.85822E+12,picard_CASM,2.18.2.1                                                                       
+ 2021-5     ,5.85774E+12,EMBOSS: wordmatch110,5.0.0.1                                                             
+ 2021-5     ,5.73176E+12,cd_hit_dup,0.0.1                                                                       
+ 2021-5     ,5.69285E+12,quast,4.6.3                                                                                     
+ 2021-5     ,5.5249E+12,peptide_shaker,1.16.36.3                                                            
+ 2021-5     ,5.12031E+12,hyphy_conv,2.5.31+galaxy1                                                                  
+ 2021-5     ,5.07659E+12,bedtools_fisher,2.30.0                                                                       
+ 2021-5     ,4.96639E+12,mothur_venn,1.39.5.0                                                                      
+ 2021-5     ,4.82863E+12,bcftools_call,1.9+galaxy1                                                               
+ 2021-5     ,4.78491E+12,maker_map_ids,2.31.11                                                                   
+ 2021-5     ,4.73257E+12,tp_split_on_column,0.2
+ 2021-5     ,4.66823E+12,EMBOSS: cusp17,5.0.0                                                                     
+ 2021-5     ,4.62508E+12,annotatemyids,3.5.0.1                                                                   
+ 2021-5     ,4.5954E+12,multiqc,1.9
+ 2021-5     ,4.59265E+12,bedtools_mergebed,2.29.2                                                                     
+ 2021-5     ,4.55974E+12, Interval2Maf1                                                                                                                          , Interval2Maf1                                                                                                                          
+ 2021-5     ,4.49167E+12,vsearch_search,2.8.3.1                                                                        
+ 2021-5     ,4.16186E+12, CONVERTER_interval_to_bgzip_0                                                                                                          , CONVERTER_interval_to_bgzip_0                                                                                                          
+ 2021-5     ,4.1506E+12,bowtie2,0.3
+ 2021-5     ,3.99754E+12,sklearn_train_test_split,1.0.8.2                                       
+ 2021-5     ,3.87142E+12,mimodd_reheader,0.1.9                                                                   
+ 2021-5     ,3.74252E+12,samtools_reheader,2.0.1+galaxy1                                                 
+ 2021-5     ,3.71026E+12,trinity_contig_exn50_statistic,2.9.1                                   
+ 2021-5     ,3.69346E+12,samtools_slice_bam,2
+ 2021-5     ,3.6918E+12,heatmap_1,1.0.0                                                                       
+ 2021-5     ,3.68516E+12,EMBOSS: pepstats71,5.0.0                                                                 
+ 2021-5     ,3.64886E+12,mothur_summary_single,1.39.5.2                                                  
+ 2021-5     ,3.63809E+12,varscan,0.1
+ 2021-5     ,3.58837E+12,tn93_readreduce,1.0.4                                                                 
+ 2021-5     ,3.51116E+12,cshl_fasta_formatter,1.0.1                                                        
+ 2021-5     ,3.47915E+12, CONVERTER_bed_to_tabix_0                                                                                                               , CONVERTER_bed_to_tabix_0                                                                                                               
+ 2021-5     ,3.31686E+12,collection_element_identifiers,0.0.2                                   
+ 2021-5     ,3.29364E+12,tp_unfold_column_tool,1.1.1                                                     
+ 2021-5     ,3.28166E+12,rseqc_infer_experiment,2.6.4                                                                 
+ 2021-5     ,3.25436E+12,bedtools_maskfastabed,2.30.0                                                                 
+ 2021-5     ,3.22607E+12,mothur_summary_tax,1.39.5.0                                                        
+ 2021-5     ,3.1948E+12,bedtools_spacingbed,2.30.0                                                                   
+ 2021-5     ,3.18197E+12,plotly_regression_performance_plots,0.1
+ 2021-5     ,3.13184E+12,keras_model_builder,0.5.0                                                   
+ 2021-5     ,3.10437E+12,kobas_annotate,2.1.1                                                                            
+ 2021-5     ,3.04244E+12, Summary_Statistics1                                                                                                                    , Summary_Statistics1                                                                                                                    
+ 2021-5     ,3.03682E+12, __IMPORT_HISTORY__                                                                                                                     , __IMPORT_HISTORY__                                                                                                                     
+ 2021-5     ,2.97873E+12,ebi_search_rest_results,0.1.1                                                 
+ 2021-5     ,2.97286E+12,fasplit,357
+ 2021-5     ,2.91082E+12,mothur_lefse,1.39.5.0                                                                    
+ 2021-5     ,2.84687E+12,cufflinks,2.2.1.0                                                                       
+ 2021-5     ,2.80105E+12,ggplot2_violin,2.2.1+galaxy0                                                           
+ 2021-5     ,2.76347E+12,tabular_to_fastq,1.1.5                                                           
+ 2021-5     ,2.71716E+12,circos_interval_to_text,0.69.8+galaxy7                                                         
+ 2021-5     ,2.69742E+12,newick_display,1.6
+ 2021-5     ,2.6962E+12,poretools_hist,0.6.1a1.1                                                               
+ 2021-5     ,2.69078E+12,mothur_align_seqs,1.36.1.0                                                          
+ 2021-5     ,2.67544E+12,EMBOSS: dotmatcher24,5.0.0.1                                                             
+ 2021-5     ,2.63133E+12,crossmap_bed,0.3.7+galaxy1                                                               
+ 2021-5     ,2.59582E+12,mothur_make_biom,1.36.1.0                                                            
+ 2021-5     ,2.59131E+12,bedtools_slopbed,2.29.0                                                                      
+ 2021-5     ,2.59108E+12,sklearn_stacking_ensemble_models,1.0.8.2                       
+ 2021-5     ,2.57637E+12,umi_tools_count,0.5.5.1                                                               
+ 2021-5     ,2.52698E+12,ebi_metagenomics_run_downloader,0.1.0                                 
+ 2021-5     ,2.50882E+12,cshl_fastx_nucleotides_distribution,1.0.1                          
+ 2021-5     ,2.49387E+12,circos_aln_to_links,0.69.8+galaxy7                                                             
+ 2021-5     ,2.4481E+12,vegan_fisher_alpha,2.4-3                                                           
+ 2021-5     ,2.42705E+12,mothur_merge_groups,1.39.5.0                                                      
+ 2021-5     ,2.41672E+12,EMBOSS: extractseq35,5.0.0                                                               
+ 2021-5     ,2.41568E+12,bedtools_slopbed,2.30.0                                                                      
+ 2021-5     ,2.40122E+12,bedtools_clusterbed,2.30.0                                                                   
+ 2021-5     ,2.38697E+12,graphembed,2.4.0                                                                           
+ 2021-5     ,2.37282E+12,bedtools_annotatebed,2.30.0                                                                  
+ 2021-5     ,2.3311E+12,multiqc,1.8+galaxy0                                                                           
+ 2021-5     ,2.27998E+12,search_gui,3.3.10.1                                                                 
+ 2021-5     ,2.27575E+12,snpSift_int,4.3+t.galaxy0                                                                     
+ 2021-5     ,2.26936E+12, CONVERTER_vcf_to_tabix_0                                                                                                               , CONVERTER_vcf_to_tabix_0                                                                                                               
+ 2021-5     ,2.20829E+12, CONVERTER_wig_to_bigwig                                                                                                                , CONVERTER_wig_to_bigwig                                                                                                                
+ 2021-5     ,2.18149E+12,vcfprimers,1.0.0_rc3+galaxy0                                                           
+ 2021-5     ,2.17333E+12,vcftools_annotate,0.1
+ 2021-5     ,2.16289E+12,mothur_pcoa,1.39.5.0                                                                      
+ 2021-5     ,2.13217E+12,generate_matrix_for_pca_and_lda1,1.0.0                                     
+ 2021-5     ,2.12846E+12,gatk4_mutect2,4.1.4.0+galaxy2                                                           
+ 2021-5     ,2.09281E+12,bandage_image,0.8.1+galaxy2                                                                   
+ 2021-5     ,2.08851E+12,plotly_parallel_coordinates_plot,0.2
+ 2021-5     ,2.08313E+12,bedtools_reldistbed,2.30.0                                                                   
+ 2021-5     ,2.04888E+12,gd_pca,1.0.0                                                                  
+ 2021-5     ,2.002E+12, hgv_linkToGProfile                                                                                                                     , hgv_linkToGProfile                                                                                                                     
+ 2021-5     ,1.99913E+12,hgv_snpFreq,1.0.1                                                                         
+ 2021-5     ,1.99064E+12,poretools_yield_plot,0.6.1a1.1                                                   
+ 2021-5     ,1.98604E+12,maf_stats1,1.0.1+galaxy0                                                                    
+ 2021-5     ,1.97545E+12,iwtomics_loadandplot,1.0.0.0                                                     
+ 2021-5     ,1.96279E+12,gffread,0.11.6.0                                                                          
+ 2021-5     ,1.9537E+12,snpEff_databases,4.3+T.galaxy1                                                                 
+ 2021-5     ,1.93837E+12,gfa_to_fa,0.1.2                                                                             
+ 2021-5     ,1.92915E+12,biom_add_metadata,2.1.5.1                                                           
+ 2021-5     ,1.90863E+12, modENCODEfly                                                                                                                           , modENCODEfly                                                                                                                           
+ 2021-5     ,1.90127E+12,microsats_align1,1.0.0                                                  
+ 2021-5     ,1.8508E+12,gd_new_oscar,1.0.0                                                            
+ 2021-5     ,1.84665E+12,EMBOSS: polydot77,5.0.0.1                                                                
+ 2021-5     ,1.83083E+12,mummer_show_coords,4.0.0beta2+galaxy1                                              
+ 2021-5     ,1.81667E+12,limma_voom,3.38.3+galaxy2                                                                  
+ 2021-5     ,1.80833E+12,sklearn_train_test_eval,1.0.8.2                                         
+ 2021-5     ,1.80392E+12,gprofiler_orth,0.1.7+galaxy11                                                          
+ 2021-5     ,1.7855E+12,mothur_make_lefse,1.39.5.0                                                          
+ 2021-5     ,1.78119E+12,samtools_flagstat,1.0.0                                                         
+ 2021-5     ,1.76182E+12,plotly_ml_performance_plots,0.2
+ 2021-5     ,1.74263E+12, CONVERTER_biom2_to_biom1                                                                                                               , CONVERTER_biom2_to_biom1                                                                                                               
+ 2021-5     ,1.73513E+12,bedtools_bedtobam,2.29.2                                                                     
+ 2021-5     ,1.72208E+12,picard_AddOrReplaceReadGroups,2.7.1.0                                                      
+ 2021-5     ,1.70589E+12,bcftools_plugin_fill_an_ac,1.1
+ 2021-5     ,1.70491E+12,EMBOSS: equicktandem31,5.0.0.1                                                           
+ 2021-5     ,1.68364E+12, Interval_Maf_Merged_Fasta2                                                                                                             , Interval_Maf_Merged_Fasta2                                                                                                             
+ 2021-5     ,1.65026E+12,sklearn_nn_classifier,1.0.8.2                                             
+ 2021-5     ,1.64191E+12,ggplot2_histogram,2.2.1+galaxy0                                                     
+ 2021-5     ,1.62343E+12,fastqc,0.71
+ 2021-5     ,1.62112E+12,bedtools_unionbedgraph,2.29.2                                                                
+ 2021-5     ,1.60576E+12,heinz_bum,1
+ 2021-5     ,1.59538E+12, master2pgSnp                                                                                                                           , master2pgSnp                                                                                                                           
+ 2021-5     ,1.50943E+12, createInterval                                                                                                                         , createInterval                                                                                                                         
+ 2021-5     ,1.49681E+12,bedtools_subtractbed,2.29.2                                                                  
+ 2021-5     ,1.47653E+12,hetbox,1
+ 2021-5     ,1.45253E+12,EMBOSS: compseq14,5.0.0.1                                                                
+ 2021-5     ,1.45123E+12,bedtools_overlapbed,2.30.0                                                                   
+ 2021-5     ,1.442E+12,sklearn_data_preprocess,1.0.8.2                                         
+ 2021-5     ,1.43742E+12,picard_CollectHsMetrics,2.18.2                                                             
+ 2021-5     ,1.41519E+12,mothur_merge_files,1.36.1.0                                                        
+ 2021-5     ,1.40738E+12,sam_to_bam,2.1
+ 2021-5     ,1.39394E+12,Interval2Maf1,1.0.1+galaxy0                                                              
+ 2021-5     ,1.37671E+12,EMBOSS: degapseq20,5.0.0                                                                 
+ 2021-5     ,1.37007E+12,edger,3.24.1                                                                                    
+ 2021-5     ,1.36987E+12,mothur_phylotype,1.39.5.0                                                            
+ 2021-5     ,1.36884E+12,EMBOSS: pepwheel72,5.0.0.1                                                               
+ 2021-5     ,1.36423E+12, CONVERTER_maf_to_interval_0                                                                                                            , CONVERTER_maf_to_interval_0                                                                                                            
+ 2021-5     ,1.35096E+12,hyphy_annotate,2.5.31                                                                  
+ 2021-5     ,1.34696E+12,vsearch_clustering,2.8.3.0                                                                    
+ 2021-5     ,1.33049E+12,bcftools_plugin_tag2tag,1.9+galaxy1                                           
+ 2021-5     ,1.32036E+12,bcftools_cnv,1.1
+ 2021-5     ,1.30689E+12,bedtools_groupbybed,2.30.0                                                                   
+ 2021-5     ,1.30627E+12, gff_filter_by_feature_count                                                                                                            , gff_filter_by_feature_count                                                                                                            
+ 2021-5     ,1.29179E+12,tb_variant_filter,0.1.3+galaxy0                                                     
+ 2021-5     ,1.29041E+12,ncbi_blastdbcmd_info,2.10.1+galaxy0                                               
+ 2021-5     ,1.23048E+12,iwtomics_testandplot,1.0.0.0                                                     
+ 2021-5     ,1.21729E+12,circos_bundlelinks,0.69.8+galaxy7                                                              
+ 2021-5     ,1.21673E+12,EMBOSS: dottup26,5.0.0.1                                                                 
+ 2021-5     ,1.2162E+12,mothur_remove_seqs,1.36.1.0                                                        
+ 2021-5     ,1.21526E+12, gene2exon1                                                                                                                             , gene2exon1                                                                                                                             
+ 2021-5     ,1.21298E+12,pileup_interval,1.0.3                                                             
+ 2021-5     ,1.19487E+12,mothur_unifrac_unweighted,1.39.5.0                                          
+ 2021-5     ,1.14697E+12,mothur_summary_single,1.39.5.0                                                  
+ 2021-5     ,1.14043E+12,samtools_slice_bam,0.0.1                                                       
+ 2021-5     ,1.09907E+12,mothur_metastats,1.39.5.0                                                            
+ 2021-5     ,1.09413E+12,tbvcfreport,0.1.7+galaxy0                                                                 
+ 2021-5     ,1.07432E+12,trim_reads,1.0.0                                                             
+ 2021-5     ,1.04613E+12,heinz,1
+ 2021-5     ,1.00185E+12,bedtools_multiintersectbed,2.29.2                                                            
+ 2021-5     ,9.8886E+11,qualimap_counts,2.2.2d                                                                
+ 2021-5     ,9.65759E+11,presto_assemblepairs,0.5.4                                                       
+ 2021-5     ,9.4523E+11,EMBOSS: dottup26,5.0.0                                                                   
+ 2021-5     ,9.42971E+11,bedtools_fisher,2.29.0                                                                       
+ 2021-5     ,9.33596E+11,EMBOSS: epestfind29,5.0.0.1                                                              
+ 2021-5     ,9.28246E+11,rapidnj,2.3.2                                                                                 
+ 2021-5     ,9.26909E+11,snp_mapping_using_wgs,1.0.0                                        
+ 2021-5     ,9.22736E+11,tp_easyjoin_tool,1.0.0                                                          
+ 2021-5     ,9.15101E+11,vsearch_sorting,2.8.3.0                                                                       
+ 2021-5     ,9.02121E+11, gtf_filter_by_attribute_values_list                                                                                                    , gtf_filter_by_attribute_values_list                                                                                                    
+ 2021-5     ,8.98636E+11,vsearch_dereplication,2.8.3.0                                                                 
+ 2021-5     ,8.92483E+11,mothur_merge_count,1.39.5.0                                                        
+ 2021-5     ,8.87383E+11,mothur_chop_seqs,1.39.5.0                                                            
+ 2021-5     ,8.82835E+11, hgv_sift                                                                                                                               , hgv_sift                                                                                                                               
+ 2021-5     ,8.78844E+11,get_pdb,0.1.0                                                                           
+ 2021-5     ,8.78202E+11,picard_BedToIntervalList,2.18.2.1                                                          
+ 2021-5     ,8.74996E+11,migmap,1.0.3+galaxy1                                                                           
+ 2021-5     ,8.68734E+11,sarscov2formatter,0.5.3+galaxy1                                                     
+ 2021-5     ,8.62798E+11,vcffilter2,1.0.0_rc1+galaxy2                                                            
+ 2021-5     ,8.59462E+11,fastqc,0.64
+ 2021-5     ,8.53418E+11,picard_MergeSamFiles,1.126.0                                                               
+ 2021-5     ,8.52384E+11,mothur_heatmap_bin,1.39.5.0                                                        
+ 2021-5     ,8.47484E+11,raceid_inspectclusters,3.1
+ 2021-5     ,8.4467E+11,picard_RevertSam,2.18.2.1                                                                  
+ 2021-5     ,8.31082E+11,cat_summarise,5.0.3.0                                                                   
+ 2021-5     ,8.2593E+11,ctb_online_data_fetch,0.2
+ 2021-5     ,8.24598E+11,hgv_funDo,1.0.0                                                                         
+ 2021-5     ,8.22857E+11, modENCODEworm                                                                                                                          , modENCODEworm                                                                                                                          
+ 2021-5     ,8.16986E+11,hyphy_gard,2.5.31+galaxy1                                                                  
+ 2021-5     ,8.16433E+11,bedtools_sortbed,2.29.2                                                                      
+ 2021-5     ,8.15088E+11,mimodd_rebase,0.1.9                                                                     
+ 2021-5     ,8.13564E+11,circos_binlinks,0.69.8+galaxy7                                                                 
+ 2021-5     ,8.05732E+11,bedtools_coveragebed,2.22.1                                                                  
+ 2021-5     ,7.47635E+11,translate_bed,0.1.0                                                                 
+ 2021-5     ,7.43804E+11,align_families,2.15
+ 2021-5     ,7.43477E+11,cor2,1.0.0                                                                            
+ 2021-5     ,7.42599E+11,EMBOSS: extractfeat34,5.0.0.1                                                            
+ 2021-5     ,7.37537E+11,gops_cluster_1,1.0.0                                                                      
+ 2021-5     ,7.35633E+11,tp_tac,1.1.0                                                                    
+ 2021-5     ,7.28082E+11,samtools_flagstat,2.0.1                                                         
+ 2021-5     ,7.2393E+11, vcf_to_maf_customtrack1                                                                                                                , vcf_to_maf_customtrack1                                                                                                                
+ 2021-5     ,7.17181E+11, CONVERTER_interval_to_tabix_0                                                                                                          , CONVERTER_interval_to_tabix_0                                                                                                          
+ 2021-5     ,7.14682E+11,gops_basecoverage_1,1.0.0                                                            
+ 2021-5     ,7.03014E+11,poretools_tabular,0.6.1a1.0                                                         
+ 2021-5     ,6.8467E+11,snippy_clean_full_aln,4.5.0                                                                    
+ 2021-5     ,6.84088E+11,bedtools_jaccard,2.30.0                                                                      
+ 2021-5     ,6.80951E+11,annotatemyids,3.7.0                                                                     
+ 2021-5     ,6.52129E+11,seqtk_mergepe,1.3.1                                                                             
+ 2021-5     ,6.48046E+11,fasta_nucleotide_color_plot,1.0.1                                         
+ 2021-5     ,6.42993E+11,ivar_filtervariants,1.3.1+galaxy0                                                 
+ 2021-5     ,6.41439E+11,bedtools_bedpetobam,2.30.0                                                                   
+ 2021-5     ,6.37935E+11,build_ucsc_custom_track_1,1.0.0                                                 
+ 2021-5     ,6.27043E+11,fastqe,0.2.6+galaxy0                                                                           
+ 2021-5     ,6.21496E+11,bcftools_view,0.0.1                                                        
+ 2021-5     ,6.16603E+11,mothur_bin_seqs,1.39.5.0                                                              
+ 2021-5     ,6.09754E+11,EMBOSS: diffseq22,5.0.0.1                                                                
+ 2021-5     ,5.96664E+11,mlst_list,2.19.0                                                                                 
+ 2021-5     ,5.956E+11,tp_cut_tool,1.0.0                                                               
+ 2021-5     ,5.91634E+11,EMBOSS: fuzzpro38,5.0.0.1                                                                
+ 2021-5     ,5.8957E+11,fasta_filter_by_length,1.1
+ 2021-5     ,5.88555E+11,mimodd_header,0.1.9                                                                     
+ 2021-5     ,5.88362E+11, CONVERTER_interval_to_bed6_0                                                                                                           , CONVERTER_interval_to_bed6_0                                                                                                           
+ 2021-5     ,5.80091E+11,vcffilter2,1.0.0_rc1+galaxy1                                                            
+ 2021-5     ,5.67926E+11,iwtomics_plotwithscale,1.0.0.0                                                 
+ 2021-5     ,5.66348E+11,collapse_dataset,4
+ 2021-5     ,5.66045E+11,mothur_biom_info,1.39.5.0                                                            
+ 2021-5     ,5.63187E+11,repmatch_gff3,1.0.3                                                                     
+ 2021-5     ,5.59944E+11,picard_MarkDuplicates,1.126.0                                                              
+ 2021-5     ,5.58889E+11,snpSift_geneSets,4.3.0                                                               
+ 2021-5     ,5.54608E+11,poretools_qualdist,0.6.1a1.0                                                       
+ 2021-5     ,5.49776E+11,model_prediction,1.0.8.2                                                       
+ 2021-5     ,5.48359E+11,LinearRegression1,1.0.1                                                         
+ 2021-5     ,5.4636E+11,mothur_get_oturep,1.39.5.0                                                          
+ 2021-5     ,5.4419E+11,gmx_editconf,2020.2+galaxy0                                                         
+ 2021-5     ,5.15154E+11,bedtools_complementbed,2.30.0                                                                
+ 2021-5     ,5.11614E+11,mimodd_info,0.1.9                                                                       
+ 2021-5     ,5.11433E+11,sklearn_sample_generator,1.0.8.2                                       
+ 2021-5     ,5.07745E+11, MAF_Reverse_Complement_1                                                                                                               , MAF_Reverse_Complement_1                                                                                                               
+ 2021-5     ,5.06882E+11,scatterplot_rpy,1.0.3                                                                 
+ 2021-5     ,4.96278E+11,EMBOSS: water107,5.0.0.1                                                                 
+ 2021-5     ,4.9432E+11,lda_analy1,1.0.1                                                                     
+ 2021-5     ,4.92905E+11,tn93_filter,1.0.6                                                                         
+ 2021-5     ,4.88255E+11, MAF_To_BED1                                                                                                                            , MAF_To_BED1                                                                                                                            
+ 2021-5     ,4.75413E+11, flymine                                                                                                                                , flymine                                                                                                                                
+ 2021-5     ,4.72273E+11,jbrowse,1.16.10+galaxy0                                                                       
+ 2021-5     ,4.47446E+11,bcftools_stats,1.4.0                                                                   
+ 2021-5     ,4.44142E+11,khmer_normalize_by_median,3.0.0a3+galaxy1                                   
+ 2021-5     ,4.39817E+11,mothur_parsimony,1.39.5.0                                                            
+ 2021-5     ,4.32968E+11,bedtools_windowbed,2.29.0                                                                    
+ 2021-5     ,4.32711E+11,EMBOSS: freak36,5.0.0.1                                                                  
+ 2021-5     ,4.29267E+11,cat_prepare,5.0.3.0                                                                       
+ 2021-5     ,4.27541E+11, MAF_Thread_For_Species1                                                                                                                , MAF_Thread_For_Species1                                                                                                                
+ 2021-5     ,4.27267E+11,EMBOSS: trimest102,5.0.0.1                                                               
+ 2021-5     ,4.27144E+11,phylorelatives,0.0.1                                                                 
+ 2021-5     ,4.20202E+11,bedtools_multicovtbed,2.29.2                                                                 
+ 2021-5     ,4.18838E+11,samtools_idxstats,2.0.1                                                         
+ 2021-5     ,4.18308E+11,vcfaddinfo,1.0.0_rc3+galaxy0                                                           
+ 2021-5     ,4.07376E+11,bcftools_plugin_counts,1.4.0                                                   
+ 2021-5     ,4.01034E+11,tp_sort_rows,1.1.0                                                              
+ 2021-5     ,3.94521E+11,EMBOSS: sirna89,5.0.0                                                                    
+ 2021-5     ,3.93336E+11,EMBOSS: iep45,5.0.0.1                                                                    
+ 2021-5     ,3.89316E+11,EMBOSS: newcpgseek58,5.0.0.1                                                             
+ 2021-5     ,3.78208E+11,jbrowse,1.16.5+galaxy7                                                                        
+ 2021-5     ,3.77298E+11,gff3.rebase,1.2
+ 2021-5     ,3.71063E+11,gd_cluster_kegg,1.0.0                                                         
+ 2021-5     ,3.69646E+11,multiqc,1.0.0.0                                                                         
+ 2021-5     ,3.58625E+11,roary,3.13.0+galaxy0                                                                            
+ 2021-5     ,3.55358E+11,bedtools_bedtoigv,2.29.2                                                                     
+ 2021-5     ,3.50493E+11,megablast_xml_parser,1.0.1                                                   
+ 2021-5     ,3.4532E+11,tp_easyjoin_tool,1.1.1                                                          
+ 2021-5     ,3.42386E+11, hgv_ldtools                                                                                                                            , hgv_ldtools                                                                                                                            
+ 2021-5     ,3.2978E+11,EMBOSS: lindna48,5.0.0.1                                                                 
+ 2021-5     ,3.28326E+11,abricate_list,1.0.1                                                                          
+ 2021-5     ,3.16553E+11,EMBOSS: shuffleseq87,5.0.0.1                                                             
+ 2021-5     ,3.152E+11,allele_counts_1,1.2
+ 2021-5     ,3.11944E+11,bedtools_randombed,2.30.0                                                                    
+ 2021-5     ,3.10989E+11,snpEff_build_gb,4.3+T.galaxy3                                                                  
+ 2021-5     ,3.10784E+11,gprofiler_random,0.1.7+galaxy11                                                      
+ 2021-5     ,3.08966E+11,fastqc,0.52
+ 2021-5     ,3.02042E+11,tp_grep_tool,1.1.0                                                              
+ 2021-5     ,2.9874E+11, CONVERTER_tar_to_directory                                                                                                             , CONVERTER_tar_to_directory                                                                                                             
+ 2021-5     ,2.96177E+11,heinz_scoring,1
+ 2021-5     ,2.92684E+11,vcfrandomsample,1.0.0_rc3+galaxy0                                                 
+ 2021-5     ,2.85179E+11,tsne,0.0.2                                                                                       
+ 2021-5     ,2.77602E+11, CONVERTER_bcf_to_bcf_uncompressed                                                                                                      , CONVERTER_bcf_to_bcf_uncompressed                                                                                                      
+ 2021-5     ,2.71476E+11,vcfdistance,1.0.0_rc3+galaxy0                                                         
+ 2021-5     ,2.7146E+11,bcftools_call,1.4.0                                                                     
+ 2021-5     ,2.68334E+11,cloudmap_variant_discovery_mapping,1.0.0              
+ 2021-5     ,2.68073E+11,kobas_identify,2.1.1                                                                            
+ 2021-5     ,2.62341E+11,vcfcheck,1.0.0_rc3+galaxy0                                                               
+ 2021-5     ,2.58981E+11,mothur_get_seqs,1.39.5.0                                                              
+ 2021-5     ,2.58008E+11,raceid_inspecttrajectory,3.1
+ 2021-5     ,2.57276E+11,bedtools_shufflebed,2.30.0                                                                   
+ 2021-5     ,2.49117E+11,EMBOSS: sixpack90,5.0.0+galaxy2                                                          
+ 2021-5     ,2.491E+11,EMBOSS: dotpath25,5.0.0.1                                                                
+ 2021-5     ,2.48049E+11,EMBOSS: cirdna11,5.0.0                                                                   
+ 2021-5     ,2.44928E+11,bcftools_reheader,1.4.0                                                             
+ 2021-5     ,2.40124E+11,cuffmerge,2.2.1.0                                                                       
+ 2021-5     ,2.37082E+11, CONVERTER_gff_to_bgzip_0                                                                                                               , CONVERTER_gff_to_bgzip_0                                                                                                               
+ 2021-5     ,2.32914E+11,deeptools_plot_pca,3.1.2.0.0                                                 
+ 2021-5     ,2.3184E+11,bedtools_bamtobed,2.29.0                                                                     
+ 2021-5     ,2.31469E+11,ncbi_makeprofiledb,2.10.1+galaxy0                                                 
+ 2021-5     ,2.29832E+11,presto_buildconsensus,0.5.4                                                     
+ 2021-5     ,2.28974E+11,bedtools_closestbed,2.29.0                                                                   
+ 2021-5     ,2.26998E+11,mothur_nmds,1.39.5.0                                                                      
+ 2021-5     ,2.26929E+11,mothur_get_relabund,1.39.5.0                                                      
+ 2021-5     ,2.26816E+11,EMBOSS: trimseq103,5.0.0.1                                                               
+ 2021-5     ,2.24344E+11,cat_contigs,5.0.3.1                                                                       
+ 2021-5     ,2.23999E+11,bcftools_plugin_mendelian,1.1
+ 2021-5     ,2.15864E+11,raceid_trajectory,3.1
+ 2021-5     ,2.10626E+11,mothur_pre_cluster,1.36.1.0                                                        
+ 2021-5     ,2.08455E+11,EMBOSS: cpgreport16,5.0.0.1                                                              
+ 2021-5     ,2.0842E+11,mimodd_delcall,0.1.9                                                                    
+ 2021-5     ,2.02548E+11,plant_tribes_gene_family_integrator,1.0.3.0                      
+ 2021-5     ,1.97094E+11,cast,1.4.2                                                                              
+ 2021-5     ,1.96298E+11,mothur_pca,1.39.5.0                                                                        
+ 2021-5     ,1.95934E+11,EMBOSS: plotorf76,5.0.0                                                                  
+ 2021-5     ,1.875E+11,Add_a_column1,1.1.0                                                                  
+ 2021-5     ,1.87425E+11,fastq_masker_by_quality,1.1.5                                             
+ 2021-5     ,1.81671E+11,EMBOSS: backtranseq2,6.6.0                                                               
+ 2021-5     ,1.80238E+11,rseqc_geneBody_coverage2,2.6.4.1                                                             
+ 2021-5     ,1.78197E+11,EMBOSS: checktrans9,5.0.0.1                                                              
+ 2021-5     ,1.77826E+11,EMBOSS: oddcomp64,5.0.0.1                                                                
+ 2021-5     ,1.73185E+11,ems_variant_density_mapping,1.0.0                            
+ 2021-5     ,1.7307E+11,fastq_to_fasta_python,1.0.0                                                          
+ 2021-5     ,1.69984E+11,sam_merge2,1.1.2                                                                        
+ 2021-5     ,1.69948E+11,picard_ReplaceSamHeader,2.18.2.1                                                           
+ 2021-5     ,1.69098E+11,hyphy_absrel,2.5.31+galaxy0                                                              
+ 2021-5     ,1.6856E+11,cca1,1.0.0                                                         
+ 2021-5     ,1.68398E+11,EMBOSS: chips10,5.0.0                                                                    
+ 2021-5     ,1.67535E+11,modify_loom,0.7.5+galaxy0                                                                 
+ 2021-5     ,1.66589E+11,Profilegenerator,2.0.0                                                     
+ 2021-5     ,1.64966E+11,ggplot2_heatmap2,2.2.1+galaxy1                                                       
+ 2021-5     ,1.62601E+11,vcf2tsv,1.0.0_rc1+galaxy0                                                                 
+ 2021-5     ,1.58553E+11,mothur_list_seqs,1.39.5.0                                                            
+ 2021-5     ,1.58337E+11,poretools_squiggle,0.6.1a1.1                                                       
+ 2021-5     ,1.55813E+11,transit_resampling,3.0.2+galaxy0                                                   
+ 2021-5     ,1.54283E+11,valet,1.0.0                                                                                     
+ 2021-5     ,1.51971E+11,tp_text_file_with_recurring_lines,1.1.0                                         
+ 2021-5     ,1.50996E+11,mothur_reverse_seqs,1.39.5.0                                                      
+ 2021-5     ,1.50461E+11,bedtools_intersectbed,2.27.1                                                                 
+ 2021-5     ,1.50382E+11,bedtools_maskfastabed,2.29.2                                                                 
+ 2021-5     ,1.5003E+11,bamtools,0.0.1                                                                           
+ 2021-5     ,1.46493E+11,naive_variant_caller,0.0.1                                               
+ 2021-5     ,1.45817E+11,rseqc_RNA_fragment_size,2.6.4.1                                                              
+ 2021-5     ,1.44883E+11,Add_a_column1,1.3.1                                                                  
+ 2021-5     ,1.43058E+11,vcfleftalign,1.0.0_rc3+galaxy0                                                       
+ 2021-5     ,1.42326E+11,sqlite_to_tabular,2.0.1                                                             
+ 2021-5     ,1.41895E+11,EMBOSS: pepwindow73,5.0.0.1                                                              
+ 2021-5     ,1.39976E+11,mixcr_analyze,3.0.5.0                                                                   
+ 2021-5     ,1.39541E+11,vcffilter2,1.0.0_rc1+galaxy3                                                            
+ 2021-5     ,1.38151E+11,ffindex_dbkit_merge,0.2+galaxy0                                               
+ 2021-5     ,1.3741E+11,cshl_fastq_quality_converter,1.0.1                                        
+ 2021-5     ,1.36372E+11,macs2_callpeak,2.1.1.20160309.4                                                                 
+ 2021-5     ,1.33324E+11,gd_extract_flanking_dna,1.0.0                                                 
+ 2021-5     ,1.30595E+11, CONVERTER_picard_interval_list_to_bed6                                                                                                 , CONVERTER_picard_interval_list_to_bed6                                                                                                 
+ 2021-5     ,1.28279E+11,getalleleseq,0.0.1                                                                     
+ 2021-5     ,1.27271E+11,poretools_nucdist,0.6.1a1.0                                                         
+ 2021-5     ,1.27008E+11,samtools_view,1.9
+ 2021-5     ,1.26908E+11,bcftools_plugin_setgt,1.1
+ 2021-5     ,1.20144E+11,cummerbund_to_cuffdiff,1.0.1                                                
+ 2021-5     ,1.1932E+11,poretools_winner,0.6.1a1.0                                                           
+ 2021-5     ,1.16224E+11,blastxml_to_gapped_gff3,1.1
+ 2021-5     ,1.15435E+11,vsearch_alignment,2.8.3.0                                                                     
+ 2021-5     ,1.14972E+11,microsatpurity,1.0.0                                                       
+ 2021-5     ,1.14871E+11, Condense characters1                                                                                                                   , Condense characters1                                                                                                                   
+ 2021-5     ,1.12646E+11,bedtools_makewindowsbed,2.29.2                                                               
+ 2021-5     ,1.12268E+11,bedtools_reldistbed,2.29.2                                                                   
+ 2021-5     ,1.10223E+11,cufflinks,0.0.6                                                                         
+ 2021-5     ,1.08391E+11,ks_distribution,1.0.3.0                                                 
+ 2021-5     ,1.08219E+11,gd_pathway_image,1.0.0                                                        
+ 2021-5     ,1.06986E+11,bed_to_protein_map,0.2.0                                                       
+ 2021-5     ,1.06349E+11,snpEff_download,4.3+T.galaxy1                                                                  
+ 2021-5     ,1.04117E+11,tp_sort_header_tool,1.1.0                                                       
+ 2021-5     ,1.02925E+11,Extract genomic DNA 1,3.0.3                                                       
+ 2021-5     ,1.01946E+11,mothur_get_otulist,1.39.5.0                                                        
+ 2021-5     ,99254799248,bcftools_plugin_impute_info,1.1
+ 2021-5     ,94998204560,sailfish,0.7.6.0                                                                       
+ 2021-5     ,92731947950, hgv_pass                                                                                                                               , hgv_pass                                                                                                                               
+ 2021-5     ,91407275018,datamash_ops,1.0.6                                                                       
+ 2021-5     ,90761689150,mothur_degap_seqs,1.39.5.0                                                          
+ 2021-5     ,90665805120,EMBOSS: seqret84,5.0.0                                                                   
+ 2021-5     ,90295106044,in_silico_complementation,1.0.0                       
+ 2021-5     ,90077746190,fastq_paired_end_interlacer,1.2.0.1                                   
+ 2021-5     ,89460006490,gd_population_structure,1.0.0                                                 
+ 2021-5     ,86833293134,EMBOSS: revseq82,5.0.0                                                                   
+ 2021-5     ,85280263310,mothur_cluster_classic,1.39.5.0                                                
+ 2021-5     ,82550745400,XY_Plot_1,1.0.1                                                                           
+ 2021-5     ,82459354890,mothur_cluster_fragments,1.39.5.0                                            
+ 2021-5     ,80897771870,poretools_events,0.6.1a1.1                                                           
+ 2021-5     ,80670380445,metagenomeseq_normalizaton,1.16.0-0.0.1                                   
+ 2021-5     ,77466454624,bcftools_plugin_mendelian,1.9+galaxy1                                       
+ 2021-5     ,74704807071,picard_CleanSam,1.126.0                                                                    
+ 2021-5     ,74005222437,cshl_fastx_nucleotides_distribution,1.0.0                          
+ 2021-5     ,72658028300, CONVERTER_biom1_to_biom2                                                                                                               , CONVERTER_biom1_to_biom2                                                                                                               
+ 2021-5     ,70205565108,EMBOSS: splitter92,5.0.0.1                                                               
+ 2021-5     ,69255434346,cufflinks,2.2.1.2                                                                       
+ 2021-5     ,68199803085,meme_psp_gen,5.0.5.0                                                                     
+ 2021-5     ,67842346023,EMBOSS: infoseq46,5.0.0                                                                  
+ 2021-5     ,67767317320,cshl_fastx_barcode_splitter,1.0.0                                          
+ 2021-5     ,67692967002,EMBOSS: prettyseq80,5.0.0.1                                                              
+ 2021-5     ,66320468466,meme_meme,4.11.1.0                                                                          
+ 2021-5     ,65205905166,bcftools_gtcheck,1.1
+ 2021-5     ,65018215790,mothur_cluster_split,1.36.1.0                                                    
+ 2021-5     ,64880474004,rgPicardMarkDups,1.56.0                                                                    
+ 2021-5     ,63887871289,EMBOSS: tranalign100,5.0.0                                                               
+ 2021-5     ,63814998573,bedtools_flankbed,2.27.0.0                                                                   
+ 2021-5     ,63710080677,circos,0.69.8+galaxy4                                                                          
+ 2021-5     ,63611193256,seqtk_listhet,1.3.1                                                                             
+ 2021-5     ,61583102420,gmx_sim,2020.2+galaxy0                                                                   
+ 2021-5     ,59974663312,bcftools_convert_from_vcf,1.1
+ 2021-5     ,59296068530,ncbi_makeblastdb,0.3.3                                                            
+ 2021-5     ,58487528140,mothur_chimera_slayer,1.39.5.0                                                  
+ 2021-5     ,52910066550,gmaj_1,2.0.1                                                                                 
+ 2021-5     ,52873280430,vsearch_masking,2.8.3.0                                                                       
+ 2021-5     ,50919598224,bamFilter,0.0.2                                                                   
+ 2021-5     ,50459748160,galaxy_intermine_exchange,0.0.1                                             
+ 2021-5     ,50094322232,mothur_summary_shared,1.39.5.0                                                  
+ 2021-5     ,49355780672,tradis_gene_insert_sites,1.4.5+galaxy2                                                      
+ 2021-5     ,48088657224,mothur_homova,1.39.5.0                                                                  
+ 2021-5     ,47778498680,EMBOSS: antigenic1,5.0.0.1                                                               
+ 2021-5     ,46360278171,tp_sort_header_tool,1.0.0                                                       
+ 2021-5     ,45704049075,lastz_d_wrapper,1.3.2                                                                       
+ 2021-5     ,43767979000,freebayes,freebayes-0.9.14                                                              
+ 2021-5     ,40600686128,idba_hybrid,1.1.3                                                                         
+ 2021-5     ,39560001131,EMBOSS: pepinfo69,5.0.0.1                                                                
+ 2021-5     ,39437056127,spring_map,0.2+galaxy0                                                                 
+ 2021-5     ,39400969698,mothur_sort_seqs,1.39.5.0                                                            
+ 2021-5     ,39053612538,EMBOSS: charge8,5.0.0.1                                                                  
+ 2021-5     ,38673276579,mothur_make_lefse,1.36.1.0                                                          
+ 2021-5     ,38378869571,EMBOSS: coderet13,5.0.0                                                                  
+ 2021-5     ,31557315944,bedtools_intersectbed,2.24.0                                                                 
+ 2021-5     ,31512723109,EMBOSS: preg78,5.0.0+galaxy1                                                             
+ 2021-5     ,31011626754,gd_extract_primers,1.0.0                                                      
+ 2021-5     ,30382795440,EMBOSS: helixturnhelix43,5.0.0.1                                                         
+ 2021-5     ,29677716762,pep_pointer,0.1.3                                                                     
+ 2021-5     ,29457909498,mothur_make_shared,1.36.1.0                                                        
+ 2021-5     ,29378069262,ivar_filtervariants,1.2.2+galaxy0                                                 
