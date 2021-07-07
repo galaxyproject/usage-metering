@@ -17,11 +17,11 @@ on cpu_usage.job_id = runtime_seconds.job_id)
 select job.tool_id,concat(cast(EXTRACT(year FROM cast(job.create_time as date)) as varchar(4)),'-',cast(EXTRACT(month FROM cast(job.create_time as date)) as varchar(2))) as month_year,SUM(runtime_cpu_combined.cpu_usage * runtime_cpu_combined.runtime_seconds) as total_cpu_time
 from job join runtime_cpu_combined on job.id = runtime_cpu_combined.job_id
 group by month_year,job.tool_id
-order by total_cpu_time desc;
+order by month_year asc,total_cpu_time desc;
 
 
 
-/* Average amount of cpu time per tool per month. It’d be great to visualize this as a bar graph with error bars indicating 1 standard deviation of runtime.
+/* Average amount of cpu time per tool per month. Itï¿½d be great to visualize this as a bar graph with error bars indicating 1 standard deviation of runtime.
 Total amount of memory allocated per tool per month
 
 Average amount of memory allocated per tool per month
