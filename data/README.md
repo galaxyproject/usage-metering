@@ -88,6 +88,30 @@ Sequences flagged as poor quality|0
 Sequence length|250
 %GC|40
 
+### Dataset 7 - Sample SRS9540951 (Paired)
+
+* **Source:** https://www.ncbi.nlm.nih.gov/biosample/SAMN20231028
+* **SRR Accession:** SRR15195475
+* **Retrieved from:** NCBI SRA
+
+Library Info | -
+-------------|--------------
+Name | CBCP00271-T1
+Instrument | Illumina HiSeq 4000
+Strategy | WXS
+Source | GENOMIC
+Selection | RANDOM
+Layout | PAIRED
+
+FastQC Summary | -
+-----------|-----------
+Filename | SRR15195475 _fastq-dump_.gz
+File type | Conventional base calls
+Encoding | Sanger / Illumina 1.9
+Total Sequences | 103494378
+Sequences flagged as poor quality | 0
+Sequence length | 30-150
+%GC | 55
 
 ## RNA Datasets
 
@@ -135,3 +159,19 @@ Strategy | AMPLICON
 Source | TRANSCRIPTOMIC
 Selection | PCR
 Layout | PAIRED
+
+### Dataset 4 - Sample SRS9551191
+
+* **Source:** https://www.ncbi.nlm.nih.gov/sra/SRX11513020[accn]
+* **SRR Accession:** SRR15206520
+* **Retrieved from:** NCBI SRA
+
+Library Info | -
+-------------|--------------
+Name | DE84NGSUKBD107873
+Instrument | Illumina HiSeq 2500
+Strategy | RNA-Seq
+Source | TRANSCRIPTOMIC
+Selection | RANDOM PCR
+Layout | SINGLE
+
