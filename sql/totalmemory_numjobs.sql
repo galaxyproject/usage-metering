@@ -4,8 +4,8 @@ with totalmem as (
     where metric_name = 'memtotal'
 )
 
-select to_char(job.create_time,'YYYY-MM') as date,tool_id,sum(metric_value) as totalMemory,
+select tool_id,sum(metric_value) as totalMemory,
 COUNT(distinct id) as num_jobs
 from job join totalmem on job.id = totalmem.job_id
-group by date,tool_id
-order by date asc, totalMemory desc; 
+group by tool_id
+order by totalMemory desc,num_jobs desc; 
