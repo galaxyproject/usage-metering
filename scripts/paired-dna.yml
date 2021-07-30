@@ -1,0 +1,5 @@
+workflow_id: b94314cb9cb46380
+inputs:
+  - name: FASTQ Dataset
+    dataset_id: e49d4a2f705b9571
+output_history_name: Example Paired DNA Test
