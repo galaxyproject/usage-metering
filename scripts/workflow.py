@@ -15,7 +15,7 @@ import os
 
 from pprint import pprint
 
-VERSION='1.0.0'
+VERSION='1.1.0-snapshot'
 
 BOLD = '\033[1m'
 CLEAR = '\033[0m'
@@ -30,6 +30,16 @@ API_KEY = None
 
 # The directory where the workflow invocation data will be saved.
 INVOCATIONS_DIR = 'invocations'
+
+class Keys:
+    NAME = 'name'
+    RUNS = 'runs'
+    INPUTS = 'inputs'
+    REFERENCE_DATA = 'reference_data'
+    WORKFLOW_ID = 'workflow_id'
+    DATASET_ID = 'dataset_id'
+    HISTORY_BASE_NAME = 'output_history_base_name'
+    HISTORY_NAME = 'history_name'
 
 
 def workflows():
@@ -81,33 +91,51 @@ def run(args):
     with open(name, 'r') as stream:
         try:
             config = yaml.safe_load(stream)
+            print(f"Loaded {name}")
         except yaml.YAMLError as exc:
             print(exc)
 
     gi = bioblend.galaxy.GalaxyInstance(url=GALAXY_SERVER, key=API_KEY)
     print(f"Connected to {GALAXY_SERVER}")
 
-    workflow = config['workflow_id']
-    inputs = {}
-    for spec in config['inputs']:
-        input = gi.workflows.get_workflow_inputs(workflow, spec['name'])
-        if input is None or len(input) == 0:
-            print('ERROR: Invalid input specification')
-            sys.exit(1)
-        inputs[input[0]] = {'id': spec['dataset_id'], 'src': 'hda'}
+    print(f"Found {len(config)} workflow definitions")
+    for workflow in config:
+        wfid = workflow['workflow_id']
+        inputs = {}
+        history_base_name = wfid
+        if Keys.HISTORY_BASE_NAME in workflow:
+            history_base_name = workflow[Keys.HISTORY_BASE_NAME]
 
-    if 'output_history_name' in config:
-        print(f"Saving output to a history named {config['output_history_name']}")
-        invocation = gi.workflows.invoke_workflow(workflow, inputs=inputs, history_name=config['output_history_name'])
-    else:
-        invocation = gi.workflows.invoke_workflow(workflow, inputs=inputs)
+        if Keys.REFERENCE_DATA in workflow:
+            for spec in workflow[Keys.REFERENCE_DATA]:
+                input = gi.workflows.get_workflow_inputs(wfid, spec[Keys.NAME])
+                if input is None or len(input) == 0:
+                    print(f'ERROR: Invalid input specification for {spec[Keys.NAME]}')
+                    sys.exit(1)
+                inputs[input[0]] = { 'id': spec[Keys.DATASET_ID], 'src':'hda'}
 
-    pprint(invocation)
+        count = 0
+        for run in workflow[Keys.RUNS]:
+            count += 1
+            if Keys.HISTORY_NAME in run:
+                output_history_name = f"{history_base_name} {run[Keys.HISTORY_NAME]}"
+            else:
+                output_history_name = f"{history_base_name} run {count}"
+            for spec in run[Keys.INPUTS]:
+                input = gi.workflows.get_workflow_inputs(wfid, spec[Keys.NAME])
+                if input is None or len(input) == 0:
+                    print(f'ERROR: Invalid input specification for {spec[Keys.NAME]}')
+                    sys.exit(1)
 
-    output_path = os.path.join(INVOCATIONS_DIR, invocation['id'] + '.json')
-    with open(output_path, 'w') as f:
-        json.dump(invocation, f, indent=4)
-        print(f"Wrote {output_path}")
+                inputs[input[0]] = {'id': spec[Keys.DATASET_ID], 'src' : 'hda' }
+
+            invocation = gi.workflows.invoke_workflow(wfid, inputs=inputs, history_name=output_history_name)
+            pprint(invocation)
+            # output_path = os.path.join(INVOCATIONS_DIR, invocation['id'] + '.json')
+            output_path = os.path.join(INVOCATIONS_DIR, output_history_name.replace(' ', '_') + '.json')
+            with open(output_path, 'w') as f:
+                json.dump(invocation, f, indent=4)
+                print(f"Wrote {output_path}")
 
 
 def histories(args):
