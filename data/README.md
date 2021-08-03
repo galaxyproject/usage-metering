@@ -9,6 +9,7 @@
 
 FastQC Summary | -
 -----------|-----------
+File size|2.6 GB
 File type|Conventional base calls
 Encoding|Sanger / Illumina 1.9
 Total Sequences|10640477
@@ -23,6 +24,7 @@ Sequence length|108
 
 FastQC Summary | -
 -----------|-----------
+File size|5.1 GB
 File type|Conventional base calls
 Encoding|Sanger / Illumina 1.9
 Total Sequences|20487991
@@ -37,6 +39,7 @@ Sequence length|108
 
 FastQC Summary | -
 -----------|-----------
+File size|505.1 MB
 File type|Conventional base calls
 Encoding|Sanger / Illumina 1.9
 Total Sequences|2263238
@@ -51,6 +54,7 @@ Sequence length|101
 
 FastQC Summary | -
 -----------|-----------
+File size|1.1 GB
 File type|Conventional base calls
 Encoding|Sanger / Illumina 1.9
 Total Sequences|5422883
@@ -65,6 +69,7 @@ Sequence length|76
 
 FastQC Summary | -
 -----------|-----------
+File size|5.3 GB
 File type|Conventional base calls
 Encoding|Sanger / Illumina 1.9
 Total Sequences|24026884
@@ -81,6 +86,7 @@ Sequence length|90
 
 FastQC Summary | -
 -----------|-----------
+File size|2.1 GB
 File type|Conventional base calls
 Encoding|Sanger / Illumina 1.9
 Total Sequences|4000000
@@ -94,6 +100,17 @@ Sequence length|250
 * **SRR Accession:** SRR15195475
 * **Retrieved from:** NCBI SRA
 
+FastQC Summary | -
+-----------|-----------
+File size | 3.8 GB
+Filename | SRR15195475 _fastq-dump_.gz
+File type | Conventional base calls
+Encoding | Sanger / Illumina 1.9
+Total Sequences | 103494378
+Sequences flagged as poor quality | 0
+Sequence length | 30-150
+%GC | 55
+
 Library Info | -
 -------------|--------------
 Name | CBCP00271-T1
@@ -102,16 +119,6 @@ Strategy | WXS
 Source | GENOMIC
 Selection | RANDOM
 Layout | PAIRED
-
-FastQC Summary | -
------------|-----------
-Filename | SRR15195475 _fastq-dump_.gz
-File type | Conventional base calls
-Encoding | Sanger / Illumina 1.9
-Total Sequences | 103494378
-Sequences flagged as poor quality | 0
-Sequence length | 30-150
-%GC | 55
 
 ## RNA Datasets
 
@@ -124,6 +131,7 @@ Sequence length | 30-150
 Library Info | -
 -------------|--------------
 Name | GTAC_7d
+File Size | 641.2 MB (compressed)
 Instrument | Illumina MiSeq
 Strategy | AMPLICON
 Source | TRANSCRIPTOMIC
@@ -139,6 +147,7 @@ Layout | PAIRED
 Library Info | -
 -------------|--------------
 Name | GTAC_2c
+File Size | 329.8 MB (compressed)
 Instrument | Illumina MiSeq
 Strategy | AMPLICON
 Source | TRANSCRIPTOMIC
@@ -154,6 +163,7 @@ Layout | PAIRED
 Library Info | -
 -------------|--------------
 Name | GTAC_6d
+File Size | 380.2 MB (compressed)
 Instrument | Illumina MiSeq
 Strategy | AMPLICON
 Source | TRANSCRIPTOMIC
@@ -169,6 +179,7 @@ Layout | PAIRED
 Library Info | -
 -------------|--------------
 Name | DE84NGSUKBD107873
+File Size | 297.7 MB (compressed)
 Instrument | Illumina HiSeq 2500
 Strategy | RNA-Seq
 Source | TRANSCRIPTOMIC
