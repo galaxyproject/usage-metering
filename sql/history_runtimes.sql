@@ -1,12 +1,13 @@
--- Calculate runtime of each job in a history, also reporting allocated amount of memory and CPUs.
-
+-- Calculate runtime of each job in a history, reporting tool id, real runtime,
+-- system runtime, allocated amount of memory, and number of CPUs.
 SELECT
     j.history_id,
     j.create_time,
     j.tool_id,
-    job_memory_gb,
-    cpu_count,
-    cpu_count * runtime_seconds as total_runtime_sec
+    ROUND(job_memory_gb, 1) AS job_memory_gb,
+    cpu_count :: int,
+    (cpu_count * runtime_seconds) :: int AS system_runtime_sec,
+    runtime_seconds :: int AS real_runtime_sec
 FROM
     (
         SELECT
@@ -15,7 +16,6 @@ FROM
             history_id,
             create_time,
             tool_id,
-            state,
             COALESCE(
                 (
                     SELECT
@@ -55,5 +55,16 @@ FROM
         FROM
             job
         WHERE
-            history_id = 20
-    ) AS j;
+            job.id IN (
+                SELECT
+                    job_id
+                FROM
+                    dataset
+                    INNER JOIN history_dataset_association ON history_dataset_association.dataset_id = dataset.id
+                WHERE
+                    history_dataset_association.history_id = 20
+                    AND history_dataset_association.deleted = false
+            )
+    ) AS j
+ORDER BY
+    j.create_time DESC;
