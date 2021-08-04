@@ -7,6 +7,12 @@ if [[ -z $KUBECONFIG && ! -e $HOME/.kube/config ]] ; then
 	exit 1
 fi
 
+OPTS=
+if [[ $1 = -c || $1 = --csv ]] ; then
+  OPTS='--csv'
+  shift
+fi
+
 if [[ -z $1 ]] ; then
 	echo "No SQL query provided."
 	exit 1
@@ -22,4 +28,4 @@ fi
 
 # But this will be faster if we know the pod hasn't been restarted
 POD=galaxy-galaxy-1626291120-galaxy-postgres-0
-kubectl exec -in initial $POD -- sudo -u postgres psql -d galaxy < $1
+kubectl exec -in initial $POD -- sudo -u postgres psql -d galaxy $OPTS < $1
