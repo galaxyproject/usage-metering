@@ -1,0 +1,32 @@
+# DO NOT RUN
+# This is a non-working example used for discussion purposes only.
+- workflow_id: b94314cb9cb46380
+  comments: DNA testing
+  output_history_base_name: DNA Testing 10 CPU
+  reference_data:
+    - name: FASTQ Reference
+      dataset_id: badfood
+    - name: GTF
+      dataset_id: more
+  runs:
+    - history_name: run one
+      inputs:
+      - name: input one
+        dataset_id: 1f04e612d8649780
+      - name: input two
+        dataset_id: 1f04e612d8649780
+    - history_name: run two
+      inputs:
+      - name: FASTQ Dataset
+        dataset_id: 1f04e612d8649780
+      - name: GTF index
+        dataset_id: 1f04e612d8649780
+- workflow_id: b94314cb9cb46380
+  comments: RNA testing
+  output_history_base_name: RNA Testing 10 CPU
+  runs:
+    - hostory_name: FASTQ Dataset
+      inputs:
+      - name: FASTQ Dataset
+        dataset_ids: 1f04e612d8649780
+
