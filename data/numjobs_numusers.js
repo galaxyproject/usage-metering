@@ -40,7 +40,7 @@ d3.csv("numjobs_numusers.csv", function(data) {
         return "tool_name_version" + ": " + d.tool_name_version + "<br>num_jobs" + ": " + d.num_jobs +  "<br>num_users" + ": " + d.num_users;
       });
 
-  var zoomBeh = d3.behavior.zoom()
+  var zoomBeh = d3.zoom()
       .x(x)
       .y(y)
       .scaleExtent([0,200])
