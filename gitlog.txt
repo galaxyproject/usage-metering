@@ -1,0 +1,311 @@
+commit 92dff5d1ad98c203cbc2fbff679a5303b079d2f4
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Aug 12 16:13:26 2021 -0500
+
+    added gitlog.txt
+
+commit 7fd9fd34b8635a69b09729ac43a1432934b8bf1f
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Aug 12 16:12:12 2021 -0500
+
+    improved file organizations
+
+commit 40848d2fc5e5bf73a9800a45aab234950244188e
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Aug 12 16:06:40 2021 -0500
+
+    simplified code for inverting file view
+
+commit 793fd25b2ae81d61a9b819435936a56d34705b4c
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Aug 12 13:07:26 2021 -0500
+
+    simplified looping in Python script
+
+commit b8987a7128d3477b720c488ac14cb4c3255315a6
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Tue Aug 10 19:09:53 2021 -0500
+
+    updated scatterplot zoomable for total_cpu_time_numjobs
+
+commit 67cdc9c0ba38ef1cfc272c8e06c565a934d863da
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Tue Aug 10 18:02:34 2021 -0500
+
+    updated JS code for zoomable scatterplot for numjobs_numusers
+
+commit 80f8e8e881bc5d8076c3e1482e25b41c5ce52267
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Tue Aug 10 11:19:50 2021 -0500
+
+    included .behavior to zoom
+
+commit 7f521d452db19dbdebb80c8ca45cdc1cb63f32eb
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Mon Aug 9 10:52:56 2021 -0500
+
+    numjobs_all.csv reverted
+
+commit b22b6838c2b6d328993d4260cbaace74b79e68b7
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Sun Aug 8 12:10:13 2021 -0500
+
+    added zoomable scatterplots for two query results
+
+commit f91c87245484a455677417eec7c18bb148163fc9
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Aug 5 10:09:25 2021 -0500
+
+    modified script
+
+commit 34b3b173ad0459ccbdc66a5cf934f41559e5b055
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Wed Aug 4 16:32:47 2021 -0500
+
+    added inverted views
+
+commit 5d92cd5a43ba6ef431c22315f53a861e297394c3
+Author: Bridget Carr <59096545+aTrashPanda@users.noreply.github.com>
+Date:   Tue Aug 3 16:50:29 2021 -0700
+
+    Update README.md with file sizes
+
+commit 48cf8447a95ca5f6f71ad91cba2b8bbe0c44a823
+Author: Enis Afgan <afgane@gmail.com>
+Date:   Tue Aug 3 17:09:49 2021 -0400
+
+    Update runtime query to show only non-deleted jobs
+
+commit 8926708cbfe9af3c7f8a81bbe42476ed905c131b
+Author: Enis Afgan <afgane@gmail.com>
+Date:   Fri Jul 30 16:43:08 2021 -0400
+
+    Add query for calculating job runtimes in a history
+
+commit 466723a2c07f4ab02c1010120af68b2419d9e30a
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Tue Jul 27 17:16:09 2021 -0500
+
+    removed old SQL files
+
+commit 1d2d63f9b77cd55eafca625022c673d1072b2bb8
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Tue Jul 27 17:14:37 2021 -0500
+
+    renamed sql files
+
+commit 9e1e519f0f038af9e3ecc4b12c191062d7e55a51
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Tue Jul 27 17:12:28 2021 -0500
+
+    removed an unnecessary file
+
+commit 498c83a127e93c69bf5bae26ac7a44491711fa5d
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Tue Jul 27 17:11:38 2021 -0500
+
+    updated some query to not take into account month
+
+commit 3e3f09196e1594d48fc9b1ec0dbdbc21c70d5437
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Mon Jul 26 11:59:01 2021 -0500
+
+    added additional query
+
+commit 4f2bd7c93a10543b0877210d2502e0c32c39b008
+Author: Bridget Carr <59096545+aTrashPanda@users.noreply.github.com>
+Date:   Sat Jul 24 16:13:20 2021 -0700
+
+    Update README.md with paired DNA and single RNA
+
+commit fa560d3c383be608c67317bad5d7fd8b39838abc
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Fri Jul 23 10:59:27 2021 -0500
+
+    finished another query on total_cpu_time vs numjobs
+
+commit 0334de4caba2658fb7e865f811108582ae3efb94
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Fri Jul 23 10:59:08 2021 -0500
+
+    finished another query on total_cpu_time vs numjobs
+
+commit 67247add0741e2c396ba87eba4feb60254e0fe29
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Fri Jul 23 10:30:30 2021 -0500
+
+    simplified numjobs_numusers SQL query
+
+commit ea60d99f9c3365cbe694a06846682a83ac7c19be
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Jul 22 17:10:16 2021 -0500
+
+    returned result combining numjobs and numusers
+
+commit 3e45bad3be4c9b35c358cbfddde9f0abbef8285d
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Jul 22 16:59:40 2021 -0500
+
+    removed unnecessary files
+
+commit 4ba16e06396260bab8d53c2e4bf6141f10965d60
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Jul 22 16:37:01 2021 -0500
+
+    new SQL
+
+commit 2f82ca0abdbe6a6aa958f8ae34d985e0b0db9964
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Fri Jul 16 16:08:51 2021 -0500
+
+    updated query results
+
+commit 92291f21f4677a373eef2cd56a0dbc7eeb981b13
+Author: Bridget Carr <59096545+aTrashPanda@users.noreply.github.com>
+Date:   Thu Jul 22 11:18:27 2021 -0700
+
+    Update README.md with RNA datasets
+
+commit 588d7109072a151261344429a298422429f1c5cb
+Author: Dannon Baker <dannon.baker@gmail.com>
+Date:   Wed Jul 21 19:07:07 2021 -0400
+
+    Move processed_data back to the simpler 'data' dir name
+
+commit c06d9ad570bb52922b3fb249ea35c95c19a87e71
+Author: Bridget Carr <59096545+aTrashPanda@users.noreply.github.com>
+Date:   Wed Jul 21 11:38:53 2021 -0700
+
+    Re-add README.md with benchmarking datasets
+
+commit f59d1edc029b61fde6ad99cc74b1860bb9eb65ef
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Mon Jul 19 14:08:12 2021 -0500
+
+    removed unprocessed query results
+
+commit 74e8ce6de08ea905cbd95f7cb7c0d28ca5e1f6e0
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Fri Jul 16 16:14:01 2021 -0500
+
+    visualization of processed query results
+
+commit 59a842b8dbe9bbe9f4cc497e2c257f3e5b6fe4b0
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Fri Jul 16 16:10:23 2021 -0500
+
+    updated query results
+
+commit df5b6c31bfbfe53394247dfcd6cccf5a5ae5d869
+Author: Bridget Carr <59096545+aTrashPanda@users.noreply.github.com>
+Date:   Wed Jul 14 20:45:45 2021 -0700
+
+    Fix format and rename FASTQC.md to README.md
+
+commit 55555bce93eec654e19d83c98481921ce22452de
+Author: Bridget Carr <59096545+aTrashPanda@users.noreply.github.com>
+Date:   Wed Jul 14 11:16:25 2021 -0700
+
+    Summarized FastQC reports for sequence datasets
+
+commit 243403680aeaddf9a1a99f0a5f4e3860ce0b0d91
+Merge: 5666524 eb1f2a2
+Author: Dannon <dannon.baker@gmail.com>
+Date:   Wed Jul 14 10:25:49 2021 -0400
+
+    Merge pull request #2 from galaxyproject/data-folder
+    
+    Move data to data folder
+
+commit eb1f2a2af8d4cf90b5c875e807e72298d379f811
+Author: Dannon Baker <dannon.baker@gmail.com>
+Date:   Tue Jul 13 16:22:09 2021 -0400
+
+    Move data to data folder
+
+commit 56665241c2107fd77db43c6e63af4cd7129bac3f
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Fri Jul 9 09:38:26 2021 -0500
+
+    improved result file formatting
+
+commit 3c1ad2ee479ec6d3938928f3d1f7822fe4b9e08c
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Jul 8 10:47:54 2021 -0500
+
+    minor changes
+
+commit 998df8fb4b3284b30f628effc4ec5be1e3542ce7
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Jul 8 10:46:00 2021 -0500
+
+    fixed formatiing of ..csv files
+
+commit 1f36d84606217fb7ebb0d12da6d4dccd7d243559
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Thu Jul 8 10:28:06 2021 -0500
+
+    modified SQL queries
+
+commit c3c08af04101d2866474cb0037d24b5d3fa3aa2f
+Merge: 21cf02e 071ae15
+Author: Peiyuan Xu <67803234+pxu23@users.noreply.github.com>
+Date:   Wed Jul 7 19:26:19 2021 -0500
+
+    Merge pull request #1 from galaxyproject/date_formatting
+    
+    Simplify date formatting
+
+commit 071ae15aee2fbbf5e9bb81a776f1f24d1b47ced3
+Author: Enis Afgan <afgane@gmail.com>
+Date:   Wed Jul 7 19:57:46 2021 -0400
+
+    Simplify date formatting
+
+commit 21cf02e61aa54d92000784851ad52e6fa266bb38
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Wed Jul 7 17:43:54 2021 -0500
+
+    processed results of all queries except query3_May2021
+
+commit d46fbba60bff6b82234f3236d780011ea4690520
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Wed Jul 7 17:42:19 2021 -0500
+
+    added final data processing Python code
+
+commit 8bffc6f77885aabde2859774ae163b40cc8eb109
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Wed Jul 7 12:36:13 2021 -0500
+
+    order by month_year asc
+
+commit 744286e19dad025bb82602ff1ca1a2b7654c2874
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Wed Jun 30 10:04:40 2021 -0500
+
+    added tables.sql
+
+commit b1baef53eacd8d79065a85df65e13ccee54c651e
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Wed Jun 30 10:03:57 2021 -0500
+
+    improved SQL queries
+
+commit 32a86f9c0beb63b7188b127b685d34cb021aaf90
+Author: Peiyuan Xu <peiyuanxu303@gmail.com>
+Date:   Sun Jun 27 16:15:29 2021 -0500
+
+    wrote five queries
+
+commit 5eb7fe95ce6c872ab298ca8e9eaa492216a20222
+Author: Enis Afgan <afgane@gmail.com>
+Date:   Wed Jun 23 17:39:55 2021 -0400
+
+    Add setup instructions
+
+commit c9840a1800175a2d900b1d690dfb7c708693187d
+Author: Enis Afgan <afgane@gmail.com>
+Date:   Fri Jun 18 08:21:46 2021 -0400
+
+    Initial commit
