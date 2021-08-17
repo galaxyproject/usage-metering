@@ -1,4 +1,4 @@
-,month_year,numusers,tool_name_version
+,month_year,num_users,tool_name_version
 1, 2020-01 ,3731.0,upload1/upload1
 2, 2020-01 ,1515.0,fastqc/0.72+galaxy1
 3, 2020-01 ,827.0,__SET_METADATA__/__SET_METADATA__

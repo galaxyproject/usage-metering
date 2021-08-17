@@ -1,4 +1,4 @@
-,month_year,numusers,tool_name_version
+,month_year,num_users,tool_name_version
 1, 2021-05 ,5190.0,upload1/upload1
 2, 2021-05 ,2699.0,fastqc/0.72+galaxy1
 3, 2021-05 ,1163.0,trimmomatic/0.38.0
