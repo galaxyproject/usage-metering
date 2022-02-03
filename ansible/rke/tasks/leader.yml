@@ -1,0 +1,76 @@
+---
+- name: Ensure the /etc/rancher/rke2 director exists.
+  become: yes
+  file:
+    path: /etc/rancher/rke2
+    state: directory
+    recurse: yes
+- name: Generate the config
+  vars:
+    node_token: unused
+    server: unused
+    leader: true
+  template:
+    src: templates/rke2_server.yml.j2
+    dest: /etc/rancher/rke2/config.yaml
+    mode: 0600
+- name: Install the rke2 binary
+  include_tasks: install-rke2.yml
+  vars:
+    type: server
+- name: Wait for the token to be created
+  wait_for:
+    path: /var/lib/rancher/rke2/server/node-token
+    state: present
+
+- name: Check if kubectl exists in /usr/local/bin
+  stat:
+    path: /usr/local/bin/kubectl
+  register: kubectl_test
+
+- name: Link kubectl into /usr/local/bin
+  become: yes
+  file:
+    src: /var/lib/rancher/rke2/bin/kubectl
+    path: /usr/local/bin/kubectl
+    state: link
+  when: not kubectl_test.stat.exists
+
+- name: Create the .kube directory for root and ubuntu users
+  become: yes
+  file:
+    path: "{{ item.path }}"
+    owner: "{{ item.owner }}"
+    state: directory
+  loop:
+    - path: /root/.kube
+      owner: root
+    - path: /home/ubuntu/.kube
+      owner: ubuntu
+
+- name: Copy kubeconfig files for root and ubuntu users
+  become: yes
+  copy:
+    src: "{{ kubeconfig }}"
+    dest: "{{ item.path }}/config"
+    owner: "{{ item.owner }}"
+    mode: 0600
+    remote_src: yes
+  loop:
+    - path: /root/.kube
+      owner: root
+    - path: /home/ubuntu/.kube
+      owner: ubuntu
+
+- name: Patch the server address in the original kubeconfig
+  become: yes
+  lineinfile:
+    path: "{{ kubeconfig }}"
+    regexp: 'server: https://127\.0\.0\.1:6443'
+    line: "    server: https://{{ ansible_ssh_host }}:6443"
+
+- name: Download the kubeconfig
+  fetch:
+    src: "{{ kubeconfig }}"
+    dest: outputs/{{ ansible_hostname }}.kube.config
+    flat: yes

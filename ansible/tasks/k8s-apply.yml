@@ -1,0 +1,23 @@
+- debug:
+    msg: Downloading and applying {{ url }}
+- name: Create a temporary file
+  tempfile:
+    state: file
+    suffix: yml
+  register: temp_file
+
+- name: Download the URL
+  get_url:
+    url: "{{ url }}"
+    dest: "{{ temp_file.path }}"
+
+- name: kubectl apply it
+  k8s:
+    src: "{{ temp_file.path }}"
+    state: present
+
+- name: Clean up the temp file
+  file:
+    path: "{{ temp_file.path }}"
+    state: absent
+
