@@ -1,0 +1,7 @@
+history_id,create_time,tool_id,job_memory_gb,cpu_count,total_runtime_sec
+20,2021-08-12 22:41:40.563219,toolshed.g2.bx.psu.edu/repos/bgruening/salmon/salmon/1.5.1+galaxy0,0.00000000000000000000,1,1
+20,2021-08-12 22:41:40.423673,toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0,0.00000000000000000000,1,1
+20,2021-08-12 22:41:40.613855,toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/2.1.1,0.00000000000000000000,1,1
+20,2021-08-12 22:41:40.492723,toolshed.g2.bx.psu.edu/repos/iuc/kallisto_quant/kallisto_quant/0.46.2+galaxy0,0.00000000000000000000,1,1
+20,2021-08-12 22:41:40.304246,toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_deinterlacer/fastq_paired_end_deinterlacer/1.1.5,0.00000000000000000000,1,1
+20,2021-08-12 22:41:40.366969,toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1,0.00000000000000000000,1,1

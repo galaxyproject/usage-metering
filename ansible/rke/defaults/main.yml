@@ -1,0 +1,5 @@
+#rke_version: "v1.20.4+rke2r1"
+rke_version: "v1.19.9+rke2r1"
+rke_container_image: "rancher/rke2-runtime:v1.20.4-rke2r1"
+token: /var/lib/rancher/rke2/server/node-token
+kubeconfig: /etc/rancher/rke2/rke2.yaml

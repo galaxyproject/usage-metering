@@ -1,0 +1,10 @@
+configs:
+  galaxy.yml:
+    galaxy:
+      job_metrics_config_file: job_metrics_conf.yml
+  job_metrics_conf.yml: 
+    - type: core
+    - type: cgroup
+    - type: cpuinfo
+    - type: meminfo
+    - type: uname

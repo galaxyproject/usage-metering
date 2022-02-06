@@ -1,0 +1,8 @@
+- output_history_base_name: DNA Test Run
+  runs:
+  - history_name: HG00599
+    inputs:
+    - dataset_id: SRR592109_2.fastq.gz
+      name: FASTQ Dataset
+  workflow_id: Benchmarking DNA Cloud Costs
+

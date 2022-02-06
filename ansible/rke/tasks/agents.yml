@@ -1,0 +1,16 @@
+---
+- name: Ensure the RKE2 config directory exists
+  file:
+    path: /etc/rancher/rke2
+    state: directory
+- name: Generate the config
+  vars:
+    node_token: "{{ hostvars[groups['controllers'][0]].join_token.content | b64decode }}"
+    server: "{{ hostvars[groups['controllers'][0]]['ansible_ssh_host'] }}"
+  template:
+    src: templates/rke2_agent.yml.j2
+    dest: /etc/rancher/rke2/config.yaml
+- name: Install the RKE2 binary
+  include_tasks: tasks/install-rke2.yml
+  vars:
+    type: agent

@@ -1,0 +1,5 @@
+export MACHINE_FAMILY=c2
+export MACHINE_CPU=30
+export IMAGE=galaxyproject/galaxy-min
+export TAG=dev
+export CLUSTER_NAME=ks-c2-230122

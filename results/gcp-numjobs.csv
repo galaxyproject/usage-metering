@@ -1,0 +1,12 @@
+date,tool_id,num_jobs
+2021-08,toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa_mem/0.7.17.1,56
+2021-08,toolshed.g2.bx.psu.edu/repos/iuc/stringtie/stringtie/2.1.1,55
+2021-08,toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0,54
+2021-08,toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.1.0+galaxy7,34
+2021-08,toolshed.g2.bx.psu.edu/repos/devteam/bwa/bwa/0.7.17.4,22
+2021-08,toolshed.g2.bx.psu.edu/repos/bgruening/salmon/salmon/1.3.0+galaxy1,22
+2021-08,toolshed.g2.bx.psu.edu/repos/iuc/kallisto_quant/kallisto_quant/0.46.0.4,22
+2021-08,CONVERTER_gz_to_uncompressed,18
+2021-08,toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_deinterlacer/fastq_paired_end_deinterlacer/1.1.5,13
+2021-08,__DATA_FETCH__,10
+2021-08,toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fastq_dump/2.11.0+galaxy0,9

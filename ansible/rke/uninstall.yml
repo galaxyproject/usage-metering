@@ -1,0 +1,12 @@
+---
+- hosts: nodes
+  become: yes
+  tasks:
+    - name: kill all
+      shell: /usr/local/bin/rke2-killall.sh
+    - name: uninstall
+      shell: /usr/local/bin/rke2-uninstall.sh
+    - name: Reboot
+      reboot:
+    - name: Reboot
+      reboot:

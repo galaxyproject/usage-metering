@@ -1,0 +1,44 @@
+image:
+  repository: galaxyproject/galaxy-min
+  tag: dev
+configs:
+  galaxy.yml:
+    galaxy:
+      admin_users: suderman@jhu.edu,bcarr15@jhu.edu,vwen2@jhu.edu,enis.afgan@gmail.com,admin@galaxyproject.org
+      job_metrics_config_file: job_metrics_conf.yml
+  job_metrics_conf.yml: 
+    - type: core
+    - type: cgroup
+    - type: cpuinfo
+    - type: meminfo
+    - type: uname
+  job_conf.yml:
+    runners:
+      k8s:
+        k8s_unschedulable_walltime_limit: 604800
+        k8s_walltime_limit: 604800
+cvmfs:
+  enabled: true
+  deploy: true
+initJob:
+  downloadToolConfs:
+    enabled: true
+persistence:
+  accessMode: ReadWriteMany
+  size: '50Gi'
+  storageClass: "nfs"
+postgresql:
+  deploy: true
+  galaxyDatabasePassword: galaxydbpassword
+  persistence:
+    storageClass: nfs
+ingress:
+  enabled: true
+  canary:
+    enabled: true
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/proxy-body-size: "10G"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+
+

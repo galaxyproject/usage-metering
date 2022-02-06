@@ -1,0 +1,5 @@
+export MACHINE_FAMILY=e2
+export MACHINE_CPU=32
+export IMAGE=galaxyproject/galaxy-min
+export TAG=dev
+export CLUSTER_NAME=ks-e2-230122
