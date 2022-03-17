@@ -120,6 +120,40 @@ Source | GENOMIC
 Selection | RANDOM
 Layout | PAIRED
 
+### Dataset 8 - Sample HG00408 (Paired-1)
+
+* **Source:** https://www.internationalgenome.org/data-portal/sample/HG00408
+* **Download link:** ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR398/002/ERR3988762/ERR3988762_1.fastq.gz
+* **Retrieved from:** ENA
+
+FastQC Summary | -
+-----------|-----------
+File size (compressed) | 12.1 GB
+Filename | ERR3988762_1.fastq.gz
+File type | Conventional base calls
+Encoding | Sanger / Illumina 1.9
+Total Sequences | 377951081
+Sequences flagged as poor quality | 0
+Sequence length | 150
+%GC | 41
+
+### Dataset 9 - Sample HG00408 (Paired-2)
+
+* **Source:** https://www.internationalgenome.org/data-portal/sample/HG00408
+* **Download link:** ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR398/002/ERR3988762/ERR3988762_2.fastq.gz
+* **Retrieved from:** ENA
+
+FastQC Summary | -
+-----------|-----------
+File size (compressed) | 12.5 GB
+Filename | ERR3988762_2.fastq.gz
+File type | Conventional base calls
+Encoding | Sanger / Illumina 1.9
+Total Sequences | 377951081
+Sequences flagged as poor quality | 0
+Sequence length | 150
+%GC | 41
+
 ## RNA Datasets
 
 ### Dataset 1 - Sample SRS9276533
@@ -185,4 +219,3 @@ Strategy | RNA-Seq
 Source | TRANSCRIPTOMIC
 Selection | RANDOM PCR
 Layout | SINGLE
-
