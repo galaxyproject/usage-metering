@@ -1,4 +1,4 @@
-Sample name,Dataset name,Size (GB),Sequences,Sequence length,%GC
+sample_name,dataset_name,size_GB,sequences,sequence_length,pct_gc
 HG00599,SRR592109_2.fastq.gz,0.5,2263238,101,40
 HG01167,SRR233167_2.fastq.gz,1.1,5422883,76,47
 GIAB003,D2_S1_L002_R1_002.fastq.gz,2.1,4000000,250,40
