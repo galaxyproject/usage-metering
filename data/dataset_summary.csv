@@ -1,10 +1,10 @@
-sample_name,dataset_name,size_GB,sequences,sequence_length,pct_gc
-HG00599,SRR592109_2.fastq.gz,0.5,2263238,101,40
-HG01167,SRR233167_2.fastq.gz,1.1,5422883,76,47
-GIAB003,D2_S1_L002_R1_002.fastq.gz,2.1,4000000,250,40
-HG00171,ERR013101_1.fastq.gz,2.6,10640477,108,40
-SRS9540951,SRR15195475,3.8,103494378,30-150,55
-HG00152,ERR015526_2.fastq.gz,5.1,20487991,108,48
-HG01028,ERR047678_1.fastq.gz,5.3,24026884,90,45
-HG00408,ERR3988762_1.fastq.gz,12.1,377951081,150,41
-HG00408,ERR3988762_2.fastq.gz,12.5,377951081,150,41
+sample_name,sample_info_link,dataset_name,download_link," size_GB",sequences,sequence_length,pct_gc
+HG00599,https://www.internationalgenome.org/data-portal/sample/HG00599,SRR592109_2.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR592/SRR592109/SRR592109_2.fastq.gz,"0.5",2263238,101,40
+HG01167,https://www.internationalgenome.org/data-portal/sample/HG01167,SRR233167_2.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR233/SRR233167/SRR233167_2.fastq.gz,"1.1",5422883,76,47
+GIAB003,https://github.com/genome-in-a-bottle/giab_data_indexes/blob/master/AshkenazimTrio/sequence.index.AJtrio_Illumina_2x250bps_06012016.HG003,D2_S1_L002_R1_002.fastq.gz,ftp://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG003_NA24149_father/NIST_Illumina_2x250bps/reads/D2_S1_L002_R1_002.fastq.gz,"2.1",4000000,250,40
+HG00171,https://www.internationalgenome.org/data-portal/sample/HG00171,ERR013101_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR013/ERR013101/ERR013101_1.fastq.gz,"2.6",10640477,108,40
+SRS9540951,https://www.ncbi.nlm.nih.gov/biosample/SAMN20231028,SRR15195475,https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR15195475/SRR15195475,"2.8",103494378,30-150,55
+HG00152,https://www.internationalgenome.org/data-portal/sample/HG00152,ERR015526_2.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR015/ERR015526/ERR015526_2.fastq.gz,"5.1",20487991,108,48
+HG01028,https://www.internationalgenome.org/data-portal/sample/HG01028,ERR047678_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR047/ERR047678/ERR047678_1.fastq.gz,"5.3",24026884,90,45
+HG00408,https://www.internationalgenome.org/data-portal/sample/HG00408,ERR3988762_1.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR398/002/ERR3988762/ERR3988762_1.fastq.gz,"12.1",377951081,150,41
+HG00408,https://www.internationalgenome.org/data-portal/sample/HG00408,ERR3988762_2.fastq.gz,ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR398/002/ERR3988762/ERR3988762_2.fastq.gz,"12.5",377951081,150,41
