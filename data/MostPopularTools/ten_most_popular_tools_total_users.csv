@@ -1,0 +1,11 @@
+tool_name_version,total_num_users
+upload1/upload1,78547.0
+fastqc/0.72+galaxy1,35442.0
+__SET_METADATA__/__SET_METADATA__,15502.0
+trimmomatic/0.38.0,14010.0
+bowtie2/2.3.4.3+galaxy0,13764.0
+CONVERTER_gz_to_uncompressed/CONVERTER_gz_to_uncompressed,13429.0
+ucsc_table_direct1/ucsc_table_direct1,10531.0
+deseq2/2.11.40.6+galaxy1,9770.0
+bwa_mem/0.7.17.1,9608.0
+hisat2/2.1.0+galaxy5,9194.0
