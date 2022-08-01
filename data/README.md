@@ -98,12 +98,13 @@ Sequence length|250
 
 * **Source:** https://www.ncbi.nlm.nih.gov/biosample/SAMN20231028
 * **SRR Accession:** SRR15195475
+* **Download link:** https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR15195475/SRR15195475
 * **Retrieved from:** NCBI SRA
 
 FastQC Summary | -
 -----------|-----------
-File size | 3.8 GB
-Filename | SRR15195475 _fastq-dump_.gz
+File size | 2.8 GB
+Filename | SRR15195475_fastq-dump_.gz
 File type | Conventional base calls
 Encoding | Sanger / Illumina 1.9
 Total Sequences | 103494378
