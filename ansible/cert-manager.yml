@@ -1,0 +1,62 @@
+---
+- hosts: controllers[0]
+  collections:
+    - kubernetes.core
+  tasks:
+    - name: Create cert-manager namespace
+      k8s:
+        kind: Namespace
+        name: cert-manager
+        state: present
+#      command: >
+#        /usr/local/bin/kubectl create namespace cert-manager
+#      ignore_errors: true
+
+    - name: Create cert manager CRDs
+      include_tasks: tasks/k8s-apply.yml
+      vars:
+        url: https://raw.githubusercontent.com/jetstack/cert-manager/release-0.11/deploy/manifests/00-crds.yaml
+#      shell: /usr/local/bin/kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.11/deploy/manifests/00-crds.yaml
+
+    - name: Add cert manager helm repo
+      helm_repository:
+        name: jetstack
+        url: https://charts.jetstack.io
+#      shell: /usr/local/bin/helm repo add jetstack https://charts.jetstack.io
+#      ignore_errors: true
+
+#    - name: Update Helm repos
+#      shell: /usr/local/bin/helm repo update
+
+    - name: Render cluster issuer template
+      k8s:
+        template: templates/clusterissuer.yaml.j2
+        state: present
+
+#      template:
+#        src: clusterissuer.yaml.j2
+#        dest: /tmp/clusterissuer.yaml
+#
+#    - name: Create cert manager cluster issuer
+#      shell: /usr/local/bin/kubectl apply -f /tmp/clusterissuer.yaml
+
+    - name: Helm install cert-manager
+      helm:
+        name: cert-manager
+        namespace: cert-manager
+        chart_ref: jetstack/cert-manager
+        chart_version: "0.11.0"
+        values:
+          ingressShim:
+            defaultIssuerName: letsencrypt-prod
+            defaultIssuerKind: ClusterIssuer
+          webhook:
+            enabled: false
+#      command: >
+#        /usr/local/bin/helm upgrade --install cert-manager jetstack/cert-manager
+#        --namespace "cert-manager"
+#        --version "0.11.0"
+#        --set ingressShim.defaultIssuerName="letsencrypt-prod"
+#        --set ingressShim.defaultIssuerKind="ClusterIssuer"
+#        --set webhook.enabled=false
+#      ignore_errors: true

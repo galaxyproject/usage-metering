@@ -1,0 +1,20 @@
+# Run the simple experiment on four GCP instances with all the job conf files.
+name: Google Benchmarking DNA
+# The number of times each benchmark will be executed.
+runs: 1
+# The benchmarks that will be run as part of the experiment. Each benchmark
+# configuration defines the Galaxy workflow and input datasets to be used.
+benchmark_confs:
+  - benchmarks/dna-test-run.yml
+# The cloud instances, as defined in the $HOME/.abm/profile.yml file.
+cloud:
+  - test
+# The Galaxy container_mapper_rules.yml files that defined the CPU and memory
+# resources allocated to tools. List the file names without the .yml extension.
+# These files are expected to be found in the rules directory.
+job_configs:
+  - default
+# TODO Discuss if this belongs here...
+galaxy:
+  namespace: galaxy
+  chart: anvil/galaxykubeman

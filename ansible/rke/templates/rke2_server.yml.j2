@@ -1,0 +1,12 @@
+node-name: {{ ansible_fqdn }}
+{% if not leader %}
+token: {{ node_token }}
+server: https://{{ server }}:9345
+{% endif %}
+
+write-kubeconfig-mode: "0600"
+disable: rke2-ingress-nginx
+tls-san:
+  - {{ ansible_fqdn }}
+  - {{ ansible_hostname }}
+  - {{ ansible_ssh_host }}

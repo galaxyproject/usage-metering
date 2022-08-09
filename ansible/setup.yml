@@ -1,0 +1,137 @@
+---
+# This playbook is a combination of the helm.yml, ingress.yml, and storage.yml
+# playbooks and is used to configure a cluster for Galaxy in place of the
+# cloudman-boot playbook
+- name: Common tasks for all nodes in the cluster.
+  hosts: nodes
+  tasks:
+    - name: Install nfs-common (needed for csi mount)
+      apt: pkg=nfs-common state=latest
+      become: yes
+
+
+- hosts: controllers[0]
+  collections:
+    - kubernetes.core
+  vars:
+    helm_version: 3.5.2
+    nfs_storage_class: ebs
+    nginx_version: 3.34.0
+  tasks:
+    # From storage.yml, but needs to come first
+    - name: Install Python3 and pip
+      apt:
+        name: "{{ item }}"
+        state: present
+      become: true
+      loop:
+        - python3
+        - python3-pip
+
+    - name: Install openshift
+      pip:
+        name: openshift
+        state: present
+
+    # helm.yml
+    - name: Install Helm version {{ helm_version }}
+      shell:
+        cmd: "curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash -s"
+        creates: /usr/local/bin/helm
+      become: yes
+
+    - name: Remove existing stable Helm repo
+      helm_repository:
+        name: stable
+        state: absent
+
+    - name: Add stable Helm repo
+      helm_repository:
+        name: stable
+        repo_url: https://charts.helm.sh/stable
+        state: present
+
+    - name: Add the cloudve Helm repository
+      helm_repository:
+        name: cloudve
+        repo_url: https://raw.githubusercontent.com/CloudVE/helm-charts/master/
+
+    # ingress.yml
+    - name: Create namespace for nginx ingress
+      k8s:
+        kind: Namespace
+        name: ingress-nginx
+        state: present
+      #tags: [ never, nginx ]
+
+    - name: Add helm repo for nginx ingress
+      helm_repository:
+        name: ingress-nginx
+        state: present
+        repo_url: https://kubernetes.github.io/ingress-nginx
+
+    - name: Helm install nginx ingress controller
+      helm:
+        name: ingress-nginx
+        namespace: ingress-nginx
+        chart_ref: ingress-nginx/ingress-nginx
+        chart_version: "{{ nginx_version }}"
+        values:
+          controller:
+            kind: DaemonSet
+            hostNetwork: true
+            daemonset:
+              useHostPort: true
+
+    - name: Fix for issue https://github.com/kubernetes/ingress-nginx/issues/5401
+      k8s:
+        name: ingress-nginx-admission
+#        namespace: ingress-nginx
+        kind: ValidatingWebhookConfiguration
+        state: absent
+
+    # storage.yml
+    - name: Render the hostpath storage class template
+      k8s:
+        template:
+          path: templates/hostpath_storage_class.yaml.j2
+        state: present
+
+    - name: Render the ebs storage class
+      k8s:
+        template:
+          path: ebs_storage_class.yml.j2
+        state: present
+
+    - name: Create CSI driver namespace
+      k8s:
+        kind: Namespace
+        name: csi-drivers
+        state: present
+
+    - name: Helm install nfs-provisioner
+      helm:
+        name: nfs-provisioner
+        namespace: csi-drivers
+        chart_ref: stable/nfs-server-provisioner
+        values:
+          persistence:
+            enabled: true
+            storageClass: "{{ nfs_storage_class }}"
+            size: 100Gi
+          storageClass:
+            create: true
+            reclaimPolicy: Delete
+            allowVolumeExpansion: true
+
+    - name:
+      helm_repository:
+        url: https://raw.githubusercontent.com/CloudVE/helm-charts/master/
+        name: galaxy
+        state: present
+
+#    - name: Helm install galaxy-cvmfs-csi
+#      helm:
+#        name: gxy-cvmfs
+#        namespace: csi-drivers
+#        chart_ref: galaxy/galaxy-cvmfs-csi

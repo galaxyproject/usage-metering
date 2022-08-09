@@ -1,0 +1,74 @@
+ingress:
+  enabled: true
+  canary:
+    enabled: true
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/proxy-body-size: "10G"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"    
+  hosts:
+  - host: ~
+    paths:
+    - path: /galaxy
+  path: /galaxy
+  tls:
+    - secretName: {{ name }}-{{ domain }}-{{ tld }}
+      hosts:
+      - {{ name }}.{{ domain }}.{{ tld }}
+extraFileMappings:
+  /galaxy/server/static/welcome.html:
+    useSecret: false
+    applyToWeb: true
+    applyToNginx: true
+    tpl: true
+    content: |
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="utf-8">
+                <link rel="stylesheet" href="style/base.css" type="text/css" />
+            </head>
+            <body class="m-0">
+                <div class="py-4">
+                  <div class="container">
+                      <h1>Galaxy Cloud Costs</h1>
+                      <h2>{{ title }}</h2>
+                      <p>Welcome to the Galaxy Cloud Cost Benchmarking instance hosted on {{ location }}.
+                      This is a development instance used for testing and the node configuration will likely evolve over time.</p>
+                      <p>Please create an account using your JHU email address to be granted admin access to this server.</p>
+                      <h3>Resources</h3>
+                      <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1Vw9USjZ510joMGlIGEiT0x8FXRb2XspAeRiLAXpYVvM/edit#gid=0">Galaxy Benchmark History</a></li>
+                        <li>Observable worksheets</li>
+                        <li>Anything else we can think of</li>
+                      </ul>
+                  </div>
+              </div>
+                <div class="py-4">
+                    <div class="container">
+                        <p>Take an interactive tour:
+                            <a target="_parent" href="../tours/core.galaxy_ui" class="btn btn-secondary btn-sm">Galaxy UI</a>
+                            <a target="_parent" href="../tours/core.history" class="btn btn-secondary btn-sm">History</a>
+                            <a target="_parent" href="../tours/core.scratchbook" class="btn btn-secondary btn-sm">Scratchbook</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <p>
+                        <a target="_blank" class="reference" href="http://galaxyproject.org/">
+                        Galaxy</a> is an open platform for supporting data intensive
+                        research. Galaxy is developed by <a target="_blank" class="reference" href="https://galaxyproject.org/galaxy-team/">The Galaxy Team</a>
+                        with the support of  <a target="_blank" class="reference" href="https://github.com/galaxyproject/galaxy/blob/dev/CONTRIBUTORS.md">many contributors</a>.
+                    </p>
+                    <footer>
+                        The <a target="_blank" class="reference" href="http://galaxyproject.org/">Galaxy Project</a>
+                        is supported in part by <a target="_blank" class="reference" href="http://www.genome.gov">NHGRI</a>,
+                        <a target="_blank" class="reference" href="http://www.nsf.gov">NSF</a>,
+                        <a target="_blank" class="reference" href="http://www.huck.psu.edu">The Huck Institutes of the Life Sciences</a>,
+                        <a target="_blank" class="reference" href="http://www.ics.psu.edu">The Institute for CyberScience at Penn State</a>,
+                        and <a target="_blank" class="reference" href="http://www.jhu.edu/">Johns Hopkins University</a>.
+                    </footer>
+                </div>
+            </body>
+        </html>
+    

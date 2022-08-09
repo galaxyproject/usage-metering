@@ -1,0 +1,5 @@
+- type: core
+- type: cgroup
+- type: cpuinfo
+- type: meminfo
+- type: uname

@@ -1,0 +1,9 @@
+- name: Install the rke2 binary
+  shell:
+    cmd: curl -sfL https://get.rke2.io | INSTALL_RKE2_VERSION="{{ rke_version }}" INSTALL_RKE2_TYPE="{{ type }}" sh -
+    creates: /usr/local/bin/rke2
+- name: Enable and start the rke2-{{ type }}.service
+  systemd:
+    name: rke2-{{ type }}.service
+    enabled: true
+    state: started
