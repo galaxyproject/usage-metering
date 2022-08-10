@@ -1,0 +1,6 @@
+*
+*/
+!.gitignore
+!README.md
+!job_table_sample.txt
+!metrics_table_sample.txt
