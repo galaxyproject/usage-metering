@@ -1,4 +1,4 @@
--- Count total memory a tool consumed, was alloctaed, and ratio across all jobs.
+-- Total memory a tool consumed, was alloctaed, and ratio, across all jobs.
 
 WITH consumed_mem AS (
     SELECT
@@ -23,7 +23,7 @@ aggregate_mem AS (
         tool_id,
         COUNT(DISTINCT id) AS num_jobs,
         ROUND(SUM(max_mem) * 0.000000001, 0) AS consumed_mem_gb,  -- Convert to GB
-        CAST(SUM(allc_mem) * 0.001 AS int) AS allocated_mem_gb -- Convert to GB
+        CAST(SUM(allc_mem) * 0.001 AS int) AS allocated_mem_gb  -- Convert to GB
     FROM
         job
         JOIN consumed_mem ON job.id = consumed_mem.job_id
