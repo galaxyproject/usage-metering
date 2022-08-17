@@ -41,10 +41,13 @@ INNER JOIN job_metric_numeric
     ON job_metric_numeric.job_id = job.id
 WHERE
     job.create_time >= '2021-08-01' AND
-    job.create_time < '2022-07-31' AND
+    job.create_time < '2022-08-01' AND
     (job_metric_numeric.metric_name = 'galaxy_slots' OR
      job_metric_numeric.metric_name = 'memory.max_usage_in_bytes' OR
-     job_metric_numeric.metric_name = 'galaxy_memory_mb')) TO STDOUT;
+     job_metric_numeric.metric_name = 'galaxy_memory_mb' OR
+     job_metric_numeric.metric_name = 'galaxy_slots' OR
+     job_metric_numeric.metric_name = 'cpuacct.usage' OR
+     job_metric_numeric.metric_name = 'runtime_seconds')) TO STDOUT;
 ```
 
 Run the query from the command shell (where `galaxy_main` is the name of database):

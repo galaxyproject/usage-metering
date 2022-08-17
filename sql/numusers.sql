@@ -1,9 +1,14 @@
-/* Number of users running a tool, grouped by month and by year in two separate graphs. */
+-- Number of users running a tool, grouped by month and by year.
 
-/* Query that group by month-year */
-select to_char(create_time,'YYYY-MM') as date, tool_id,count(distinct user_id) as numusers
-from job
-group by date,tool_id
-order by date asc,numusers desc;
-
- 
+SELECT
+    TO_CHAR(create_time, 'YYYY-MM') AS date,
+    tool_id,
+    COUNT(DISTINCT user_id) AS num_users
+FROM
+    job
+GROUP BY
+    date,
+    tool_id
+ORDER BY
+    date ASC,
+    num_users DESC;

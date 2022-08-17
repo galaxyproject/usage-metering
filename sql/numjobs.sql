@@ -1,6 +1,14 @@
-/* Number of jobs per tool per month (ie, replicate this diagram) */
+-- Number of jobs per tool per month.
 
-select to_char(job.create_time, 'YYYY-MM') as date, tool_id, count(DISTINCT id) as num_jobs
-from job 
-group by tool_id, date
-order by date asc, num_jobs desc;
+SELECT
+    TO_CHAR(job.create_time, 'YYYY-MM') AS date,
+    tool_id,
+    COUNT(DISTINCT id) AS num_jobs
+FROM
+    job
+GROUP BY
+    tool_id,
+    date
+ORDER BY
+    date ASC,
+    num_jobs DESC;
