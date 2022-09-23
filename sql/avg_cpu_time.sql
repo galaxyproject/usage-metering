@@ -3,11 +3,18 @@
 WITH cpu_usage AS (
     SELECT
         DISTINCT job_id,
-        metric_value / 1000000000 AS cpu_usage_seconds  -- Convert from nanoseconds to seconds.
+        CASE
+            WHEN destination_id LIKE 'stampede%' THEN metric_value
+            ELSE metric_value / 1000000000  -- Convert from nanoseconds to seconds
+        END cpu_usage_seconds
     FROM
         job_metric_numeric
     WHERE
-        metric_name = 'cpuacct.usage'
+        CASE
+            -- Stampede2 does not isolate jobs in cgroups so we need to use runtime_seconds
+            WHEN destination_id LIKE 'stampede%' THEN metric_name = 'runtime_seconds'
+            ELSE metric_name = 'cpuacct.usage'
+        END
 )
 SELECT
     TO_CHAR(job.create_time, 'YYYY-MM') AS date,
