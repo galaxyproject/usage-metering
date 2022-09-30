@@ -5,13 +5,19 @@ datasets for benchmarking, and workflows to automate the benchmarking steps.
 
 A list of datasets used for benchmarking. The human datasets were selected from
 the [Genome in a Bottle](https://www.nist.gov/programs-projects/genome-bottle)
-project.
+project and were downsampled to yield datasets of desired size. All sizes are in
+gigabytes and all files are compressed.
+
+If an accession or dbkey cell is empty for a given dataset, it is the same as the
+most recent row above that does have a value.
 
 ## DNA Datasets
 
-| dbkey      | Accession/source                                           | Galaxy history                                                                 | Forward reads                                                                                          | Size (GB) | Reverse reads                                                                                          | Size (GB) |
-|------------|------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------|-----------|
-| hg38/CHM13 | [SRR12898325](https://www.ncbi.nlm.nih.gov/sra/SRX9363363) | [usegalaxy.org](https://usegalaxy.org/u/eafgan/h/benchmarking-input-human-30x) | [download](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/NextSeq_LAB02_Son3_REP01-R1.fq.gz) | 16.7      | [download](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/NextSeq_LAB02_Son3_REP01-R2.fq.gz) | 17.5      |
+| Accession/source                                           | dbkey      | Galaxy history                                                                     |                                                                                           Forward reads |                                                                                           Reverse reads |
+|------------------------------------------------------------|------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------------:|
+| [SRR12898325](https://www.ncbi.nlm.nih.gov/sra/SRX9363363) | hg38/CHM13 | [usegalaxy.org](https://usegalaxy.org/u/eafgan/h/benchmarking-input-human-dna-1x)  | [0.5GB](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R1-downsampled-05GB.fq.gz) | [0.5GB](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R2-downsampled-05GB.fq.gz) |
+|                                                            |            | [usegalaxy.org](https://usegalaxy.org/u/eafgan/h/benchmarking-input-human-dna-10x) |  [5.2GB](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R1-downsampled-5GB.fq.gz) |  [5.5GB](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/SRR12898325-R2-downsampled-5GB.fq.gz) |
+|                                                            |            | [usegalaxy.org](https://usegalaxy.org/u/eafgan/h/benchmarking-input-human-dna-30x) |    [16.7GB](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/NextSeq_LAB02_Son3_REP01-R1.fq.gz) |    [17.5GB](https://benchmarking-inputs.s3.amazonaws.com/SRR12898325/NextSeq_LAB02_Son3_REP01-R2.fq.gz) |
 
 ## Reference indices
 
