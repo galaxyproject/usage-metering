@@ -9,6 +9,7 @@ CREATE TABLE job (
 
 CREATE TABLE job_metric_numeric (
     job_id integer,
+    destination_id character varying(255),
     metric_name character varying(255),
     metric_value numeric(26,7)
 );

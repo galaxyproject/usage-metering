@@ -1,0 +1,58 @@
+{
+	"data_labels": [
+		{
+			"dataset": "numjobs",
+			"filename": "numjobs_all",
+			"has_inverted_dataset": true,
+			"columns": ["month_year", "num_jobs"]
+		},
+		{
+			"dataset": "numusers",
+			"filename": "numusers_all",
+			"has_inverted_dataset": true,
+			"columns": ["month_year", "num_users"]
+		},
+		{
+			"dataset": "totalmemory",
+			"filename": "totalmemory_all",
+			"has_inverted_dataset": true,
+			"columns": ["month_year", "totalmemory"]
+		},
+		{
+			"dataset": "avg_memory",
+			"filename": "avgmemory_all",
+			"has_inverted_dataset": true,
+			"columns": ["month_year", "avg_memory"]
+		},
+		{
+			"dataset": "total_cpu_time",
+			"filename": "total_cpu_time",
+			"has_inverted_dataset": true,
+			"columns": ["month_year", "total_cpu_time_seconds", "num_jobs"]
+		},
+		{
+			"dataset": "avg_cpu_time",
+			"filename": "avg_cpu_time",
+			"has_inverted_dataset": true,
+			"columns": ["month_year", "avg_cpu_time"]
+		},
+		{
+			"dataset": "numjobs_numusers",
+			"filename": "numjobs_numusers",
+			"has_inverted_dataset": false,
+			"columns": ["num_jobs", "num_users"]
+		},
+		{
+			"dataset": "num_jobs_vs_total_cpu_time",
+			"filename": "numjobs_numusers",
+			"has_inverted_dataset": false,
+			"columns": ["num_jobs","num_users"]
+		},
+		{
+			"dataset": "totalmemory_numjobs",
+			"filename": "totalmemory_numjobs",
+			"has_inverted_dataset": false,
+			"columns": ["num_jobs", "consumed_mem_gb", "allocated_mem_gb", "pct_mem_consumed"]
+		}
+	]
+}

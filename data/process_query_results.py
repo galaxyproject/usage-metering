@@ -3,165 +3,72 @@
 ## to be that of the tool_name_version for better readibility
 
 import pandas as pd
+import json
 
-## function that gets the tool_name from the tool_id
-def getName(tool_id):
+LOCAL_DIRECTORY_READ = '../../psql-main-data/STEP_2_1_export_enumerate/'    ## contains Txt files (created from SQL exports from AWS)
+LOCAL_DIRECTORY_WRITE = '20221019/'     ## contains Csv files (created from above Txt files)
+# LOCAL_DIRECTORY_PREFIX = '202210181743/'     ## unique date-time string value for multiple runs
+
+def getToolName(tool_id):
     arr = tool_id.split('/')
     return arr[len(arr) - 2]
 
-## function that gets the tool_version from the tool_id
 def getVersion(tool_id):
     arr = tool_id.split('/')
     return arr[len(arr) - 1]
 
-## Get the tool_id in the query results for numjobs vs numusers to be in the format tool_name/version
-numjobs_numusers = pd.read_csv('../unprocessed_toolid/numjobs_numusers.txt',
-                                delimiter = '|',names = ['tool_id','num_jobs','num_users'],skiprows = 1)
-numjobs_numusers = numjobs_numusers.dropna()
-numjobs_numusers['tool_id'] = numjobs_numusers['tool_id'].str.strip()
-numjobs_numusers['tool_name_version'] = ''
-numjobs_numusers['tool_name_version'] = numjobs_numusers.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-numjobs_numusers = numjobs_numusers.drop(columns = ['tool_id'])
-numjobs_numusers.to_csv('numjobs_numusers.csv')
+def normalizeToolNameVersion(dataset):
+    toolNameVersion = dataset.apply(lambda x: x['tool_name_version'] + getToolName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
+    return toolNameVersion
 
-## Get the tool_id in the query results for total_cpu_time vs numjobs to be in the format tool_name/version
-total_cpu_time_numjobs = pd.read_csv('../unprocessed_toolid/total_cpu_time_numjobs.txt',
-                                delimiter = '|',names = ['tool_id','total_cpu_time','num_jobs'],skiprows = 1)
-total_cpu_time_numjobs = total_cpu_time_numjobs.dropna()
-total_cpu_time_numjobs['tool_id'] = total_cpu_time_numjobs['tool_id'].str.strip()
-total_cpu_time_numjobs['tool_name_version'] = ''
-total_cpu_time_numjobs['tool_name_version'] = total_cpu_time_numjobs.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-total_cpu_time_numjobs = total_cpu_time_numjobs.drop(columns = ['tool_id'])
-total_cpu_time_numjobs.to_csv('total_cpu_time_numjobs.csv')
+def normalizeHeaders(columns, isPivot):
+    if isPivot:
+        columns.insert(1, "tool_id")
+    else:
+        columns.insert(0, "tool_id")
+    return columns
 
-## Get the tool_id in the query results for totalmemory vs numjobs to be in the format tool_name/version
-totalmemory_numjobs = pd.read_csv('../unprocessed_toolid/totalmemory_numjobs.txt',
-                                delimiter = '|',names = ['tool_id','totalmemory','num_jobs'],skiprows = 1)
-totalmemory_numjobs = totalmemory_numjobs.dropna()
-totalmemory_numjobs['tool_id'] = totalmemory_numjobs['tool_id'].str.strip()
-totalmemory_numjobs['tool_name_version'] = ''
-totalmemory_numjobs['tool_name_version'] = totalmemory_numjobs.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-totalmemory_numjobs = totalmemory_numjobs.drop(columns = ['tool_id'])
-totalmemory_numjobs.to_csv('totalmemory_numjobs.csv')
+## function that (1) exports the Txt file data into Csv files (2) removes null values (3) enumerates the rows in the Csv files (4) normalizes tool name/version
+def exportDataTxtToCsv(txtFileIn, headers):
+    txtFile = LOCAL_DIRECTORY_READ + txtFileIn + '.txt'
+    print('txtFile', txtFile)
+    csvFile = LOCAL_DIRECTORY_WRITE + 'STEP_3_0_clean_data/' + txtFileIn + '.csv'
+    print('csvFile', csvFile)
+    dataset = pd.read_csv(txtFile, delimiter = '|',names = headers,skiprows = 1)
+    dataset = dataset.dropna()
+    dataset['tool_id'] = dataset['tool_id'].str.strip()
+    dataset['tool_name_version'] = ''
+    dataset['tool_name_version'] = normalizeToolNameVersion(dataset)
+    dataset = dataset.drop(columns = ['tool_id'])
+    dataset.to_csv(csvFile)
 
+## function that (1) formats Csv data into pivoted data (2) replaces null values with zeros/0 values in order that the pivot chart displays properly
+def exportDataCsvToCsvInverted(csvFileIn, headers):
+    csvFile = LOCAL_DIRECTORY_WRITE + 'STEP_3_0_clean_data/' + csvFileIn + '.csv'
+    print('csvFile', csvFile)
+    csvInvertedFile = LOCAL_DIRECTORY_WRITE + 'STEP_3_1_chart_views/' + csvFileIn + '_inverted.csv'
+    print('csvInvertedFile', csvInvertedFile)
+    print('headers[2]', headers[2])
+    dataset = pd.read_csv(csvFile,names = ['month_year',headers[2],'tool_name_version'],skiprows = 1)
+    dataset = dataset.drop_duplicates(['month_year','tool_name_version'])
+    datasetInverted = dataset.pivot(index='month_year', columns='tool_name_version', values=headers[2])
+    datasetInverted = datasetInverted.fillna(0)
+    datasetInverted.to_csv(csvInvertedFile)
 
-## Get the tool_id in the query results for numjobs for all months to be in the format tool_name/version
-numjobs_all = pd.read_csv("../unprocessed_toolid/numjobs_all.txt",
-                    delimiter = '|',names = ['month_year','tool_id','num_jobs'],skiprows = 1)
-numjobs_all = numjobs_all.dropna() # Removes all the Nan values
-numjobs_all['tool_id'] = numjobs_all['tool_id'].str.strip()
-numjobs_all['tool_name_version'] = ''
-numjobs_all['tool_name_version'] = numjobs_all.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-numjobs_all = numjobs_all.drop(columns = ['tool_id'])
-numjobs_all.to_csv('numjobs_all.csv')
+# Main: Opening JSON file which contains instructions on proper labeling of chart data
+with open('constants_data_labels.json') as json_file:
+    data = json.load(json_file)
 
-## Get the tool_id in the query results for numusers for all months to be in the format tool_name/version
-numusers_all = pd.read_csv("../unprocessed_toolid/numusers_all.txt",
-                    delimiter = '|',names = ['month_year','tool_id','num_users'],skiprows = 1)
-numusers_all = numusers_all.dropna()
-numusers_all['tool_id'] = numusers_all['tool_id'].str.strip()
-numusers_all['tool_name_version'] = ''
-numusers_all['tool_name_version'] = numusers_all.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-numusers_all = numusers_all.drop(columns = ['tool_id'])
-numusers_all.to_csv('numusers_all.csv')
+    print("\nPrinting nested dictionary as a key-value pair\n")
+    for i in data['data_labels']:
+        headers = normalizeHeaders(i['columns'], i['has_inverted_dataset'])
+        print("> starting file import / export for:", i['filename'])
+        exportDataTxtToCsv(i['filename'], headers)
+        if i['has_inverted_dataset']:
+            exportDataCsvToCsvInverted(i['filename'], headers)
+            print("> starting file inversion for:", i['filename'])
+        else:
+            print("> no file inversion for:", i['filename'])
+        print()
 
-## Get the tool_id in the query results for total_cpu_time for all months to be in the format tool_name/version
-total_cpu_time_all = pd.read_csv("../unprocessed_toolid/total_cpu_time_all.txt",
-                    delimiter = '|',names = ['tool_id','month_year','total_cpu_time'],skiprows = 1)
-total_cpu_time_all = total_cpu_time_all.dropna()
-total_cpu_time_all['tool_id'] = total_cpu_time_all['tool_id'].str.strip()
-total_cpu_time_all['tool_name_version'] = ''
-total_cpu_time_all['tool_name_version'] = total_cpu_time_all.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-total_cpu_time_all = total_cpu_time_all.drop(columns = ['tool_id'])
-total_cpu_time_all.to_csv('total_cpu_time_all.csv')
-
-## Get the tool_id in the query results for totalmemory for all months to be in the format tool_name/version
-totalmemory_all = pd.read_csv("../unprocessed_toolid/totalmemory_all.txt",
-                    delimiter = '|',names = ['month_year','tool_id','totalmemory'],skiprows = 1)
-totalmemory_all = totalmemory_all.dropna()
-totalmemory_all['tool_id'] = totalmemory_all['tool_id'].str.strip()
-totalmemory_all['tool_name_version'] = ''
-totalmemory_all['tool_name_version'] = totalmemory_all.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-totalmemory_all = totalmemory_all.drop(columns = ['tool_id'])
-totalmemory_all.to_csv('totalmemory_all.csv')
-
-## Get the tool_id in the query results for avg_cpu_time for all months to be in the format tool_name/version
-avg_cpu_time_all = pd.read_csv("../unprocessed_toolid/avg_cpu_time_all.txt",
-                    delimiter = '|',names = ['tool_id','month_year','avg_cpu_time'],skiprows = 1)
-avg_cpu_time_all = avg_cpu_time_all.dropna()
-avg_cpu_time_all['tool_id'] = avg_cpu_time_all['tool_id'].str.strip()
-avg_cpu_time_all['tool_name_version'] = ''
-avg_cpu_time_all['tool_name_version'] = avg_cpu_time_all.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-avg_cpu_time_all = avg_cpu_time_all.drop(columns = ['tool_id'])
-avg_cpu_time_all.to_csv('avg_cpu_time_all.csv')
-
-## Get the tool_id in the query results for avg_memory for all months to be in the format tool_name/version
-avg_memory_all = pd.read_csv("../unprocessed_toolid/avgmemory_all.txt",
-                    delimiter = '|',names = ['month_year','tool_id','avg_memory'],skiprows = 1)
-avg_memory_all = avg_memory_all.dropna()
-avg_memory_all['tool_id'] = avg_memory_all['tool_id'].str.strip()
-avg_memory_all['tool_name_version'] = ''
-avg_memory_all['tool_name_version'] = avg_memory_all.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-avg_memory_all = avg_memory_all.drop(columns = ['tool_id'])
-avg_memory_all.to_csv('avg_memory_all.csv')
-
-## Get the tool_id in the query results for numjobs for May 2021 to be in the format tool_name/version
-numjobs_May2021 = pd.read_csv("../unprocessed_toolid/numjobs_May2021.txt",
-                    delimiter = '|',names = ['month_year','tool_id','num_jobs'],skiprows = 1)
-numjobs_May2021 = numjobs_May2021.dropna() # Removes all the Nan values
-numjobs_May2021['tool_id'] = numjobs_May2021['tool_id'].str.strip()
-numjobs_May2021['tool_name_version'] = ''
-numjobs_May2021['tool_name_version'] = numjobs_May2021.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-numjobs_May2021 = numjobs_May2021.drop(columns = ['tool_id'])
-numjobs_May2021.to_csv('numjobs_May2021.csv')
-
-## Get the tool_id in the query results for numusers for May 2021 to be in the format tool_name/version
-numusers_May2021 = pd.read_csv("../unprocessed_toolid/numusers_May2021.txt",
-                    delimiter = '|',names = ['month_year','tool_id','num_users'],skiprows = 1)
-numusers_May2021 = numusers_May2021.dropna() # Removes all the Nan values
-numusers_May2021['tool_id'] = numusers_May2021['tool_id'].str.strip()
-numusers_May2021['tool_name_version'] = ''
-numusers_May2021['tool_name_version'] = numusers_May2021.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-numusers_May2021 = numusers_May2021.drop(columns = ['tool_id'])
-numusers_May2021.to_csv('numusers_May2021.csv')
-
-## Get the tool_id in the query results for total_cpu_time for May 2021 to be in the format tool_name/version
-total_cpu_time_May2021 = pd.read_csv("../unprocessed_toolid/total_cpu_time_May2021.txt",
-                    delimiter = '|',names = ['tool_id','month_year','total_cpu_time'],skiprows = 1)
-total_cpu_time_May2021 = total_cpu_time_May2021.dropna() # Removes all the Nan values
-total_cpu_time_May2021['tool_id'] = total_cpu_time_May2021['tool_id'].str.strip()
-total_cpu_time_May2021['tool_name_version'] = ''
-total_cpu_time_May2021['tool_name_version'] = total_cpu_time_May2021.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-total_cpu_time_May2021 = total_cpu_time_May2021.drop(columns = ['tool_id'])
-total_cpu_time_May2021.to_csv('total_cpu_time_May2021.csv')
-
-## Get the tool_id in the query results for total_memory for May 2021 to be in the format tool_name/version
-totalmemory_May2021 = pd.read_csv("../unprocessed_toolid/totalmemory_May2021.txt",
-                    delimiter = '|',names = ['month_year','tool_id','totalmemory'],skiprows = 1)
-totalmemory_May2021 = totalmemory_May2021.dropna() # Removes all the Nan values
-totalmemory_May2021['tool_id'] = totalmemory_May2021['tool_id'].str.strip()
-totalmemory_May2021['tool_name_version'] = ''
-totalmemory_May2021['tool_name_version'] = totalmemory_May2021.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-totalmemory_May2021 = totalmemory_May2021.drop(columns = ['tool_id'])
-totalmemory_May2021.to_csv('totalmemory_May2021.csv')
-
-## Get the tool_id in the query results for avg_cpu_time for May 2021 to be in the format tool_name/version
-avg_cpu_time_May2021 = pd.read_csv("../unprocessed_toolid/avg_cpu_time_May2021.txt",
-                    delimiter = '|',names = ['tool_id','month_year','avg_cpu_time'],skiprows = 1)
-avg_cpu_time_May2021 = avg_cpu_time_May2021.dropna() # Removes all the Nan values
-avg_cpu_time_May2021['tool_id'] = avg_cpu_time_May2021['tool_id'].str.strip()
-avg_cpu_time_May2021['tool_name_version'] = ''
-avg_cpu_time_May2021['tool_name_version'] = avg_cpu_time_May2021.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-avg_cpu_time_May2021 = avg_cpu_time_May2021.drop(columns = ['tool_id'])
-avg_cpu_time_May2021.to_csv('avg_cpu_time_May2021.csv')
-
-## Get the tool_id in the query results for avgmemory for May 2021 to be in the format tool_name/version
-avgmemory_May2021 = pd.read_csv("../unprocessed_toolid/avgmemory_May2021.txt",
-                    delimiter = '|',names = ['month_year','tool_id','avgmemory'],skiprows = 1)
-avgmemory_May2021 = avgmemory_May2021.dropna() # Removes all the Nan values
-avgmemory_May2021['tool_id'] = avgmemory_May2021['tool_id'].str.strip()
-avgmemory_May2021['tool_name_version'] = ''
-avgmemory_May2021['tool_name_version'] = avgmemory_May2021.apply(lambda x: x['tool_name_version'] + getName(str(x['tool_id'])) + "/" + getVersion(str(x['tool_id'])),axis =1)
-avgmemory_May2021 = avgmemory_May2021.drop(columns = ['tool_id'])
-avgmemory_May2021.to_csv('avgmemory_May2021.csv')
-
+print('finished !')
