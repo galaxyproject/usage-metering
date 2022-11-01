@@ -3,37 +3,37 @@
 		{
 			"dataset": "numjobs",
 			"filename": "numjobs_all",
-			"has_inverted_dataset": true,
+			"has_inverted_dataset": false,
 			"columns": ["month_year", "num_jobs"]
 		},
 		{
 			"dataset": "numusers",
 			"filename": "numusers_all",
-			"has_inverted_dataset": true,
+			"has_inverted_dataset": false,
 			"columns": ["month_year", "num_users"]
 		},
 		{
 			"dataset": "totalmemory",
 			"filename": "totalmemory_all",
-			"has_inverted_dataset": true,
+			"has_inverted_dataset": false,
 			"columns": ["month_year", "totalmemory"]
 		},
 		{
 			"dataset": "avg_memory",
 			"filename": "avgmemory_all",
-			"has_inverted_dataset": true,
+			"has_inverted_dataset": false,
 			"columns": ["month_year", "avg_memory"]
 		},
 		{
 			"dataset": "total_cpu_time",
 			"filename": "total_cpu_time",
-			"has_inverted_dataset": true,
+			"has_inverted_dataset": false,
 			"columns": ["month_year", "total_cpu_time_seconds", "num_jobs"]
 		},
 		{
 			"dataset": "avg_cpu_time",
 			"filename": "avg_cpu_time",
-			"has_inverted_dataset": true,
+			"has_inverted_dataset": false,
 			"columns": ["month_year", "avg_cpu_time"]
 		},
 		{
