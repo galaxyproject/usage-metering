@@ -1,6 +1,9 @@
-## The purpose of this file is to process the initial query results returned so as to
-## be inverted for the purpose of stacked area chart and for the replacement of the tool_id column 
-## to be that of the tool_name_version for better readibility
+## The purpose of this file is to transform the initial query results into
+## readable data for chart visualization tools (stacked area, scatter/bubble):
+## (1) exports Raw .TXT files into .CSV files for use by chart plotting tool 
+## (2) replaces tool_id column for tool_name_version for better readibility 
+## (3) modifies/removes NULL values for use by chart plotting tool 
+## (4) ensures consistent column header names/placement for better readibility 
 
 import pandas as pd
 import json
