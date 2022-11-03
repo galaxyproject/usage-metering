@@ -6,6 +6,9 @@ SELECT
     COUNT(DISTINCT id) AS num_jobs
 FROM
     job
+WHERE
+    create_time >= '2021-10-01'
+    AND create_time < '2022-11-01'
 GROUP BY
     tool_id,
     date
