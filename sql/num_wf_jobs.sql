@@ -1,4 +1,7 @@
 -- Number of jobs per month, total and run as part of a workflow.
+--
+-- This query should be run against the full Galaxy database and not
+-- the reduced set of tables/rows like the other queries in this folder.
 
 WITH wf_jobs AS (
     SELECT
