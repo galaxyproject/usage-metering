@@ -7,6 +7,8 @@ easier and faster to work with. This setup needs to be done once for a given set
 of data. Once the data is available, we can start querying it. For Maine, these
 queries tend to run abut half an hour each.
 
+Take a look at the `collect_job_data.sh` script to automate this process.
+
 ## Extract job data from a Galaxy database
 
 Put the following `Job` table query in a file called `job_query.sql`,
