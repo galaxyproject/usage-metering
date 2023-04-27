@@ -1,0 +1,11 @@
+jobs:
+  rules:
+    tpv_rules_local.yml:
+      tools:  
+        toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/.*:
+          cores: {{ cores }}
+          mem: {{ mem }}
+        toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/.*:
+          cores: {{ cores }}
+          mem: {{ mem }}
+        

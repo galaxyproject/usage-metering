@@ -1,0 +1,23 @@
+# BOG Experiemnts
+name: BOG
+# The number of times each benchmark will be executed.
+runs: 2
+# The benchmarks that will be run as part of the experiment. Each benchmark
+# configuration defines the Galaxy workflow and input datasets to be used.
+benchmark_confs:
+  - benchmarks/rnaseq20.yml
+  - benchmarks/rnaseq50.yml
+# The cloud instances, as defined in the $HOME/.abm/profile.yml file.
+cloud:
+  - eagkm
+# The Galaxy container_mapper_rules.yml files that defined the CPU and memory
+# resources allocated to tools. List the file names without the .yml extension.
+# These files are expected to be found in the rules directory.
+#job_configs:
+#  - 4x8
+#  - 4x16
+#  - 8x16
+# TODO Discuss if this belongs here...
+galaxy:
+  namespace: galaxy
+  chart: galaxy/galaxy
