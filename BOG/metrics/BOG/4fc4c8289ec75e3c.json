@@ -1,0 +1,90 @@
+{
+    "run": "1",
+    "cloud": "eagkm",
+    "job_conf": "Default",
+    "workflow_id": "333846b030006412",
+    "history_id": "8c3042b3e14a8ca9",
+    "inputs": "Paired_List_50 hg38.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "4fc4c8289ec75e3c",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2023-04-28T00:51:30.663794",
+        "create_time": "2023-04-28T00:48:43.373563",
+        "galaxy_version": "23.0",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.1",
+        "history_id": "8c3042b3e14a8ca9",
+        "external_id": "gxy-gkm-galaxy-md8px",
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"6c662f2ae55e11ed9768b29265ad4550\"",
+            "unmapped": "{\"__current_case__\": 1, \"on_unmapped\": \"fail\"}",
+            "output_param_type": "\"text\"",
+            "input_param_type": "{\"__current_case__\": 0, \"input_param\": \"stranded - forward\", \"mappings\": [{\"__index__\": 0, \"from\": \"stranded - forward\", \"to\": \"-strand +\"}, {\"__index__\": 1, \"from\": \"stranded - reverse\", \"to\": \"-strand -\"}, {\"__index__\": 2, \"from\": \"unstranded\", \"to\": \"-strand +\"}], \"type\": \"text\"}"
+        },
+        "inputs": {},
+        "outputs": {
+            "output_param_text": {
+                "id": "a78aa8968944035e",
+                "src": "hda",
+                "uuid": "b2967780-74e5-4eb8-86f1-4e39bbc12ea3"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "admin@cloudve.org",
+        "job_metrics": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "4fc4c8289ec75e3c",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2023-04-28T00:51:30.663794",
+        "create_time": "2023-04-28T00:48:43.373563",
+        "galaxy_version": "23.0",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.1",
+        "history_id": "8c3042b3e14a8ca9",
+        "external_id": "gxy-gkm-galaxy-md8px",
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"6c662f2ae55e11ed9768b29265ad4550\"",
+            "unmapped": "{\"__current_case__\": 1, \"on_unmapped\": \"fail\"}",
+            "output_param_type": "\"text\"",
+            "input_param_type": "{\"__current_case__\": 0, \"input_param\": \"stranded - forward\", \"mappings\": [{\"__index__\": 0, \"from\": \"stranded - forward\", \"to\": \"-strand +\"}, {\"__index__\": 1, \"from\": \"stranded - reverse\", \"to\": \"-strand -\"}, {\"__index__\": 2, \"from\": \"unstranded\", \"to\": \"-strand +\"}], \"type\": \"text\"}"
+        },
+        "inputs": {},
+        "outputs": {
+            "output_param_text": {
+                "id": "a78aa8968944035e",
+                "src": "hda",
+                "uuid": "b2967780-74e5-4eb8-86f1-4e39bbc12ea3"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.23.129.253:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        186,
+        503642961
+    ]
+}

@@ -1,0 +1,17 @@
+- output_history_base_name: KS
+  workflow_id: RNAseq_PE
+  runs:
+  - history_name: 50 32x128
+    inputs:
+    - name: PE fastq input
+      collection: Paired50
+    - name: gtf
+      dataset_id: hg38.gtf
+    - name: forward_adapter
+      value: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+    - name: reverse_adapter
+      value: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+    - name: reference_genome
+      value: hg38
+    - name: strandness
+      value: stranded - forward
