@@ -4,7 +4,7 @@
   - history_name: 20 16x64
     inputs:
     - name: PE fastq input
-      collection: Paired_List_20
+      collection: Paired20
     - name: gtf
       dataset_id: hg38.gtf
     - name: forward_adapter
