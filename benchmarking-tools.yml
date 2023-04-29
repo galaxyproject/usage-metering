@@ -1,4 +1,4 @@
 tools:
   toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/.*:
-    cores: 16
-    mem: 64
+    cores: 32
+    mem: 128
