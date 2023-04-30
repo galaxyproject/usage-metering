@@ -10,10 +10,10 @@ if [[ ! -e $1 ]] ; then
 	exit 1
 fi
 
-chart=/Users/suderman/Workspaces/JHU/galaxykubeman-helm/galaxykubeman
-name=gkm
-namespace=gkmns
+chart=/home/ubuntu/galaxykubeman-helm/galaxykubeman
+name=galaxy
+namespace=ks-gkm
 
 echo "Upgrading with values from $1"
-helm upgrade $name --namespace $namespace $chart --reset-values -f values.yml -f $1
+helm upgrade $name --namespace $namespace $chart --reuse-values --values $1
 

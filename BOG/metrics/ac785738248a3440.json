@@ -1,0 +1,217 @@
+{
+    "run": 0,
+    "cloud": "N/A",
+    "job_conf": "Unknown",
+    "workflow_id": "8594a32a34f345cf",
+    "history_id": "3bda49087c9afc48",
+    "inputs": "Paired50_2 hg38.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "ac785738248a3440",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2023-04-29T21:00:21.860443",
+        "create_time": "2023-04-29T20:59:51.578998",
+        "galaxy_version": "23.0",
+        "command_version": "",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.1",
+        "history_id": "3bda49087c9afc48",
+        "external_id": "gxy-galaxy-galaxy-5rpkz",
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"c819b7c4e6d011ed804a6e3f2e067cf9\"",
+            "unmapped": "{\"__current_case__\": 1, \"on_unmapped\": \"fail\"}",
+            "output_param_type": "\"text\"",
+            "input_param_type": "{\"__current_case__\": 0, \"input_param\": \"stranded - forward\", \"mappings\": [{\"__index__\": 0, \"from\": \"stranded - forward\", \"to\": \"fr-secondstrand\"}, {\"__index__\": 1, \"from\": \"stranded - reverse\", \"to\": \"fr-firststrand\"}, {\"__index__\": 2, \"from\": \"unstranded\", \"to\": \"fr-unstranded\"}], \"type\": \"text\"}"
+        },
+        "inputs": {},
+        "outputs": {
+            "output_param_text": {
+                "id": "455675b3167a6b97",
+                "src": "hda",
+                "uuid": "2edf653c-5998-4526-b3cf-34785eedb2ab"
+            }
+        },
+        "output_collections": {},
+        "tool_stdout": "",
+        "tool_stderr": "",
+        "job_stdout": "",
+        "job_stderr": "",
+        "stderr": "",
+        "stdout": "",
+        "job_messages": [],
+        "dependencies": [],
+        "user_email": "admin@cloudve.org",
+        "job_metrics": [
+            {
+                "title": "Operating System",
+                "value": "Linux gxy-galaxy-galaxy-5rpkz-ldd72 5.10.162+ #1 SMP Thu Feb 9 16:00:42 UTC 2023 x86_64 GNU/Linux\n",
+                "plugin": "uname",
+                "name": "uname",
+                "raw_value": "Linux gxy-galaxy-galaxy-5rpkz-ldd72 5.10.162+ #1 SMP Thu Feb 9 16:00:42 UTC 2023 x86_64 GNU/Linux\n"
+            },
+            {
+                "title": "Total System Swap",
+                "value": "0 bytes",
+                "plugin": "meminfo",
+                "name": "swaptotal",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Total System Memory",
+                "value": "246.0 GB",
+                "plugin": "meminfo",
+                "name": "memtotal",
+                "raw_value": "264126312.0000000"
+            },
+            {
+                "title": "Processor Count",
+                "value": "64",
+                "plugin": "cpuinfo",
+                "name": "processor_count",
+                "raw_value": "64.0000000"
+            },
+            {
+                "title": "Memory softlimit on cgroup",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.soft_limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Was OOM Killer active?",
+                "value": "No",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.under_oom",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "OOM Control enabled",
+                "value": "Yes",
+                "plugin": "cgroup",
+                "name": "memory.oom_control.oom_kill_disable",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "Max memory usage (MEM+SWP)",
+                "value": "158.1 MB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.max_usage_in_bytes",
+                "raw_value": "165740544.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM+SWP)",
+                "value": "8.0 EB",
+                "plugin": "cgroup",
+                "name": "memory.memsw.limit_in_bytes",
+                "raw_value": "9223372036854771712.0000000"
+            },
+            {
+                "title": "Max memory usage (MEM)",
+                "value": "158.1 MB",
+                "plugin": "cgroup",
+                "name": "memory.max_usage_in_bytes",
+                "raw_value": "165740544.0000000"
+            },
+            {
+                "title": "Memory limit on cgroup (MEM)",
+                "value": "3.8 GB",
+                "plugin": "cgroup",
+                "name": "memory.limit_in_bytes",
+                "raw_value": "4080218112.0000000"
+            },
+            {
+                "title": "Failed to allocate memory count",
+                "value": 0.0,
+                "plugin": "cgroup",
+                "name": "memory.failcnt",
+                "raw_value": "0E-7"
+            },
+            {
+                "title": "CPU Time",
+                "value": "3.941094612 seconds",
+                "plugin": "cgroup",
+                "name": "cpuacct.usage",
+                "raw_value": "3941094612.0000000"
+            },
+            {
+                "title": "Job Runtime (Wall Clock)",
+                "value": "4 seconds",
+                "plugin": "core",
+                "name": "runtime_seconds",
+                "raw_value": "4.0000000"
+            },
+            {
+                "title": "Job End Time",
+                "value": "2023-04-29 21:00:10",
+                "plugin": "core",
+                "name": "end_epoch",
+                "raw_value": "1682802010.0000000"
+            },
+            {
+                "title": "Job Start Time",
+                "value": "2023-04-29 21:00:06",
+                "plugin": "core",
+                "name": "start_epoch",
+                "raw_value": "1682802006.0000000"
+            },
+            {
+                "title": "Memory Allocated (MB)",
+                "value": "4080",
+                "plugin": "core",
+                "name": "galaxy_memory_mb",
+                "raw_value": "4080.0000000"
+            },
+            {
+                "title": "Cores Allocated",
+                "value": "1",
+                "plugin": "core",
+                "name": "galaxy_slots",
+                "raw_value": "1.0000000"
+            }
+        ]
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "ac785738248a3440",
+        "state": "ok",
+        "exit_code": 0,
+        "update_time": "2023-04-29T21:00:21.860443",
+        "create_time": "2023-04-29T20:59:51.578998",
+        "galaxy_version": "23.0",
+        "command_version": "",
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/map_param_value/map_param_value/0.1.1",
+        "history_id": "3bda49087c9afc48",
+        "external_id": "gxy-galaxy-galaxy-5rpkz",
+        "command_line": "cd ../; python _evaluate_expression_.py",
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"?\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len\"",
+            "__workflow_invocation_uuid__": "\"c819b7c4e6d011ed804a6e3f2e067cf9\"",
+            "unmapped": "{\"__current_case__\": 1, \"on_unmapped\": \"fail\"}",
+            "output_param_type": "\"text\"",
+            "input_param_type": "{\"__current_case__\": 0, \"input_param\": \"stranded - forward\", \"mappings\": [{\"__index__\": 0, \"from\": \"stranded - forward\", \"to\": \"fr-secondstrand\"}, {\"__index__\": 1, \"from\": \"stranded - reverse\", \"to\": \"fr-firststrand\"}, {\"__index__\": 2, \"from\": \"unstranded\", \"to\": \"fr-unstranded\"}], \"type\": \"text\"}"
+        },
+        "inputs": {},
+        "outputs": {
+            "output_param_text": {
+                "id": "455675b3167a6b97",
+                "src": "hda",
+                "uuid": "2edf653c-5998-4526-b3cf-34785eedb2ab"
+            }
+        },
+        "output_collections": {}
+    },
+    "server": "http://34.148.202.137:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        180,
+        503642961
+    ]
+}

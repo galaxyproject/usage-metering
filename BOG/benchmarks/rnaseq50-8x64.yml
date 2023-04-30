@@ -1,7 +1,7 @@
 - output_history_base_name: KS
   workflow_id: RNAseq_PE
   runs:
-  - history_name: 50 8x32
+  - history_name: 50 8x64
     inputs:
     - name: PE fastq input
       collection: Paired50
