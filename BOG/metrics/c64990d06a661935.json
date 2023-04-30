@@ -1,0 +1,176 @@
+{
+    "run": 0,
+    "cloud": "N/A",
+    "job_conf": "Unknown",
+    "workflow_id": "8594a32a34f345cf",
+    "history_id": "2d16941ca673727a",
+    "inputs": "Paired50 hg38.gtf",
+    "metrics": {
+        "model_class": "Job",
+        "id": "c64990d06a661935",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2023-04-29T19:56:18.152899",
+        "create_time": "2023-04-29T19:30:05.097270",
+        "galaxy_version": "23.0",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+        "history_id": "2d16941ca673727a",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"3d2fa3f0e6c411ed804a6e3f2e067cf9\"",
+            "title": "\"\"",
+            "saveLog": "false",
+            "results": "[{\"__index__\": 0, \"software_cond\": {\"__current_case__\": 5, \"input\": {\"values\": [{\"id\": 228, \"src\": \"hdca\"}]}, \"software\": \"cutadapt\"}}, {\"__index__\": 1, \"software_cond\": {\"__current_case__\": 28, \"output\": [{\"__index__\": 0, \"type\": {\"__current_case__\": 0, \"input\": {\"values\": [{\"id\": 229, \"src\": \"hdca\"}]}, \"type\": \"log\"}}, {\"__index__\": 1, \"type\": {\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 232, \"src\": \"hdca\"}]}, \"type\": \"genecounts\"}}], \"software\": \"star\"}}]",
+            "flat": "false",
+            "export": "true",
+            "comment": "\"\""
+        },
+        "inputs": {
+            "results_0|input": {
+                "id": "64994c75f5033a78",
+                "src": "hda",
+                "uuid": "fab7b2e3-7947-4562-9b84-327b6dc4315c"
+            },
+            "results_0|input1": {
+                "id": "64994c75f5033a78",
+                "src": "hda",
+                "uuid": "fab7b2e3-7947-4562-9b84-327b6dc4315c"
+            },
+            "results_1|software_cond|output_0|input": {
+                "id": "24f463143832ce66",
+                "src": "hda",
+                "uuid": "de106ce1-912d-488a-ae82-2a16e01bd849"
+            },
+            "results_1|software_cond|output_0|input1": {
+                "id": "24f463143832ce66",
+                "src": "hda",
+                "uuid": "de106ce1-912d-488a-ae82-2a16e01bd849"
+            },
+            "results_1|software_cond|output_1|input": {
+                "id": "15cd6d411b9d0070",
+                "src": "hda",
+                "uuid": "9d3fed07-086f-481f-804a-7cd4fbf84592"
+            },
+            "results_1|software_cond|output_1|input1": {
+                "id": "15cd6d411b9d0070",
+                "src": "hda",
+                "uuid": "9d3fed07-086f-481f-804a-7cd4fbf84592"
+            }
+        },
+        "outputs": {
+            "html_report": {
+                "id": "d29ee801398471aa",
+                "src": "hda",
+                "uuid": "10b84a4f-cc04-44a0-a0bf-a9d4159b5f08"
+            }
+        },
+        "output_collections": {
+            "stats": {
+                "id": "4bc0d8642c20d01e",
+                "src": "hdca"
+            },
+            "plots": {
+                "id": "ccb006f1f3f2f35a",
+                "src": "hdca"
+            }
+        },
+        "tool_stdout": null,
+        "tool_stderr": null,
+        "job_stdout": null,
+        "job_stderr": null,
+        "stderr": "",
+        "stdout": "",
+        "job_messages": null,
+        "dependencies": [],
+        "user_email": "admin@cloudve.org",
+        "job_metrics": []
+    },
+    "status": {
+        "model_class": "Job",
+        "id": "c64990d06a661935",
+        "state": "deleted",
+        "exit_code": null,
+        "update_time": "2023-04-29T19:56:18.152899",
+        "create_time": "2023-04-29T19:30:05.097270",
+        "galaxy_version": "23.0",
+        "command_version": null,
+        "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.11+galaxy1",
+        "history_id": "2d16941ca673727a",
+        "external_id": null,
+        "command_line": null,
+        "traceback": null,
+        "params": {
+            "__input_ext": "\"input\"",
+            "dbkey": "\"hg38\"",
+            "chromInfo": "\"/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len\"",
+            "__workflow_invocation_uuid__": "\"3d2fa3f0e6c411ed804a6e3f2e067cf9\"",
+            "title": "\"\"",
+            "saveLog": "false",
+            "results": "[{\"__index__\": 0, \"software_cond\": {\"__current_case__\": 5, \"input\": {\"values\": [{\"id\": 228, \"src\": \"hdca\"}]}, \"software\": \"cutadapt\"}}, {\"__index__\": 1, \"software_cond\": {\"__current_case__\": 28, \"output\": [{\"__index__\": 0, \"type\": {\"__current_case__\": 0, \"input\": {\"values\": [{\"id\": 229, \"src\": \"hdca\"}]}, \"type\": \"log\"}}, {\"__index__\": 1, \"type\": {\"__current_case__\": 1, \"input\": {\"values\": [{\"id\": 232, \"src\": \"hdca\"}]}, \"type\": \"genecounts\"}}], \"software\": \"star\"}}]",
+            "flat": "false",
+            "export": "true",
+            "comment": "\"\""
+        },
+        "inputs": {
+            "results_0|input": {
+                "id": "64994c75f5033a78",
+                "src": "hda",
+                "uuid": "fab7b2e3-7947-4562-9b84-327b6dc4315c"
+            },
+            "results_0|input1": {
+                "id": "64994c75f5033a78",
+                "src": "hda",
+                "uuid": "fab7b2e3-7947-4562-9b84-327b6dc4315c"
+            },
+            "results_1|software_cond|output_0|input": {
+                "id": "24f463143832ce66",
+                "src": "hda",
+                "uuid": "de106ce1-912d-488a-ae82-2a16e01bd849"
+            },
+            "results_1|software_cond|output_0|input1": {
+                "id": "24f463143832ce66",
+                "src": "hda",
+                "uuid": "de106ce1-912d-488a-ae82-2a16e01bd849"
+            },
+            "results_1|software_cond|output_1|input": {
+                "id": "15cd6d411b9d0070",
+                "src": "hda",
+                "uuid": "9d3fed07-086f-481f-804a-7cd4fbf84592"
+            },
+            "results_1|software_cond|output_1|input1": {
+                "id": "15cd6d411b9d0070",
+                "src": "hda",
+                "uuid": "9d3fed07-086f-481f-804a-7cd4fbf84592"
+            }
+        },
+        "outputs": {
+            "html_report": {
+                "id": "d29ee801398471aa",
+                "src": "hda",
+                "uuid": "10b84a4f-cc04-44a0-a0bf-a9d4159b5f08"
+            }
+        },
+        "output_collections": {
+            "stats": {
+                "id": "4bc0d8642c20d01e",
+                "src": "hdca"
+            },
+            "plots": {
+                "id": "ccb006f1f3f2f35a",
+                "src": "hdca"
+            }
+        }
+    },
+    "server": "http://34.148.202.137:8000/galaxy/",
+    "ref_data_size": [],
+    "input_data_size": [
+        0,
+        503642961
+    ]
+}

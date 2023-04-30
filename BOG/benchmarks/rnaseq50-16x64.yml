@@ -4,9 +4,9 @@
   - history_name: 50 16x64
     inputs:
     - name: PE fastq input
-      collection: Paired50
+      collection: Paired50_2
     - name: gtf
-      dataset_id: hg38.gtf
+      dataset_id: hg38_gtf
     - name: forward_adapter
       value: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
     - name: reverse_adapter
