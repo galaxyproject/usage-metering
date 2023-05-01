@@ -1,7 +1,7 @@
 tools:
   toolshed.g2.bx.psu.edu/repos/devteam/cufflinks/cufflinks/.*:
-    cores: 32
-    mem: 128
+    cores: 16
+    mem: 64
   toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/.*:
-    cores: 32
-    mem: 128
+    cores: 16
+    mem: 64
