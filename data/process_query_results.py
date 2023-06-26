@@ -9,8 +9,8 @@ import pandas as pd
 import json
 
 LOCAL_DIRECTORY_READ = '../../psql-main-data/STEP_2_1_export_enumerate/'    ## contains Txt files (created from SQL exports from AWS)
-LOCAL_DIRECTORY_WRITE = '20221019/'     ## contains Csv files (created from above Txt files)
-# LOCAL_DIRECTORY_PREFIX = '202210181743/'     ## unique date-time string value for multiple runs
+LOCAL_DIRECTORY_WRITE = '202305/'     ## contains Csv files (created from above Txt files)
+# LOCAL_DIRECTORY_PREFIX = '202210181743/'     ## unique date-time string value for multiple same-day runs
 
 def get_tool_name(tool_id):
     arr = tool_id.split('/')
@@ -28,7 +28,7 @@ def normalize_headers(columns, is_pivot):
     if is_pivot:
         columns.insert(1, "tool_id")
     else:
-        columns.insert(0, "tool_id")
+        columns.insert(1, "tool_id")
     return columns
 
 ## function that (1) exports the Txt file data into Csv files (2) removes null values (3) enumerates the rows in the Csv files (4) normalizes tool name/version
